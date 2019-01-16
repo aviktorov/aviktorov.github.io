@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MusicManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MusicManager
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Stem.MusicManager">
+  
+  
+  <h1 id="Stem_MusicManager" data-uid="Stem.MusicManager" class="text-break">Class MusicManager
+  </h1>
+  <div class="markdown level0 summary"><p>The main music manager class.
+Contains all methods for music playback.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MusicManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Stem_MusicManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MusicManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Stem_MusicManager_Banks_" data-uid="Stem.MusicManager.Banks*"></a>
+  <h4 id="Stem_MusicManager_Banks" data-uid="Stem.MusicManager.Banks">Banks</h4>
+  <div class="markdown level1 summary"><p><em>Readonly</em> collection of all registered music banks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;MusicBank&gt; Banks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<span class="xref">MusicBank</span>&gt;</td>
+        <td><p>Gets the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Stem_MusicManager_PrimaryBank_" data-uid="Stem.MusicManager.PrimaryBank*"></a>
+  <h4 id="Stem_MusicManager_PrimaryBank" data-uid="Stem.MusicManager.PrimaryBank">PrimaryBank</h4>
+  <div class="markdown level1 summary"><p>Primary music bank that will be used in case of name collisions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MusicBank PrimaryBank { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MusicBank</span></td>
+        <td><p>Gets the primary music bank.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Stem_MusicManager_Next_" data-uid="Stem.MusicManager.Next*"></a>
+  <h4 id="Stem_MusicManager_Next_System_String_" data-uid="Stem.MusicManager.Next(System.String)">Next(String)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to next track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Next(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Next_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Next_" data-uid="Stem.MusicManager.Next*"></a>
+  <h4 id="Stem_MusicManager_Next_System_String_System_Single_" data-uid="Stem.MusicManager.Next(System.String,System.Single)">Next(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to next track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Next(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Next_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Pause_" data-uid="Stem.MusicManager.Pause*"></a>
+  <h4 id="Stem_MusicManager_Pause_System_String_" data-uid="Stem.MusicManager.Pause(System.String)">Pause(String)</h4>
+  <div class="markdown level1 summary"><p>Pauses music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Pause_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Pause_" data-uid="Stem.MusicManager.Pause*"></a>
+  <h4 id="Stem_MusicManager_Pause_System_String_System_Single_" data-uid="Stem.MusicManager.Pause(System.String,System.Single)">Pause(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Pauses music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Pause_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Play_" data-uid="Stem.MusicManager.Play*"></a>
+  <h4 id="Stem_MusicManager_Play_System_String_" data-uid="Stem.MusicManager.Play(System.String)">Play(String)</h4>
+  <div class="markdown level1 summary"><p>Plays music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Play(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Play_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Play_" data-uid="Stem.MusicManager.Play*"></a>
+  <h4 id="Stem_MusicManager_Play_System_String_System_Single_" data-uid="Stem.MusicManager.Play(System.String,System.Single)">Play(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Play(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Play_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Prev_" data-uid="Stem.MusicManager.Prev*"></a>
+  <h4 id="Stem_MusicManager_Prev_System_String_" data-uid="Stem.MusicManager.Prev(System.String)">Prev(String)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to previous track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Prev(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Prev_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Prev_" data-uid="Stem.MusicManager.Prev*"></a>
+  <h4 id="Stem_MusicManager_Prev_System_String_System_Single_" data-uid="Stem.MusicManager.Prev(System.String,System.Single)">Prev(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to previous track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Prev(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Prev_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_RegisterAllBanks_" data-uid="Stem.MusicManager.RegisterAllBanks*"></a>
+  <h4 id="Stem_MusicManager_RegisterAllBanks" data-uid="Stem.MusicManager.RegisterAllBanks">RegisterAllBanks()</h4>
+  <div class="markdown level1 summary"><p>Registers all available music bank assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterAllBanks()</code></pre>
+  </div>
+  
+  
+  <a id="Stem_MusicManager_RegisterBank_" data-uid="Stem.MusicManager.RegisterBank*"></a>
+  <h4 id="Stem_MusicManager_RegisterBank_MusicBank_" data-uid="Stem.MusicManager.RegisterBank(MusicBank)">RegisterBank(MusicBank)</h4>
+  <div class="markdown level1 summary"><p>Registers new music bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RegisterBank(MusicBank bank)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MusicBank</span></td>
+        <td><span class="parametername">bank</span></td>
+        <td><p>Music bank to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if music bank was succesfully registered and false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Stem_MusicManager_Seek_" data-uid="Stem.MusicManager.Seek*"></a>
+  <h4 id="Stem_MusicManager_Seek_System_String_System_String_" data-uid="Stem.MusicManager.Seek(System.String,System.String)">Seek(String, String)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to target track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Seek(string player, string track)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">track</span></td>
+        <td><p>Name of the track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Seek_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Target track must be one of current playlist tracks.</p>
+<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Seek_" data-uid="Stem.MusicManager.Seek*"></a>
+  <h4 id="Stem_MusicManager_Seek_System_String_System_String_System_Single_" data-uid="Stem.MusicManager.Seek(System.String,System.String,System.Single)">Seek(String, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Advances music player to target track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Seek(string player, string track, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">track</span></td>
+        <td><p>Name of the track.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Seek_System_String_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Target track must be one of current playlist tracks.</p>
+<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_SetPlaylist_" data-uid="Stem.MusicManager.SetPlaylist*"></a>
+  <h4 id="Stem_MusicManager_SetPlaylist_System_String_System_String_" data-uid="Stem.MusicManager.SetPlaylist(System.String,System.String)">SetPlaylist(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets a playlist to a music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlaylist(string player, string playlist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlist</span></td>
+        <td><p>Name of the playlist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_SetPlaylist_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Playlist and music player must be in the same music bank.</p>
+<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>If music player was playing another track it&apos;ll automatically crossfade to the first track of the new playlist.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_SetPlaylist_" data-uid="Stem.MusicManager.SetPlaylist*"></a>
+  <h4 id="Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_" data-uid="Stem.MusicManager.SetPlaylist(System.String,System.String,System.Single)">SetPlaylist(String, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets a playlist to a music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlaylist(string player, string playlist, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlist</span></td>
+        <td><p>Name of the playlist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>If music player was playing another track it&apos;ll automatically crossfade to first track of the new playlist.</p>
+<p>Playlist and music player must be in the same music bank.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Stop_" data-uid="Stem.MusicManager.Stop*"></a>
+  <h4 id="Stem_MusicManager_Stop_System_String_" data-uid="Stem.MusicManager.Stop(System.String)">Stop(String)</h4>
+  <div class="markdown level1 summary"><p>Stops music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Stop_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_Stop_" data-uid="Stem.MusicManager.Stop*"></a>
+  <h4 id="Stem_MusicManager_Stop_System_String_System_Single_" data-uid="Stem.MusicManager.Stop(System.String,System.Single)">Stop(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Stops music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_Stop_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_UnPause_" data-uid="Stem.MusicManager.UnPause*"></a>
+  <h4 id="Stem_MusicManager_UnPause_System_String_" data-uid="Stem.MusicManager.UnPause(System.String)">UnPause(String)</h4>
+  <div class="markdown level1 summary"><p>Resumes music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnPause(string player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_UnPause_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+</div>
+  
+  
+  <a id="Stem_MusicManager_UnPause_" data-uid="Stem.MusicManager.UnPause*"></a>
+  <h4 id="Stem_MusicManager_UnPause_System_String_System_Single_" data-uid="Stem.MusicManager.UnPause(System.String,System.Single)">UnPause(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Resumes music player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnPause(string player, float fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>Name of the music player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Crossfade duration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_UnPause_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
+If name collision occurs between music banks, primary music bank will be searched first.</p>
+<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>Crossfade value will override corresponding value stored in music player.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

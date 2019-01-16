@@ -5,11 +5,35 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stem.MusicManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.MusicManager.html",
+          "hash": "TlE5Q8ud6J1pMocIZjvMbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.SoundInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.SoundInstance.html",
+          "hash": "pXBLE2LUMIYd1Ixu0UaQ9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stem.SoundManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundManager.html",
-          "hash": "qbfmmeP6EYelsxff5yC4fg=="
+          "hash": "GaeIoVf8g85o01eynLF+Yg=="
         }
       },
       "is_incremental": false,
@@ -21,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.html",
-          "hash": "ay0P4ra9a0QgeNbldZE83w=="
+          "hash": "6JMk89TV2UzeAhz6ef9R2Q=="
         }
       },
       "is_incremental": false,
@@ -45,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6/OuIJ3SuzYuO9mSOOF/Aw=="
+          "hash": "R3rAI53l1vKivq42H9MqYw=="
         }
       },
       "is_incremental": false,
@@ -60,7 +84,7 @@
           "hash": "vLRzfEG5J2XUFuYaLiYf7Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +108,7 @@
           "hash": "6nvJV6xruHMpaSrupA4Utw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -103,7 +127,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -114,11 +139,10 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
