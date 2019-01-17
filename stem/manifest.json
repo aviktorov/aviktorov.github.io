@@ -5,11 +5,119 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Stem.AttenuationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.AttenuationMode.html",
+          "hash": "DcBWFb9iWwe9rPygBmbJaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.MusicBank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.MusicBank.html",
+          "hash": "Nd546sebgqtVTSMvJPomzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Stem.MusicManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicManager.html",
-          "hash": "TlE5Q8ud6J1pMocIZjvMbQ=="
+          "hash": "iR1b5c+6/Tg67/En0d7a9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.MusicPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.MusicPlayer.html",
+          "hash": "QwRlzdIM31LyOZtKKYwKkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.Playlist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.Playlist.html",
+          "hash": "GWzMOj6NdLajlwV1r02pSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.PlaylistTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.PlaylistTrack.html",
+          "hash": "gnNfFMcnlszFOjom0wnqRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.RetriggerMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.RetriggerMode.html",
+          "hash": "7+KG6x51ZfARdTehT1QO5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.Sound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.Sound.html",
+          "hash": "xpmW7KO50mYwu1sgoUXdxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.SoundBank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.SoundBank.html",
+          "hash": "E6TrmkpGcY+A3v2eH5/lAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.SoundBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.SoundBus.html",
+          "hash": "1i6TLd3o3bAj13iQvTCN8Q=="
         }
       },
       "is_incremental": false,
@@ -21,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundInstance.html",
-          "hash": "pXBLE2LUMIYd1Ixu0UaQ9A=="
+          "hash": "sukXFFTtH6bW4qYxQP5jvw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +141,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundManager.html",
-          "hash": "GaeIoVf8g85o01eynLF+Yg=="
+          "hash": "PcSzXKvDHgrseqom0EQupA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.SoundVariation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.SoundVariation.html",
+          "hash": "vT3PNUPOqwtBWpP6dRlv5g=="
         }
       },
       "is_incremental": false,
@@ -45,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.html",
-          "hash": "6JMk89TV2UzeAhz6ef9R2Q=="
+          "hash": "vigJKMOkpmm3vcCRzK8FWw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "R3rAI53l1vKivq42H9MqYw=="
+          "hash": "ZIV3c6KuYpPnAl7KPPoJ3w=="
         }
       },
       "is_incremental": false,
@@ -137,11 +257,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
