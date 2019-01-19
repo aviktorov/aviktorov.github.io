@@ -106,10 +106,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_Sound_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Sound</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Sound</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -117,7 +118,7 @@
   
   <a id="Stem_Sound_AttenuationMode_" data-uid="Stem.Sound.AttenuationMode*"></a>
   <h4 id="Stem_Sound_AttenuationMode" data-uid="Stem.Sound.AttenuationMode">AttenuationMode</h4>
-  <div class="markdown level1 summary"><p>The attenuation mode defining how 3d sound volume will be lowered over the distance.</p>
+  <div class="markdown level1 summary"><p>The attenuation mode defining how sound volume will be lowered over the distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -140,11 +141,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Stem_Sound_AttenuationMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that attenuation rules applies only for 3D sounds. Please refer to Unity Scripting Reference for details.</p>
+</div>
   
   
   <a id="Stem_Sound_Audible_" data-uid="Stem.Sound.Audible*"></a>
   <h4 id="Stem_Sound_Audible" data-uid="Stem.Sound.Audible">Audible</h4>
-  <div class="markdown level1 summary"><p>The flag indicating the sound can be heard.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the sound can be heard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,16 +166,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound can be heard and false otherwise.</p>
+        <td><p>True, if the sound can be heard. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Stem_Sound_Audible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <a class="xref" href="Stem.Sound.html#Stem_Sound_Bus">Bus</a> is inaudible, the sound will also be inaudible.</p>
+</div>
   
   
   <a id="Stem_Sound_Bank_" data-uid="Stem.Sound.Bank*"></a>
   <h4 id="Stem_Sound_Bank" data-uid="Stem.Sound.Bank">Bank</h4>
-  <div class="markdown level1 summary"><p>The sound bank that sound belongs to.</p>
+  <div class="markdown level1 summary"><p>The sound bank the sound belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -198,7 +205,7 @@
   
   <a id="Stem_Sound_Bus_" data-uid="Stem.Sound.Bus*"></a>
   <h4 id="Stem_Sound_Bus" data-uid="Stem.Sound.Bus">Bus</h4>
-  <div class="markdown level1 summary"><p>The link to a sound bus that manages this sound.</p>
+  <div class="markdown level1 summary"><p>The reference to a sound bus which will manage the sound.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,13 +250,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A scale value.</p>
+        <td><p>Doppler scale of the sound. The value must be greater or equal to zero.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_DopplerLevel_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
@@ -273,13 +280,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A distance value in units.</p>
+        <td><p>Distance in units.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_MaxDistance_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
@@ -303,13 +310,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A distance value in units.</p>
+        <td><p>Distance in units.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_MinDistance_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
@@ -333,19 +340,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound is muted.</p>
+        <td><p>True, if the sound is muted. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_Muted_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may be overridden by the solo flag, i.e. if the sound is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may be overridden by the <a class="xref" href="Stem.Sound.html#Stem_Sound_Soloed">Soloed</a> flag, i.e. if the sound is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
   <a id="Stem_Sound_Name_" data-uid="Stem.Sound.Name*"></a>
   <h4 id="Stem_Sound_Name" data-uid="Stem.Sound.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the sound that is used for fast search in corresponding sound bank.</p>
+  <div class="markdown level1 summary"><p>The name of the sound. Used for fast search in corresponding sound bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -390,19 +397,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A stereo pan value in [-1;1] range.</p>
+        <td><p>Stereo pan of the sound. The value must be in [-1;1] range.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_PanStereo_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
   <a id="Stem_Sound_Soloed_" data-uid="Stem.Sound.Soloed*"></a>
   <h4 id="Stem_Sound_Soloed" data-uid="Stem.Sound.Soloed">Soloed</h4>
-  <div class="markdown level1 summary"><p>The flag indicating if the sound is soloed. If the flag is set to true, all other non-soloed sounds won't be audible.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the sound is soloed. If set to true, all other non-solo sounds won't be audible.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -420,13 +427,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound is soloed.</p>
+        <td><p>True, if the sound is soloed. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_Soloed_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may override the mute flag, i.e. if the sound is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may override the <a class="xref" href="Stem.Sound.html#Stem_Sound_Muted">Muted</a> flag, i.e. if the sound is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
@@ -450,13 +457,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A spatial blend value in [0;1] range.</p>
+        <td><p>Spatial blend of the sound. The value must be in [0;1] range.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_SpatialBlend_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
@@ -480,19 +487,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A spread angle value in [0;360] range.</p>
+        <td><p>Spread angle of the sound. The value must be in [0;360] range.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_Sound_Spread_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity documentation for details.</p>
+  <div class="markdown level1 remarks"><p>This parameter duplicates corresponding parameter from AudioSource. Please refer to Unity Scripting Reference for details.</p>
 </div>
   
   
   <a id="Stem_Sound_VariationRetriggerMode_" data-uid="Stem.Sound.VariationRetriggerMode*"></a>
   <h4 id="Stem_Sound_VariationRetriggerMode" data-uid="Stem.Sound.VariationRetriggerMode">VariationRetriggerMode</h4>
-  <div class="markdown level1 summary"><p>The retrigger mode defining how sound will play its variations</p>
+  <div class="markdown level1 summary"><p>The retrigger mode defining how sound will play its variations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -537,36 +544,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>&gt;</td>
-        <td><p>Gets the collection.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="Stem_Sound_FetchVariation_" data-uid="Stem.Sound.FetchVariation*"></a>
-  <h4 id="Stem_Sound_FetchVariation" data-uid="Stem.Sound.FetchVariation">FetchVariation()</h4>
-  <div class="markdown level1 summary"><p>Gets a new sound variation according to RetriggerMode value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SoundVariation FetchVariation()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Stem.SoundVariation.html">SoundVariation</a></td>
-        <td><p>A reference to a sound variation.</p>
+        <td><p>A reference to a read-only collection of sound variations.</p>
 </td>
       </tr>
     </tbody>

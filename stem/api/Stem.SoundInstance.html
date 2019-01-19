@@ -73,7 +73,7 @@
   
   <h1 id="Stem_SoundInstance" data-uid="Stem.SoundInstance" class="text-break">Class SoundInstance
   </h1>
-  <div class="markdown level0 summary"><p>Represents a single audio source that can be used for manual playback.</p>
+  <div class="markdown level0 summary"><p>The game object with audio source component. Used for manual playback and custom mixing logic.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -106,7 +106,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_SoundInstance_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SoundInstance</code></pre>
@@ -117,7 +117,7 @@
   
   <a id="Stem_SoundInstance_Looped_" data-uid="Stem.SoundInstance.Looped*"></a>
   <h4 id="Stem_SoundInstance_Looped" data-uid="Stem.SoundInstance.Looped">Looped</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if current sound is looping. Set whether the sound replays after it finishes or not.</p>
+  <div class="markdown level1 summary"><p>The flag indicating that the sound instance is looping. Set whether it should replay the audio clip after it finishes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -135,7 +135,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if sound instance is looping and false otherwise.</p>
+        <td><p>True, if sound instance is looping. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -144,7 +144,7 @@
   
   <a id="Stem_SoundInstance_Paused_" data-uid="Stem.SoundInstance.Paused*"></a>
   <h4 id="Stem_SoundInstance_Paused" data-uid="Stem.SoundInstance.Paused">Paused</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if current sound instance is paused.</p>
+  <div class="markdown level1 summary"><p>The flag indicating that the sound instance is paused.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,7 +162,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if sound instance is paused and false otherwise.</p>
+        <td><p>True, if sound instance is paused. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -171,7 +171,7 @@
   
   <a id="Stem_SoundInstance_Pitch_" data-uid="Stem.SoundInstance.Pitch*"></a>
   <h4 id="Stem_SoundInstance_Pitch" data-uid="Stem.SoundInstance.Pitch">Pitch</h4>
-  <div class="markdown level1 summary"><p>The pitch property that controls how high or low the tone coming from a <em>TODO: add see tag</em> Sound to an <em>TODO: add external reference here</em> AudioSource is.</p>
+  <div class="markdown level1 summary"><p>The pitch property allows controlling how high or low the tone of the audio source is.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -189,7 +189,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>The pitch of the sound. Value must be in [3;3] range.</p>
+        <td><p>Pitch value in [3;3] range.</p>
 </td>
       </tr>
     </tbody>
@@ -198,7 +198,7 @@
   
   <a id="Stem_SoundInstance_Playing_" data-uid="Stem.SoundInstance.Playing*"></a>
   <h4 id="Stem_SoundInstance_Playing" data-uid="Stem.SoundInstance.Playing">Playing</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if current sound instance is playing.</p>
+  <div class="markdown level1 summary"><p>The flag indicating that the sound instance is playing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -216,7 +216,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if sound instance is playing and false otherwise.</p>
+        <td><p>True, if sound instance is playing. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -225,7 +225,7 @@
   
   <a id="Stem_SoundInstance_Sound_" data-uid="Stem.SoundInstance.Sound*"></a>
   <h4 id="Stem_SoundInstance_Sound" data-uid="Stem.SoundInstance.Sound">Sound</h4>
-  <div class="markdown level1 summary"><p>The sound information that will be used for playback.</p>
+  <div class="markdown level1 summary"><p>The reference to a sound which will be used for playback. Changing this value allows playing different sounds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,7 +243,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Stem.Sound.html">Sound</a></td>
-        <td><p>A reference to <em>TODO: add see tag</em> Sound class. Change this value to play different sounds.</p>
+        <td><p>A reference to a sound.</p>
 </td>
       </tr>
     </tbody>
@@ -270,7 +270,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>Precise playback position in samples. Zero means start of the audio clip.</p>
+        <td><p>An offset in samples from the start of an audio clip.</p>
 </td>
       </tr>
     </tbody>
@@ -279,7 +279,7 @@
   
   <a id="Stem_SoundInstance_Transform_" data-uid="Stem.SoundInstance.Transform*"></a>
   <h4 id="Stem_SoundInstance_Transform" data-uid="Stem.SoundInstance.Transform">Transform</h4>
-  <div class="markdown level1 summary"><p>The transform component from corresponding game object</p>
+  <div class="markdown level1 summary"><p>The transform component from the game object of the sound instance. Please refer to Unity Scripting Reference for details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -296,8 +296,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><p>A reference to <em>TODO: add external reference here</em> Transform class.</p>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><p>A reference to a transform component.</p>
 </td>
       </tr>
     </tbody>
@@ -306,7 +306,7 @@
   
   <a id="Stem_SoundInstance_Volume_" data-uid="Stem.SoundInstance.Volume*"></a>
   <h4 id="Stem_SoundInstance_Volume" data-uid="Stem.SoundInstance.Volume">Volume</h4>
-  <div class="markdown level1 summary"><p>The volume property that controls the level of sound coming from a <em>TODO: add see tag</em> Sound to an <em>TODO: add external reference here</em> AudioSource.</p>
+  <div class="markdown level1 summary"><p>The volume property allows controlling the overall level of sound coming to the audio source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -324,7 +324,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>The volume of the sound. Value must be in [0;1] range.</p>
+        <td><p>Volume value in [0;1] range.</p>
 </td>
       </tr>
     </tbody>
@@ -353,9 +353,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Play()</code></pre>
   </div>
-  <h5 id="Stem_SoundInstance_Play_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume value will override corresponding value stored in the *TODO: add see tag* Sound class.</p>
-</div>
   
   
   <a id="Stem_SoundInstance_Play_" data-uid="Stem.SoundInstance.Play*"></a>
@@ -386,7 +383,7 @@
     </tbody>
   </table>
   <h5 id="Stem_SoundInstance_Play_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume value will override corresponding value stored in the *TODO: add see tag* Sound class.</p>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
 </div>
   
   
@@ -424,7 +421,8 @@
     </tbody>
   </table>
   <h5 id="Stem_SoundInstance_Play_System_Single_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume and pitch values will override corresponding values stored in the *TODO: add see tag* Sound class.</p>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
+<p>Pitch parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Pitch">Pitch</a> value.</p>
 </div>
   
   
@@ -468,12 +466,14 @@
     </tbody>
   </table>
   <h5 id="Stem_SoundInstance_Play_System_Single_System_Single_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume, pitch and delay values will override corresponding values stored in the *TODO: add see tag* Sound class.</p>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
+<p>Pitch parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Pitch">Pitch</a> value.</p>
+<p>Delay parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Delay">Delay</a> value.</p>
 </div>
   
   
   <a id="Stem_SoundInstance_Play3D_" data-uid="Stem.SoundInstance.Play3D*"></a>
-  <h4 id="Stem_SoundInstance_Play3D_Vector3_" data-uid="Stem.SoundInstance.Play3D(Vector3)">Play3D(Vector3)</h4>
+  <h4 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_" data-uid="Stem.SoundInstance.Play3D(UnityEngine.Vector3)">Play3D(Vector3)</h4>
   <div class="markdown level1 summary"><p>Plays sound in 3D space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -492,7 +492,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position of the sound.</p>
 </td>
@@ -502,7 +502,7 @@
   
   
   <a id="Stem_SoundInstance_Play3D_" data-uid="Stem.SoundInstance.Play3D*"></a>
-  <h4 id="Stem_SoundInstance_Play3D_Vector3_System_Single_" data-uid="Stem.SoundInstance.Play3D(Vector3,System.Single)">Play3D(Vector3, Single)</h4>
+  <h4 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_" data-uid="Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single)">Play3D(Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Plays sound in 3D space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -521,7 +521,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position of the sound.</p>
 </td>
@@ -534,13 +534,13 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Stem_SoundInstance_Play3D_Vector3_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume value will override corresponding value stored in *TODO: add see tag* Sound class.</p>
+  <h5 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
 </div>
   
   
   <a id="Stem_SoundInstance_Play3D_" data-uid="Stem.SoundInstance.Play3D*"></a>
-  <h4 id="Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_" data-uid="Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single)">Play3D(Vector3, Single, Single)</h4>
+  <h4 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_" data-uid="Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single)">Play3D(Vector3, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Plays sound in 3D space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -559,7 +559,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position of the sound.</p>
 </td>
@@ -578,13 +578,14 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume and pitch values will override corresponding values stored in the *TODO: add see tag* Sound class.</p>
+  <h5 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
+<p>Pitch parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Pitch">Pitch</a> value.</p>
 </div>
   
   
   <a id="Stem_SoundInstance_Play3D_" data-uid="Stem.SoundInstance.Play3D*"></a>
-  <h4 id="Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_System_Single_" data-uid="Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single,System.Single)">Play3D(Vector3, Single, Single, Single)</h4>
+  <h4 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_System_Single_" data-uid="Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single,System.Single)">Play3D(Vector3, Single, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Plays sound in 3D space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -603,7 +604,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position of the sound.</p>
 </td>
@@ -628,8 +629,10 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Volume, pitch and delay values will override corresponding values stored in the *TODO: add see tag* Sound class.</p>
+  <h5 id="Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Volume parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a> value.</p>
+<p>Pitch parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Pitch">Pitch</a> value.</p>
+<p>Delay parameter value will override <a class="xref" href="Stem.SoundVariation.html">SoundVariation</a>.<a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Delay">Delay</a> value.</p>
 </div>
   
   

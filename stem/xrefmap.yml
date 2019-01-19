@@ -770,19 +770,6 @@ references:
   isSpec: "True"
   fullName: Stem.Sound.DopplerLevel
   nameWithType: Sound.DopplerLevel
-- uid: Stem.Sound.FetchVariation
-  name: FetchVariation()
-  href: api/Stem.Sound.html#Stem_Sound_FetchVariation
-  commentId: M:Stem.Sound.FetchVariation
-  fullName: Stem.Sound.FetchVariation()
-  nameWithType: Sound.FetchVariation()
-- uid: Stem.Sound.FetchVariation*
-  name: FetchVariation
-  href: api/Stem.Sound.html#Stem_Sound_FetchVariation_
-  commentId: Overload:Stem.Sound.FetchVariation
-  isSpec: "True"
-  fullName: Stem.Sound.FetchVariation
-  nameWithType: Sound.FetchVariation
 - uid: Stem.Sound.MaxDistance
   name: MaxDistance
   href: api/Stem.Sound.html#Stem_Sound_MaxDistance
@@ -1261,29 +1248,29 @@ references:
   isSpec: "True"
   fullName: Stem.SoundInstance.Play
   nameWithType: SoundInstance.Play
-- uid: Stem.SoundInstance.Play3D(Vector3)
+- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3)
   name: Play3D(Vector3)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_
-  commentId: M:Stem.SoundInstance.Play3D(Vector3)
-  fullName: Stem.SoundInstance.Play3D(Vector3)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_
+  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3)
+  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3)
   nameWithType: SoundInstance.Play3D(Vector3)
-- uid: Stem.SoundInstance.Play3D(Vector3,System.Single)
+- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single)
   name: Play3D(Vector3, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single)
-  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single)
+  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single)
-- uid: Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single)
+- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single)
   name: Play3D(Vector3, Single, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single)
-  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single)
+  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single, Single)
-- uid: Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single,System.Single)
+- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single,System.Single)
   name: Play3D(Vector3, Single, Single, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single,System.Single)
-  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single, System.Single, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single, System.Single, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single, Single, Single)
 - uid: Stem.SoundInstance.Play3D*
   name: Play3D
@@ -1465,29 +1452,29 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.Play
   nameWithType: SoundManager.Play
-- uid: Stem.SoundManager.Play3D(System.String,Vector3)
+- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3)
   name: Play3D(String, Vector3)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_
-  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3)
-  fullName: Stem.SoundManager.Play3D(System.String, Vector3)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_
+  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3)
+  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3)
   nameWithType: SoundManager.Play3D(String, Vector3)
-- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single)
   name: Play3D(String, Vector3, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single)
-- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single)
   name: Play3D(String, Vector3, Single, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single, Single)
-- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single,System.Single)
   name: Play3D(String, Vector3, Single, Single, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_System_Single_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single, System.Single, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single, System.Single, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single, Single, Single)
 - uid: Stem.SoundManager.Play3D*
   name: Play3D

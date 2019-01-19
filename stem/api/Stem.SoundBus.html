@@ -106,10 +106,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_SoundBus_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SoundBus</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class SoundBus</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -117,7 +118,7 @@
   
   <a id="Stem_SoundBus_AllowVoiceStealing_" data-uid="Stem.SoundBus.AllowVoiceStealing*"></a>
   <h4 id="Stem_SoundBus_AllowVoiceStealing" data-uid="Stem.SoundBus.AllowVoiceStealing">AllowVoiceStealing</h4>
-  <div class="markdown level1 summary"><p>The flag indicating that the sound bus can stop the oldest playing sound and play the new one if the maximum allowed sound limit is exceeded.</p>
+  <div class="markdown level1 summary"><p>The flag indicating whether the sound bus can stop the oldest playing sound and play the new one if <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Polyphony">Polyphony</a> limit is exceeded.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -135,7 +136,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if sound bus will be stopping the oldest playing sounds.</p>
+        <td><p>True, if sound bus will be stopping the oldest playing sounds. False if the sound bus won't allow new sounds to play.</p>
 </td>
       </tr>
     </tbody>
@@ -144,7 +145,7 @@
   
   <a id="Stem_SoundBus_Audible_" data-uid="Stem.SoundBus.Audible*"></a>
   <h4 id="Stem_SoundBus_Audible" data-uid="Stem.SoundBus.Audible">Audible</h4>
-  <div class="markdown level1 summary"><p>The flag indicating the sound bus can be heard.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the sound bus can be heard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,7 +163,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound bus can be heard and false otherwise.</p>
+        <td><p>True, if the sound bus can be heard. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -171,7 +172,7 @@
   
   <a id="Stem_SoundBus_Bank_" data-uid="Stem.SoundBus.Bank*"></a>
   <h4 id="Stem_SoundBus_Bank" data-uid="Stem.SoundBus.Bank">Bank</h4>
-  <div class="markdown level1 summary"><p>The sound bank that sound bus belongs to.</p>
+  <div class="markdown level1 summary"><p>The sound bank the sound bus belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -198,7 +199,7 @@
   
   <a id="Stem_SoundBus_MixerGroup_" data-uid="Stem.SoundBus.MixerGroup*"></a>
   <h4 id="Stem_SoundBus_MixerGroup" data-uid="Stem.SoundBus.MixerGroup">MixerGroup</h4>
-  <div class="markdown level1 summary"><p>The link to a Unity mixer group.</p>
+  <div class="markdown level1 summary"><p>The reference to an audio mixer group. Please refer to Unity Scripting Reference for details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -215,7 +216,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AudioMixerGroup</span></td>
+        <td><span class="xref">UnityEngine.Audio.AudioMixerGroup</span></td>
         <td><p>A reference to a mixer group.</p>
 </td>
       </tr>
@@ -243,19 +244,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound bus is muted.</p>
+        <td><p>True, if the sound bus is muted. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_SoundBus_Muted_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may be overridden by the solo flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may be overridden by the <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Soloed">Soloed</a> flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
   <a id="Stem_SoundBus_Name_" data-uid="Stem.SoundBus.Name*"></a>
   <h4 id="Stem_SoundBus_Name" data-uid="Stem.SoundBus.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the sound bus that is used for fast search in corresponding sound bank.</p>
+  <div class="markdown level1 summary"><p>The name of the sound bus. Used for fast search in corresponding sound bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -282,7 +283,7 @@
   
   <a id="Stem_SoundBus_Polyphony_" data-uid="Stem.SoundBus.Polyphony*"></a>
   <h4 id="Stem_SoundBus_Polyphony" data-uid="Stem.SoundBus.Polyphony">Polyphony</h4>
-  <div class="markdown level1 summary"><p>The number of maximum allowed simultaneously playing sounds in this sound bus.</p>
+  <div class="markdown level1 summary"><p>The number of maximum allowed simultaneously playing sounds in the sound bus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -300,7 +301,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span></td>
-        <td><p>A number of allowed sounds.</p>
+        <td><p>Number of allowed sounds.</p>
 </td>
       </tr>
     </tbody>
@@ -309,7 +310,7 @@
   
   <a id="Stem_SoundBus_Soloed_" data-uid="Stem.SoundBus.Soloed*"></a>
   <h4 id="Stem_SoundBus_Soloed" data-uid="Stem.SoundBus.Soloed">Soloed</h4>
-  <div class="markdown level1 summary"><p>The flag indicating if the sound bus is soloed. If the flag is set to true, all other non-soloed sound buses won't be audible.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the sound bus is soloed. If set to true, all other non-solo sound buses won't be audible.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -327,19 +328,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the sound bus is soloed.</p>
+        <td><p>True, if the sound bus is soloed. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_SoundBus_Soloed_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may override the mute flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may override the <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Muted">Muted</a> flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
   <a id="Stem_SoundBus_Volume_" data-uid="Stem.SoundBus.Volume*"></a>
   <h4 id="Stem_SoundBus_Volume" data-uid="Stem.SoundBus.Volume">Volume</h4>
-  <div class="markdown level1 summary"><p>The volume of the music player.</p>
+  <div class="markdown level1 summary"><p>The volume of the sound bus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -357,7 +358,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A volume value in [0;1] range.</p>
+        <td><p>Volume of the sound bus. Value must be in [0;1] range.</p>
 </td>
       </tr>
     </tbody>

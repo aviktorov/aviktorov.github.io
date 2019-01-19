@@ -106,10 +106,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_PlaylistTrack_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PlaylistTrack</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PlaylistTrack</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -117,7 +118,7 @@
   
   <a id="Stem_PlaylistTrack_Clip_" data-uid="Stem.PlaylistTrack.Clip*"></a>
   <h4 id="Stem_PlaylistTrack_Clip" data-uid="Stem.PlaylistTrack.Clip">Clip</h4>
-  <div class="markdown level1 summary"><p>The audio clip with audio data.</p>
+  <div class="markdown level1 summary"><p>The audio clip with audio data. Please refer to Unity Scripting Reference for details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -134,8 +135,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AudioClip</span></td>
-        <td><p>A reference to a playlist.</p>
+        <td><span class="xref">UnityEngine.AudioClip</span></td>
+        <td><p>A reference to an audio clip.</p>
 </td>
       </tr>
     </tbody>
@@ -144,7 +145,7 @@
   
   <a id="Stem_PlaylistTrack_Name_" data-uid="Stem.PlaylistTrack.Name*"></a>
   <h4 id="Stem_PlaylistTrack_Name" data-uid="Stem.PlaylistTrack.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the audio clip being currently used.</p>
+  <div class="markdown level1 summary"><p>The name of the track.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,7 +163,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>Name of the variation.</p>
+        <td><p>Name of the current audio clip being used. Null reference otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -171,7 +172,7 @@
   
   <a id="Stem_PlaylistTrack_Playlist_" data-uid="Stem.PlaylistTrack.Playlist*"></a>
   <h4 id="Stem_PlaylistTrack_Playlist" data-uid="Stem.PlaylistTrack.Playlist">Playlist</h4>
-  <div class="markdown level1 summary"><p>The playlist that track belongs to.</p>
+  <div class="markdown level1 summary"><p>The playlist the track belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -216,7 +217,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A volume value in [0;1] range.</p>
+        <td><p>Volume of the track. Value must be in [0;1] range.</p>
 </td>
       </tr>
     </tbody>

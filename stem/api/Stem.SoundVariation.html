@@ -106,10 +106,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_SoundVariation_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SoundVariation</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class SoundVariation</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -117,7 +118,7 @@
   
   <a id="Stem_SoundVariation_Clip_" data-uid="Stem.SoundVariation.Clip*"></a>
   <h4 id="Stem_SoundVariation_Clip" data-uid="Stem.SoundVariation.Clip">Clip</h4>
-  <div class="markdown level1 summary"><p>The audio clip with audio data.</p>
+  <div class="markdown level1 summary"><p>The audio clip with audio data. Please refer to Unity Scripting Reference for details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -134,8 +135,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AudioClip</span></td>
-        <td><p>A reference to a playlist.</p>
+        <td><span class="xref">UnityEngine.AudioClip</span></td>
+        <td><p>A reference to an audio clip.</p>
 </td>
       </tr>
     </tbody>
@@ -144,7 +145,7 @@
   
   <a id="Stem_SoundVariation_Delay_" data-uid="Stem.SoundVariation.Delay*"></a>
   <h4 id="Stem_SoundVariation_Delay" data-uid="Stem.SoundVariation.Delay">Delay</h4>
-  <div class="markdown level1 summary"><p>The delay of the variation.</p>
+  <div class="markdown level1 summary"><p>The delay of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,7 +163,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A FixedDelay value if RandomizeDelay flag is false. Otherwise random volume value from RandomDelay will be used instead.</p>
+        <td><p><a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedDelay">FixedDelay</a> value if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomizeDelay">RandomizeDelay</a> is false.
+Otherwise random delay value from <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomDelay">RandomDelay</a> range.</p>
 </td>
       </tr>
     </tbody>
@@ -171,7 +173,7 @@
   
   <a id="Stem_SoundVariation_FixedDelay_" data-uid="Stem.SoundVariation.FixedDelay*"></a>
   <h4 id="Stem_SoundVariation_FixedDelay" data-uid="Stem.SoundVariation.FixedDelay">FixedDelay</h4>
-  <div class="markdown level1 summary"><p>The fixed delay of the variation.</p>
+  <div class="markdown level1 summary"><p>The fixed delay of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -189,7 +191,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A delay value in seconds.</p>
+        <td><p>Fixed delay in seconds of the sound variation. Value must be greater or equal to zero.</p>
 </td>
       </tr>
     </tbody>
@@ -198,7 +200,7 @@
   
   <a id="Stem_SoundVariation_FixedPitch_" data-uid="Stem.SoundVariation.FixedPitch*"></a>
   <h4 id="Stem_SoundVariation_FixedPitch" data-uid="Stem.SoundVariation.FixedPitch">FixedPitch</h4>
-  <div class="markdown level1 summary"><p>The fixed pitch of the variation.</p>
+  <div class="markdown level1 summary"><p>The fixed pitch of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -216,7 +218,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A pitch value in [-3;3] range.</p>
+        <td><p>Fixed pitch of the souhnd variation. Value must be in [-3;3] range.</p>
 </td>
       </tr>
     </tbody>
@@ -225,7 +227,7 @@
   
   <a id="Stem_SoundVariation_FixedVolume_" data-uid="Stem.SoundVariation.FixedVolume*"></a>
   <h4 id="Stem_SoundVariation_FixedVolume" data-uid="Stem.SoundVariation.FixedVolume">FixedVolume</h4>
-  <div class="markdown level1 summary"><p>The fixed volume of the variation.</p>
+  <div class="markdown level1 summary"><p>The fixed volume of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,7 +245,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A volume value in [0;1] range.</p>
+        <td><p>Fixed volume of the sound variation. Value must be in [0;1] range.</p>
 </td>
       </tr>
     </tbody>
@@ -252,7 +254,7 @@
   
   <a id="Stem_SoundVariation_Name_" data-uid="Stem.SoundVariation.Name*"></a>
   <h4 id="Stem_SoundVariation_Name" data-uid="Stem.SoundVariation.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the audio clip being currently used.</p>
+  <div class="markdown level1 summary"><p>The name of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -270,7 +272,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>Name of the variation.</p>
+        <td><p>Name of the current audio clip being used. Null reference otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -279,7 +281,7 @@
   
   <a id="Stem_SoundVariation_Pitch_" data-uid="Stem.SoundVariation.Pitch*"></a>
   <h4 id="Stem_SoundVariation_Pitch" data-uid="Stem.SoundVariation.Pitch">Pitch</h4>
-  <div class="markdown level1 summary"><p>The pitch of the variation.</p>
+  <div class="markdown level1 summary"><p>The pitch of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -297,7 +299,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A FixedPitch value if RandomizePitch flag is false. Otherwise random volume value from RandomPitch will be used instead.</p>
+        <td><p><a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedPitch">FixedPitch</a> value if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomizePitch">RandomizePitch</a> is false.
+Otherwise random pitch value from <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomPitch">RandomPitch</a> range.</p>
 </td>
       </tr>
     </tbody>
@@ -306,7 +309,7 @@
   
   <a id="Stem_SoundVariation_RandomDelay_" data-uid="Stem.SoundVariation.RandomDelay*"></a>
   <h4 id="Stem_SoundVariation_RandomDelay" data-uid="Stem.SoundVariation.RandomDelay">RandomDelay</h4>
-  <div class="markdown level1 summary"><p>The random delay range of the variation.</p>
+  <div class="markdown level1 summary"><p>The random delay range of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -323,8 +326,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
-        <td><p>A delay range, vector components store range boundaries.</p>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><p>Random delay range of the sound variation. Vector components store range boundaries (x - min, y - max).</p>
 </td>
       </tr>
     </tbody>
@@ -333,7 +336,7 @@
   
   <a id="Stem_SoundVariation_RandomizeDelay_" data-uid="Stem.SoundVariation.RandomizeDelay*"></a>
   <h4 id="Stem_SoundVariation_RandomizeDelay" data-uid="Stem.SoundVariation.RandomizeDelay">RandomizeDelay</h4>
-  <div class="markdown level1 summary"><p>The flag indicating which property use for Delay.</p>
+  <div class="markdown level1 summary"><p>The flag indicating which property is used for <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Delay">Delay</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -351,7 +354,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if RandomDelay property is used. Otherwise FixedDelay property is muted.</p>
+        <td><p>True, if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomDelay">RandomDelay</a> is used. Otherwise <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedDelay">FixedDelay</a> is used.</p>
 </td>
       </tr>
     </tbody>
@@ -360,7 +363,7 @@
   
   <a id="Stem_SoundVariation_RandomizePitch_" data-uid="Stem.SoundVariation.RandomizePitch*"></a>
   <h4 id="Stem_SoundVariation_RandomizePitch" data-uid="Stem.SoundVariation.RandomizePitch">RandomizePitch</h4>
-  <div class="markdown level1 summary"><p>The flag indicating which property use for Pitch.</p>
+  <div class="markdown level1 summary"><p>The flag indicating which property is used for <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Pitch">Pitch</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -378,7 +381,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if RandomPitch property is used. Otherwise FixedPitch property is muted.</p>
+        <td><p>True, if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomPitch">RandomPitch</a> is used. Otherwise <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedPitch">FixedPitch</a> is used.</p>
 </td>
       </tr>
     </tbody>
@@ -387,7 +390,7 @@
   
   <a id="Stem_SoundVariation_RandomizeVolume_" data-uid="Stem.SoundVariation.RandomizeVolume*"></a>
   <h4 id="Stem_SoundVariation_RandomizeVolume" data-uid="Stem.SoundVariation.RandomizeVolume">RandomizeVolume</h4>
-  <div class="markdown level1 summary"><p>The flag indicating which property use for Volume.</p>
+  <div class="markdown level1 summary"><p>The flag indicating which property is used for <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_Volume">Volume</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -405,7 +408,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if RandomVolume property is used. Otherwise FixedVolume property is muted.</p>
+        <td><p>True, if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomVolume">RandomVolume</a> is used. Otherwise <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedVolume">FixedVolume</a> is used.</p>
 </td>
       </tr>
     </tbody>
@@ -414,7 +417,7 @@
   
   <a id="Stem_SoundVariation_RandomPitch_" data-uid="Stem.SoundVariation.RandomPitch*"></a>
   <h4 id="Stem_SoundVariation_RandomPitch" data-uid="Stem.SoundVariation.RandomPitch">RandomPitch</h4>
-  <div class="markdown level1 summary"><p>The random pitch range of the variation.</p>
+  <div class="markdown level1 summary"><p>The random pitch range of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -431,8 +434,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
-        <td><p>A pitch range, vector components store range boundaries.</p>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><p>Random pitch range of the sound variation. Vector components store range boundaries (x - min, y - max).</p>
 </td>
       </tr>
     </tbody>
@@ -441,7 +444,7 @@
   
   <a id="Stem_SoundVariation_RandomVolume_" data-uid="Stem.SoundVariation.RandomVolume*"></a>
   <h4 id="Stem_SoundVariation_RandomVolume" data-uid="Stem.SoundVariation.RandomVolume">RandomVolume</h4>
-  <div class="markdown level1 summary"><p>The random volume range of the variation.</p>
+  <div class="markdown level1 summary"><p>The random volume range of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -458,8 +461,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
-        <td><p>A volume range, vector components store range boundaries.</p>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><p>Random volume range of the sound variation. Vector components store range boundaries (x - min, y - max).</p>
 </td>
       </tr>
     </tbody>
@@ -468,7 +471,7 @@
   
   <a id="Stem_SoundVariation_Volume_" data-uid="Stem.SoundVariation.Volume*"></a>
   <h4 id="Stem_SoundVariation_Volume" data-uid="Stem.SoundVariation.Volume">Volume</h4>
-  <div class="markdown level1 summary"><p>The volume of the variation.</p>
+  <div class="markdown level1 summary"><p>The volume of the sound variation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -486,7 +489,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A FixedVolume value if RandomizeVolume flag is false. Otherwise random volume value from RandomVolume will be used instead.</p>
+        <td><p><a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_FixedVolume">FixedVolume</a> value if <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomizeVolume">RandomizeVolume</a> is false.
+Otherwise random volume value from <a class="xref" href="Stem.SoundVariation.html#Stem_SoundVariation_RandomVolume">RandomVolume</a> range.</p>
 </td>
       </tr>
     </tbody>

@@ -81,11 +81,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Playlist</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_Playlist_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Playlist : ISerializationCallbackReceiver</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Playlist : ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -93,7 +122,7 @@
   
   <a id="Stem_Playlist_Bank_" data-uid="Stem.Playlist.Bank*"></a>
   <h4 id="Stem_Playlist_Bank" data-uid="Stem.Playlist.Bank">Bank</h4>
-  <div class="markdown level1 summary"><p>The music bank that playlist belongs to.</p>
+  <div class="markdown level1 summary"><p>The music bank the playlist belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -120,7 +149,7 @@
   
   <a id="Stem_Playlist_Name_" data-uid="Stem.Playlist.Name*"></a>
   <h4 id="Stem_Playlist_Name" data-uid="Stem.Playlist.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the playlist that is used for fast search in corresponding music bank.</p>
+  <div class="markdown level1 summary"><p>The name of the playlist. Used for fast search in corresponding music bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -165,7 +194,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Stem.PlaylistTrack.html">PlaylistTrack</a>&gt;</td>
-        <td><p>Gets the collection.</p>
+        <td><p>A reference to a read-only collection of playlist tracks.</p>
 </td>
       </tr>
     </tbody>
@@ -200,6 +229,10 @@
   <h5 id="Stem_Playlist_OnBeforeSerialize_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is automatically called by Unity during serialization process. Don&apos;t call it manually.</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
 </article>
           </div>
           

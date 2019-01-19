@@ -106,10 +106,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_MusicPlayer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MusicPlayer</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class MusicPlayer</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -117,7 +118,7 @@
   
   <a id="Stem_MusicPlayer_Audible_" data-uid="Stem.MusicPlayer.Audible*"></a>
   <h4 id="Stem_MusicPlayer_Audible" data-uid="Stem.MusicPlayer.Audible">Audible</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates the music player can be heard.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the music player can be heard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -135,7 +136,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the music player can be heard and false otherwise.</p>
+        <td><p>True, if the music player can be heard. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -144,7 +145,7 @@
   
   <a id="Stem_MusicPlayer_AutoAdvance_" data-uid="Stem.MusicPlayer.AutoAdvance*"></a>
   <h4 id="Stem_MusicPlayer_AutoAdvance" data-uid="Stem.MusicPlayer.AutoAdvance">AutoAdvance</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if music player should auto advance to next playlist track after it finishes playing current.</p>
+  <div class="markdown level1 summary"><p>The flag indicating whether the music player should auto advance to next playlist track it finishes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -162,21 +163,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if music player is auto advancing playlist tracks.</p>
+        <td><p>True, if music player is auto advancing playlist tracks. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicPlayer_AutoAdvance_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag works in pair with loop flag. There&apos;re four possible combinations:
-<ol><li>*Both flags are false* — play current track once and then stop.</li><li>*Both flags are true* — play all playlist tracks in a loop and never stop.</li><li>*Loop is false, auto advance is true* — play all playlist tracks once and then stop.</li><li>*Loop is true, auto advance is false* — play current track in a loop and never stop.</li></ol>
+  <div class="markdown level1 remarks"><p>This flag works in pair with <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Loop">Loop</a> flag. There are four possible combinations:
+<ol><li>Both flags false — play the current track once and then stop.</li><li>Both flags true — play all playlist tracks in a loop and never stop.</li><li><a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Loop">Loop</a> is false, <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_AutoAdvance">AutoAdvance</a> is true — play all playlist tracks once and then stop.</li><li><a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Loop">Loop</a> is true, <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_AutoAdvance">AutoAdvance</a> is false — play the current track in a loop and never stop.</li></ol>
 </p>
 </div>
   
   
   <a id="Stem_MusicPlayer_Bank_" data-uid="Stem.MusicPlayer.Bank*"></a>
   <h4 id="Stem_MusicPlayer_Bank" data-uid="Stem.MusicPlayer.Bank">Bank</h4>
-  <div class="markdown level1 summary"><p>The music bank that music player belongs to.</p>
+  <div class="markdown level1 summary"><p>The music bank the music player belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -203,7 +204,7 @@
   
   <a id="Stem_MusicPlayer_Fade_" data-uid="Stem.MusicPlayer.Fade*"></a>
   <h4 id="Stem_MusicPlayer_Fade" data-uid="Stem.MusicPlayer.Fade">Fade</h4>
-  <div class="markdown level1 summary"><p>The crossfade duration that is used when track is changing or music player playback events.</p>
+  <div class="markdown level1 summary"><p>The crossfade parameter that is used when the music player transitions between tracks or playback states.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -221,7 +222,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A crossfade duration in seconds.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
@@ -230,7 +231,7 @@
   
   <a id="Stem_MusicPlayer_Loop_" data-uid="Stem.MusicPlayer.Loop*"></a>
   <h4 id="Stem_MusicPlayer_Loop" data-uid="Stem.MusicPlayer.Loop">Loop</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if music player should never stop playing playlist tracks.</p>
+  <div class="markdown level1 summary"><p>The flag indicating whether the music player should repeat playlist tracks after they finish.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -248,21 +249,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if music player is playing playlist tracks in a loop and false otherwise.</p>
+        <td><p>True, if the music player is looping playlist tracks. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicPlayer_Loop_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag works in pair with auto advance flag. There&apos;re four possible combinations:
-<ol><li>*Both flags are false* — play current track once and then stop.</li><li>*Both flags are true* — play all playlist tracks in a loop and never stop.</li><li>*Loop is false, auto advance is true* — play all playlist tracks once and then stop.</li><li>*Loop is true, auto advance is false* — play current track in a loop and never stop.</li></ol>
+  <div class="markdown level1 remarks"><p>This flag works in pair with <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_AutoAdvance">AutoAdvance</a> flag. There are four possible combinations:
+<ol><li>Both flags false — play the current track once and then stop.</li><li>Both flags true — play all playlist tracks in a loop and never stop.</li><li><a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Loop">Loop</a> is false, <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_AutoAdvance">AutoAdvance</a> is true — play all playlist tracks once and then stop.</li><li><a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Loop">Loop</a> is true, <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_AutoAdvance">AutoAdvance</a> is false — play the current track in a loop and never stop.</li></ol>
 </p>
 </div>
   
   
   <a id="Stem_MusicPlayer_MixerGroup_" data-uid="Stem.MusicPlayer.MixerGroup*"></a>
   <h4 id="Stem_MusicPlayer_MixerGroup" data-uid="Stem.MusicPlayer.MixerGroup">MixerGroup</h4>
-  <div class="markdown level1 summary"><p>The link to a Unity mixer group.</p>
+  <div class="markdown level1 summary"><p>The reference to an audio mixer group. Please refer to Unity Scripting Reference for details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -279,7 +280,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AudioMixerGroup</span></td>
+        <td><span class="xref">UnityEngine.Audio.AudioMixerGroup</span></td>
         <td><p>A reference to a mixer group.</p>
 </td>
       </tr>
@@ -289,7 +290,7 @@
   
   <a id="Stem_MusicPlayer_Muted_" data-uid="Stem.MusicPlayer.Muted*"></a>
   <h4 id="Stem_MusicPlayer_Muted" data-uid="Stem.MusicPlayer.Muted">Muted</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if the music player is muted and can't be heard.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the music player is muted and can't be heard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -307,19 +308,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the music player is muted.</p>
+        <td><p>True, if the music player is muted. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicPlayer_Muted_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may be overridden by the solo flag, i.e. if the music player is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may be overridden by the <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Soloed">Soloed</a> flag, i.e. if the music player is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
   <a id="Stem_MusicPlayer_Name_" data-uid="Stem.MusicPlayer.Name*"></a>
   <h4 id="Stem_MusicPlayer_Name" data-uid="Stem.MusicPlayer.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the music player that is used for fast search in corresponding music bank.</p>
+  <div class="markdown level1 summary"><p>The name of the music player. Used for fast search in corresponding music bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -373,7 +374,7 @@
   
   <a id="Stem_MusicPlayer_Shuffle_" data-uid="Stem.MusicPlayer.Shuffle*"></a>
   <h4 id="Stem_MusicPlayer_Shuffle" data-uid="Stem.MusicPlayer.Shuffle">Shuffle</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if music player should play playlist tracks in random order.</p>
+  <div class="markdown level1 summary"><p>The flag indicating whether the music player should play tracks in random order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -391,7 +392,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if music player is playing playlist tracks in random order and false if it's playing sequentially.</p>
+        <td><p>True, if the music player is playing playlist tracks in random order. False if it's playing sequentially.</p>
 </td>
       </tr>
     </tbody>
@@ -403,7 +404,7 @@
   
   <a id="Stem_MusicPlayer_Soloed_" data-uid="Stem.MusicPlayer.Soloed*"></a>
   <h4 id="Stem_MusicPlayer_Soloed" data-uid="Stem.MusicPlayer.Soloed">Soloed</h4>
-  <div class="markdown level1 summary"><p>The flag that indicates if the music player is soloed. If the flag is set to true, all other non-soloed music players won't be audible.</p>
+  <div class="markdown level1 summary"><p>The flag indicating if the music player is soloed. If set to true, all other non-solo music players won't be audible.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -421,13 +422,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if the music player is soloed.</p>
+        <td><p>True, if the music player is soloed. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicPlayer_Soloed_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This flag may override the mute flag, i.e. if the music player is simultaneously muted and soloed it&apos;ll be audible.</p>
+  <div class="markdown level1 remarks"><p>This flag may override the <a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Muted">Muted</a> flag, i.e. if the music player is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
   
   
@@ -451,7 +452,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><p>A volume value in [0;1] range.</p>
+        <td><p>Volume of the music player. Value must be in [0;1] range.</p>
 </td>
       </tr>
     </tbody>

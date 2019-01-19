@@ -73,8 +73,7 @@
   
   <h1 id="Stem_MusicManager" data-uid="Stem.MusicManager" class="text-break">Class MusicManager
   </h1>
-  <div class="markdown level0 summary"><p>The main music manager class.
-Contains all methods for music playback.</p>
+  <div class="markdown level0 summary"><p>The main class for music playback and bank management.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -107,7 +106,7 @@ Contains all methods for music playback.</p>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_MusicManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class MusicManager</code></pre>
@@ -136,7 +135,7 @@ Contains all methods for music playback.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Stem.MusicBank.html">MusicBank</a>&gt;</td>
-        <td><p>Gets the collection.</p>
+        <td><p>A reference to a read-only collection of music banks.</p>
 </td>
       </tr>
     </tbody>
@@ -145,7 +144,7 @@ Contains all methods for music playback.</p>
   
   <a id="Stem_MusicManager_PrimaryBank_" data-uid="Stem.MusicManager.PrimaryBank*"></a>
   <h4 id="Stem_MusicManager_PrimaryBank" data-uid="Stem.MusicManager.PrimaryBank">PrimaryBank</h4>
-  <div class="markdown level1 summary"><p>The primary music bank that will be used in case of name collisions.</p>
+  <div class="markdown level1 summary"><p>The primary music bank that will be searched first in case of name collisions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -163,7 +162,7 @@ Contains all methods for music playback.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Stem.MusicBank.html">MusicBank</a></td>
-        <td><p>Gets the primary music bank.</p>
+        <td><p>A reference to a primary music bank.</p>
 </td>
       </tr>
     </tbody>
@@ -200,9 +199,9 @@ Contains all methods for music playback.</p>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Next_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -234,16 +233,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Next_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -275,9 +274,9 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Pause_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -309,16 +308,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Pause_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -350,9 +349,9 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Play_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -384,16 +383,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Play_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -425,9 +424,9 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Prev_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -459,16 +458,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Prev_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -505,7 +504,7 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><a class="xref" href="Stem.MusicBank.html">MusicBank</a></td>
         <td><span class="parametername">bank</span></td>
-        <td><p>Music bank to register.</p>
+        <td><p>A reference to a music bank to register.</p>
 </td>
       </tr>
     </tbody>
@@ -521,7 +520,7 @@ If name collision occurs between music banks, primary music bank will be searche
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if music bank was succesfully registered and false otherwise.</p>
+        <td><p>True, if music bank was succesfully registered. False otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -530,7 +529,7 @@ If name collision occurs between music banks, primary music bank will be searche
   
   <a id="Stem_MusicManager_Seek_" data-uid="Stem.MusicManager.Seek*"></a>
   <h4 id="Stem_MusicManager_Seek_System_String_System_String_" data-uid="Stem.MusicManager.Seek(System.String,System.String)">Seek(String, String)</h4>
-  <div class="markdown level1 summary"><p>Advances music player to target track.</p>
+  <div class="markdown level1 summary"><p>Advances music player to a track with a matching name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -563,15 +562,15 @@ If name collision occurs between music banks, primary music bank will be searche
   </table>
   <h5 id="Stem_MusicManager_Seek_System_String_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Target track must be one of current playlist tracks.</p>
-<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+<p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
   <a id="Stem_MusicManager_Seek_" data-uid="Stem.MusicManager.Seek*"></a>
   <h4 id="Stem_MusicManager_Seek_System_String_System_String_System_Single_" data-uid="Stem.MusicManager.Seek(System.String,System.String,System.Single)">Seek(String, String, Single)</h4>
-  <div class="markdown level1 summary"><p>Advances music player to target track.</p>
+  <div class="markdown level1 summary"><p>Advances music player to a track with a matching name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -603,17 +602,17 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Seek_System_String_System_String_System_Single__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Target track must be one of current playlist tracks.</p>
-<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+<p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -651,9 +650,8 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_SetPlaylist_System_String_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Playlist and music player must be in the same music bank.</p>
-<p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
 <p>If music player was playing another track it&apos;ll automatically crossfade to the first track of the new playlist.</p>
 </div>
   
@@ -692,17 +690,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
 <p>If music player was playing another track it&apos;ll automatically crossfade to first track of the new playlist.</p>
-<p>Playlist and music player must be in the same music bank.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -734,9 +731,9 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Stop_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -768,16 +765,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_Stop_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
   
   
@@ -809,9 +806,9 @@ If name collision occurs between music banks, primary music bank will be searche
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_UnPause_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
 </div>
   
   
@@ -843,16 +840,16 @@ If name collision occurs between music banks, primary music bank will be searche
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">fade</span></td>
-        <td><p>Crossfade duration.</p>
+        <td><p>Crossfade duration in seconds.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Stem_MusicManager_UnPause_System_String_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>In case of music player name collision inside a single music bank, the first music player with matched name will be played.
-If name collision occurs between music banks, primary music bank will be searched first.</p>
-<p>This method will do nothing if music player doesn&apos;t have a playlist assigned to it. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> method first.</p>
-<p>Crossfade value will override corresponding value stored in music player.</p>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players/playlists with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player/playlist will be used.</p>
+<p>This method does nothing if no playlist was assigned to the music player. Use <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_">SetPlaylist(String, String)</a> or <a class="xref" href="Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_System_Single_">SetPlaylist(String, String, Single)</a> to assign a playlist.</p>
+<p>Crossfade parameter value will override <a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a>.<a class="xref" href="Stem.MusicPlayer.html#Stem_MusicPlayer_Fade">Fade</a> value.</p>
 </div>
 </article>
           </div>
