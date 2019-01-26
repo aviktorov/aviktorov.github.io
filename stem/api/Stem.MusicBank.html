@@ -267,6 +267,66 @@ public class MusicBank : ScriptableObject, ISerializationCallbackReceiver, IBank
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Stem_MusicBank_ShowPlayers_" data-uid="Stem.MusicBank.ShowPlayers*"></a>
+  <h4 id="Stem_MusicBank_ShowPlayers" data-uid="Stem.MusicBank.ShowPlayers">ShowPlayers</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the music bank inspector should show the 'Players' group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowPlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the 'Players' group is shown. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicBank_ShowPlayers_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used only by the music bank inspector and does nothing during runtime.</p>
+</div>
+  
+  
+  <a id="Stem_MusicBank_ShowPlaylists_" data-uid="Stem.MusicBank.ShowPlaylists*"></a>
+  <h4 id="Stem_MusicBank_ShowPlaylists" data-uid="Stem.MusicBank.ShowPlaylists">ShowPlaylists</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the music bank inspector should show the 'Playlists' group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowPlaylists { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the 'Playlists' group is shown. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicBank_ShowPlaylists_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used only by the music bank inspector and does nothing during runtime.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
@@ -406,14 +466,14 @@ public class MusicBank : ScriptableObject, ISerializationCallbackReceiver, IBank
   </table>
   
   
-  <a id="Stem_MusicBank_GetMusicPlayerByName_" data-uid="Stem.MusicBank.GetMusicPlayerByName*"></a>
-  <h4 id="Stem_MusicBank_GetMusicPlayerByName_System_String_" data-uid="Stem.MusicBank.GetMusicPlayerByName(System.String)">GetMusicPlayerByName(String)</h4>
+  <a id="Stem_MusicBank_GetMusicPlayer_" data-uid="Stem.MusicBank.GetMusicPlayer*"></a>
+  <h4 id="Stem_MusicBank_GetMusicPlayer_System_String_" data-uid="Stem.MusicBank.GetMusicPlayer(System.String)">GetMusicPlayer(String)</h4>
   <div class="markdown level1 summary"><p>Searches for the specified music player with a matching name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MusicPlayer GetMusicPlayerByName(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public MusicPlayer GetMusicPlayer(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -451,14 +511,14 @@ public class MusicBank : ScriptableObject, ISerializationCallbackReceiver, IBank
   </table>
   
   
-  <a id="Stem_MusicBank_GetPlaylistByName_" data-uid="Stem.MusicBank.GetPlaylistByName*"></a>
-  <h4 id="Stem_MusicBank_GetPlaylistByName_System_String_" data-uid="Stem.MusicBank.GetPlaylistByName(System.String)">GetPlaylistByName(String)</h4>
+  <a id="Stem_MusicBank_GetPlaylist_" data-uid="Stem.MusicBank.GetPlaylist*"></a>
+  <h4 id="Stem_MusicBank_GetPlaylist_System_String_" data-uid="Stem.MusicBank.GetPlaylist(System.String)">GetPlaylist(String)</h4>
   <div class="markdown level1 summary"><p>Searches for the specified playlist with a matching name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Playlist GetPlaylistByName(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public Playlist GetPlaylist(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

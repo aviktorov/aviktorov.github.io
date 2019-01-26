@@ -242,6 +242,93 @@ public class SoundBank : ScriptableObject, ISerializationCallbackReceiver, IBank
   </table>
   
   
+  <a id="Stem_SoundBank_ShowSoundBuses_" data-uid="Stem.SoundBank.ShowSoundBuses*"></a>
+  <h4 id="Stem_SoundBank_ShowSoundBuses" data-uid="Stem.SoundBank.ShowSoundBuses">ShowSoundBuses</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the sound bank inspector should show the 'Buses' group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowSoundBuses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the 'Buses' group is shown. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_SoundBank_ShowSoundBuses_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used only by the sound bank inspector and does nothing during runtime.</p>
+</div>
+  
+  
+  <a id="Stem_SoundBank_ShowSounds_" data-uid="Stem.SoundBank.ShowSounds*"></a>
+  <h4 id="Stem_SoundBank_ShowSounds" data-uid="Stem.SoundBank.ShowSounds">ShowSounds</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the sound bank inspector should show the 'Sounds' group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowSounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the 'Sounds' group is shown. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_SoundBank_ShowSounds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used only by the sound bank inspector and does nothing during runtime.</p>
+</div>
+  
+  
+  <a id="Stem_SoundBank_SoundBatchImportMode_" data-uid="Stem.SoundBank.SoundBatchImportMode*"></a>
+  <h4 id="Stem_SoundBank_SoundBatchImportMode" data-uid="Stem.SoundBank.SoundBatchImportMode">SoundBatchImportMode</h4>
+  <div class="markdown level1 summary"><p>The batch import mode defining how new sounds will be created after the drag-drop event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundBatchImportMode SoundBatchImportMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.SoundBatchImportMode.html">SoundBatchImportMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Stem_SoundBank_Sounds_" data-uid="Stem.SoundBank.Sounds*"></a>
   <h4 id="Stem_SoundBank_Sounds" data-uid="Stem.SoundBank.Sounds">Sounds</h4>
   <div class="markdown level1 summary"><p>The collection of sounds.</p>
@@ -273,7 +360,7 @@ public class SoundBank : ScriptableObject, ISerializationCallbackReceiver, IBank
   
   <a id="Stem_SoundBank_AddSound_" data-uid="Stem.SoundBank.AddSound*"></a>
   <h4 id="Stem_SoundBank_AddSound_System_String_" data-uid="Stem.SoundBank.AddSound(System.String)">AddSound(String)</h4>
-  <div class="markdown level1 summary"><p>Adds a new sound to the sound bank.</p>
+  <div class="markdown level1 summary"><p>Adds an empty sound to the sound bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -294,6 +381,108 @@ public class SoundBank : ScriptableObject, ISerializationCallbackReceiver, IBank
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of the sound.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.Sound.html">Sound</a></td>
+        <td><p>A reference to a newly created sound.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Stem_SoundBank_AddSound_" data-uid="Stem.SoundBank.AddSound*"></a>
+  <h4 id="Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip_" data-uid="Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip)">AddSound(String, AudioClip)</h4>
+  <div class="markdown level1 summary"><p>Adds a sound with a single variation to the sound bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sound AddSound(string name, AudioClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the sound.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>A reference to the audio clip with audio data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.Sound.html">Sound</a></td>
+        <td><p>A reference to a newly created sound.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Stem_SoundBank_AddSound_" data-uid="Stem.SoundBank.AddSound*"></a>
+  <h4 id="Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip___" data-uid="Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip[])">AddSound(String, AudioClip[])</h4>
+  <div class="markdown level1 summary"><p>Adds a sound with multiple variations to the sound bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sound AddSound(string name, AudioClip[] clips)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the sound.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioClip</span>[]</td>
+        <td><span class="parametername">clips</span></td>
+        <td><p>An array of audio clips with audio data.</p>
 </td>
       </tr>
     </tbody>
@@ -406,14 +595,14 @@ public class SoundBank : ScriptableObject, ISerializationCallbackReceiver, IBank
   </table>
   
   
-  <a id="Stem_SoundBank_GetSoundByName_" data-uid="Stem.SoundBank.GetSoundByName*"></a>
-  <h4 id="Stem_SoundBank_GetSoundByName_System_String_" data-uid="Stem.SoundBank.GetSoundByName(System.String)">GetSoundByName(String)</h4>
+  <a id="Stem_SoundBank_GetSound_" data-uid="Stem.SoundBank.GetSound*"></a>
+  <h4 id="Stem_SoundBank_GetSound_System_String_" data-uid="Stem.SoundBank.GetSound(System.String)">GetSound(String)</h4>
   <div class="markdown level1 summary"><p>Searches for the specified sound with a matching name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Sound GetSoundByName(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public Sound GetSound(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -445,6 +634,51 @@ public class SoundBank : ScriptableObject, ISerializationCallbackReceiver, IBank
       <tr>
         <td><a class="xref" href="Stem.Sound.html">Sound</a></td>
         <td><p>A reference to a sound, if found. Null reference otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Stem_SoundBank_GetSoundBus_" data-uid="Stem.SoundBank.GetSoundBus*"></a>
+  <h4 id="Stem_SoundBank_GetSoundBus_System_String_" data-uid="Stem.SoundBank.GetSoundBus(System.String)">GetSoundBus(String)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified sound bus with a matching name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundBus GetSoundBus(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the sound bus.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.SoundBus.html">SoundBus</a></td>
+        <td><p>A reference to a sound bus, if found. Null reference otherwise.</p>
 </td>
       </tr>
     </tbody>

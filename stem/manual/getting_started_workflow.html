@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add your introductions here! </title>
+    <title>Workflow </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add your introductions here! ">
+    <meta name="title" content="Workflow ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,28 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+<h1 id="workflow">Workflow</h1>
 
+<ol>
+<li>Create a sound bank and music bank assets</li>
+<li>Fill both banks with audio clips</li>
+<li>Organize audio clips within banks</li>
+<li>Use it! No prefabs, no additional game objects.</li>
+</ol>
+<h1 id="sound-bank">Sound Bank</h1>
+<p>A sound bank is an asset that contains a set of organized audio clips into sounds, each of them is connected to a bus (which is very similar to Unity Mixer Group but has voice management functionality). Within the sound bank, you're able to set up sounds with variations. Even if you have a single audio clip for sound there're options allowing to randomize volume / pitch / delay.</p>
+<h2 id="workflow-1">Workflow</h2>
+<p>Create a new sound bank asset;
+Organize audio clips into sounds (use batch import to speed up the process);
+Tune sound settings and variations;
+Group sounds by assigning a bus to them and fine-tune number of simultaneously playing sounds.</p>
+<h1 id="music-bank">Music Bank</h1>
+<p>A music bank is an asset that contains playlists and music players that allow you to do layered music playback. It also handles complex crossfade cases. There'll be no hiccups or clicks if you want to transition to a track during another crossfade.</p>
+<h2 id="workflow-2">Workflow</h2>
+<p>Create a new music bank asset;
+Organize audio clips into playlists;
+Create a music player and assign a playlist to it;
+Fine-tune the player by setting fade duration, shuffle or sequential playback, loop and auto-advance options.</p>
 </article>
           </div>
           

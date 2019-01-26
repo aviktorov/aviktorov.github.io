@@ -262,7 +262,7 @@ public class Sound</code></pre>
   
   <a id="Stem_Sound_MaxDistance_" data-uid="Stem.Sound.MaxDistance*"></a>
   <h4 id="Stem_Sound_MaxDistance" data-uid="Stem.Sound.MaxDistance">MaxDistance</h4>
-  <div class="markdown level1 summary"><p>The parameter defining the boundaries within which the sound will be inaudible or stop attenuating depending on AttenuationMode value.</p>
+  <div class="markdown level1 summary"><p>The parameter defining the boundary outside which the sound will be inaudible or stop attenuating depending on AttenuationMode value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -292,7 +292,7 @@ public class Sound</code></pre>
   
   <a id="Stem_Sound_MinDistance_" data-uid="Stem.Sound.MinDistance*"></a>
   <h4 id="Stem_Sound_MinDistance" data-uid="Stem.Sound.MinDistance">MinDistance</h4>
-  <div class="markdown level1 summary"><p>The parameter defining the boundaries within which the sound won't get any louder.</p>
+  <div class="markdown level1 summary"><p>The parameter defining the boundary within which the sound won't get any louder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -497,9 +497,39 @@ public class Sound</code></pre>
 </div>
   
   
+  <a id="Stem_Sound_Unfolded_" data-uid="Stem.Sound.Unfolded*"></a>
+  <h4 id="Stem_Sound_Unfolded" data-uid="Stem.Sound.Unfolded">Unfolded</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the sound bank inspector should show advanced settings for the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Unfolded { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if advanced settings are shown. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_Unfolded_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used only by the sound bank inspector and does nothing during runtime.</p>
+</div>
+  
+  
   <a id="Stem_Sound_VariationRetriggerMode_" data-uid="Stem.Sound.VariationRetriggerMode*"></a>
   <h4 id="Stem_Sound_VariationRetriggerMode" data-uid="Stem.Sound.VariationRetriggerMode">VariationRetriggerMode</h4>
-  <div class="markdown level1 summary"><p>The retrigger mode defining how sound will play its variations.</p>
+  <div class="markdown level1 summary"><p>The retrigger mode defining how the sound will play variations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

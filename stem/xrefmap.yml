@@ -70,32 +70,32 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.ContainsAsset
   nameWithType: MusicBank.ContainsAsset
-- uid: Stem.MusicBank.GetMusicPlayerByName(System.String)
-  name: GetMusicPlayerByName(String)
-  href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayerByName_System_String_
-  commentId: M:Stem.MusicBank.GetMusicPlayerByName(System.String)
-  fullName: Stem.MusicBank.GetMusicPlayerByName(System.String)
-  nameWithType: MusicBank.GetMusicPlayerByName(String)
-- uid: Stem.MusicBank.GetMusicPlayerByName*
-  name: GetMusicPlayerByName
-  href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayerByName_
-  commentId: Overload:Stem.MusicBank.GetMusicPlayerByName
+- uid: Stem.MusicBank.GetMusicPlayer(System.String)
+  name: GetMusicPlayer(String)
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_String_
+  commentId: M:Stem.MusicBank.GetMusicPlayer(System.String)
+  fullName: Stem.MusicBank.GetMusicPlayer(System.String)
+  nameWithType: MusicBank.GetMusicPlayer(String)
+- uid: Stem.MusicBank.GetMusicPlayer*
+  name: GetMusicPlayer
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_
+  commentId: Overload:Stem.MusicBank.GetMusicPlayer
   isSpec: "True"
-  fullName: Stem.MusicBank.GetMusicPlayerByName
-  nameWithType: MusicBank.GetMusicPlayerByName
-- uid: Stem.MusicBank.GetPlaylistByName(System.String)
-  name: GetPlaylistByName(String)
-  href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylistByName_System_String_
-  commentId: M:Stem.MusicBank.GetPlaylistByName(System.String)
-  fullName: Stem.MusicBank.GetPlaylistByName(System.String)
-  nameWithType: MusicBank.GetPlaylistByName(String)
-- uid: Stem.MusicBank.GetPlaylistByName*
-  name: GetPlaylistByName
-  href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylistByName_
-  commentId: Overload:Stem.MusicBank.GetPlaylistByName
+  fullName: Stem.MusicBank.GetMusicPlayer
+  nameWithType: MusicBank.GetMusicPlayer
+- uid: Stem.MusicBank.GetPlaylist(System.String)
+  name: GetPlaylist(String)
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_String_
+  commentId: M:Stem.MusicBank.GetPlaylist(System.String)
+  fullName: Stem.MusicBank.GetPlaylist(System.String)
+  nameWithType: MusicBank.GetPlaylist(String)
+- uid: Stem.MusicBank.GetPlaylist*
+  name: GetPlaylist
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_
+  commentId: Overload:Stem.MusicBank.GetPlaylist
   isSpec: "True"
-  fullName: Stem.MusicBank.GetPlaylistByName
-  nameWithType: MusicBank.GetPlaylistByName
+  fullName: Stem.MusicBank.GetPlaylist
+  nameWithType: MusicBank.GetPlaylist
 - uid: Stem.MusicBank.OnAfterDeserialize
   name: OnAfterDeserialize()
   href: api/Stem.MusicBank.html#Stem_MusicBank_OnAfterDeserialize
@@ -174,6 +174,32 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.RemovePlaylist
   nameWithType: MusicBank.RemovePlaylist
+- uid: Stem.MusicBank.ShowPlayers
+  name: ShowPlayers
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ShowPlayers
+  commentId: P:Stem.MusicBank.ShowPlayers
+  fullName: Stem.MusicBank.ShowPlayers
+  nameWithType: MusicBank.ShowPlayers
+- uid: Stem.MusicBank.ShowPlayers*
+  name: ShowPlayers
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ShowPlayers_
+  commentId: Overload:Stem.MusicBank.ShowPlayers
+  isSpec: "True"
+  fullName: Stem.MusicBank.ShowPlayers
+  nameWithType: MusicBank.ShowPlayers
+- uid: Stem.MusicBank.ShowPlaylists
+  name: ShowPlaylists
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ShowPlaylists
+  commentId: P:Stem.MusicBank.ShowPlaylists
+  fullName: Stem.MusicBank.ShowPlaylists
+  nameWithType: MusicBank.ShowPlaylists
+- uid: Stem.MusicBank.ShowPlaylists*
+  name: ShowPlaylists
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ShowPlaylists_
+  commentId: Overload:Stem.MusicBank.ShowPlaylists
+  isSpec: "True"
+  fullName: Stem.MusicBank.ShowPlaylists
+  nameWithType: MusicBank.ShowPlaylists
 - uid: Stem.MusicManager
   name: MusicManager
   href: api/Stem.MusicManager.html
@@ -282,19 +308,6 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.PrimaryBank
   nameWithType: MusicManager.PrimaryBank
-- uid: Stem.MusicManager.RegisterAllBanks
-  name: RegisterAllBanks()
-  href: api/Stem.MusicManager.html#Stem_MusicManager_RegisterAllBanks
-  commentId: M:Stem.MusicManager.RegisterAllBanks
-  fullName: Stem.MusicManager.RegisterAllBanks()
-  nameWithType: MusicManager.RegisterAllBanks()
-- uid: Stem.MusicManager.RegisterAllBanks*
-  name: RegisterAllBanks
-  href: api/Stem.MusicManager.html#Stem_MusicManager_RegisterAllBanks_
-  commentId: Overload:Stem.MusicManager.RegisterAllBanks
-  isSpec: "True"
-  fullName: Stem.MusicManager.RegisterAllBanks
-  nameWithType: MusicManager.RegisterAllBanks
 - uid: Stem.MusicManager.RegisterBank(Stem.MusicBank)
   name: RegisterBank(MusicBank)
   href: api/Stem.MusicManager.html#Stem_MusicManager_RegisterBank_Stem_MusicBank_
@@ -533,6 +546,19 @@ references:
   isSpec: "True"
   fullName: Stem.MusicPlayer.Soloed
   nameWithType: MusicPlayer.Soloed
+- uid: Stem.MusicPlayer.Unfolded
+  name: Unfolded
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Unfolded
+  commentId: P:Stem.MusicPlayer.Unfolded
+  fullName: Stem.MusicPlayer.Unfolded
+  nameWithType: MusicPlayer.Unfolded
+- uid: Stem.MusicPlayer.Unfolded*
+  name: Unfolded
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Unfolded_
+  commentId: Overload:Stem.MusicPlayer.Unfolded
+  isSpec: "True"
+  fullName: Stem.MusicPlayer.Unfolded
+  nameWithType: MusicPlayer.Unfolded
 - uid: Stem.MusicPlayer.Volume
   name: Volume
   href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Volume
@@ -617,6 +643,19 @@ references:
   isSpec: "True"
   fullName: Stem.Playlist.Tracks
   nameWithType: Playlist.Tracks
+- uid: Stem.Playlist.Unfolded
+  name: Unfolded
+  href: api/Stem.Playlist.html#Stem_Playlist_Unfolded
+  commentId: P:Stem.Playlist.Unfolded
+  fullName: Stem.Playlist.Unfolded
+  nameWithType: Playlist.Unfolded
+- uid: Stem.Playlist.Unfolded*
+  name: Unfolded
+  href: api/Stem.Playlist.html#Stem_Playlist_Unfolded_
+  commentId: Overload:Stem.Playlist.Unfolded
+  isSpec: "True"
+  fullName: Stem.Playlist.Unfolded
+  nameWithType: Playlist.Unfolded
 - uid: Stem.PlaylistTrack
   name: PlaylistTrack
   href: api/Stem.PlaylistTrack.html
@@ -874,6 +913,19 @@ references:
   isSpec: "True"
   fullName: Stem.Sound.Spread
   nameWithType: Sound.Spread
+- uid: Stem.Sound.Unfolded
+  name: Unfolded
+  href: api/Stem.Sound.html#Stem_Sound_Unfolded
+  commentId: P:Stem.Sound.Unfolded
+  fullName: Stem.Sound.Unfolded
+  nameWithType: Sound.Unfolded
+- uid: Stem.Sound.Unfolded*
+  name: Unfolded
+  href: api/Stem.Sound.html#Stem_Sound_Unfolded_
+  commentId: Overload:Stem.Sound.Unfolded
+  isSpec: "True"
+  fullName: Stem.Sound.Unfolded
+  nameWithType: Sound.Unfolded
 - uid: Stem.Sound.VariationRetriggerMode
   name: VariationRetriggerMode
   href: api/Stem.Sound.html#Stem_Sound_VariationRetriggerMode
@@ -912,6 +964,21 @@ references:
   commentId: M:Stem.SoundBank.AddSound(System.String)
   fullName: Stem.SoundBank.AddSound(System.String)
   nameWithType: SoundBank.AddSound(String)
+- uid: Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip)
+  name: AddSound(String, AudioClip)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip_
+  commentId: M:Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip)
+  fullName: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip)
+  nameWithType: SoundBank.AddSound(String, AudioClip)
+- uid: Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip[])
+  name: AddSound(String, AudioClip[])
+  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip___
+  commentId: M:Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip[])
+  name.vb: AddSound(String, AudioClip())
+  fullName: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip[])
+  fullName.vb: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip())
+  nameWithType: SoundBank.AddSound(String, AudioClip[])
+  nameWithType.vb: SoundBank.AddSound(String, AudioClip())
 - uid: Stem.SoundBank.AddSound*
   name: AddSound
   href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_
@@ -958,19 +1025,32 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.ContainsAsset
   nameWithType: SoundBank.ContainsAsset
-- uid: Stem.SoundBank.GetSoundByName(System.String)
-  name: GetSoundByName(String)
-  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundByName_System_String_
-  commentId: M:Stem.SoundBank.GetSoundByName(System.String)
-  fullName: Stem.SoundBank.GetSoundByName(System.String)
-  nameWithType: SoundBank.GetSoundByName(String)
-- uid: Stem.SoundBank.GetSoundByName*
-  name: GetSoundByName
-  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundByName_
-  commentId: Overload:Stem.SoundBank.GetSoundByName
+- uid: Stem.SoundBank.GetSound(System.String)
+  name: GetSound(String)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_String_
+  commentId: M:Stem.SoundBank.GetSound(System.String)
+  fullName: Stem.SoundBank.GetSound(System.String)
+  nameWithType: SoundBank.GetSound(String)
+- uid: Stem.SoundBank.GetSound*
+  name: GetSound
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSound_
+  commentId: Overload:Stem.SoundBank.GetSound
   isSpec: "True"
-  fullName: Stem.SoundBank.GetSoundByName
-  nameWithType: SoundBank.GetSoundByName
+  fullName: Stem.SoundBank.GetSound
+  nameWithType: SoundBank.GetSound
+- uid: Stem.SoundBank.GetSoundBus(System.String)
+  name: GetSoundBus(String)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_String_
+  commentId: M:Stem.SoundBank.GetSoundBus(System.String)
+  fullName: Stem.SoundBank.GetSoundBus(System.String)
+  nameWithType: SoundBank.GetSoundBus(String)
+- uid: Stem.SoundBank.GetSoundBus*
+  name: GetSoundBus
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_
+  commentId: Overload:Stem.SoundBank.GetSoundBus
+  isSpec: "True"
+  fullName: Stem.SoundBank.GetSoundBus
+  nameWithType: SoundBank.GetSoundBus
 - uid: Stem.SoundBank.OnAfterDeserialize
   name: OnAfterDeserialize()
   href: api/Stem.SoundBank.html#Stem_SoundBank_OnAfterDeserialize
@@ -1023,6 +1103,45 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.RemoveSoundBus
   nameWithType: SoundBank.RemoveSoundBus
+- uid: Stem.SoundBank.ShowSoundBuses
+  name: ShowSoundBuses
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ShowSoundBuses
+  commentId: P:Stem.SoundBank.ShowSoundBuses
+  fullName: Stem.SoundBank.ShowSoundBuses
+  nameWithType: SoundBank.ShowSoundBuses
+- uid: Stem.SoundBank.ShowSoundBuses*
+  name: ShowSoundBuses
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ShowSoundBuses_
+  commentId: Overload:Stem.SoundBank.ShowSoundBuses
+  isSpec: "True"
+  fullName: Stem.SoundBank.ShowSoundBuses
+  nameWithType: SoundBank.ShowSoundBuses
+- uid: Stem.SoundBank.ShowSounds
+  name: ShowSounds
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ShowSounds
+  commentId: P:Stem.SoundBank.ShowSounds
+  fullName: Stem.SoundBank.ShowSounds
+  nameWithType: SoundBank.ShowSounds
+- uid: Stem.SoundBank.ShowSounds*
+  name: ShowSounds
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ShowSounds_
+  commentId: Overload:Stem.SoundBank.ShowSounds
+  isSpec: "True"
+  fullName: Stem.SoundBank.ShowSounds
+  nameWithType: SoundBank.ShowSounds
+- uid: Stem.SoundBank.SoundBatchImportMode
+  name: SoundBatchImportMode
+  href: api/Stem.SoundBank.html#Stem_SoundBank_SoundBatchImportMode
+  commentId: P:Stem.SoundBank.SoundBatchImportMode
+  fullName: Stem.SoundBank.SoundBatchImportMode
+  nameWithType: SoundBank.SoundBatchImportMode
+- uid: Stem.SoundBank.SoundBatchImportMode*
+  name: SoundBatchImportMode
+  href: api/Stem.SoundBank.html#Stem_SoundBank_SoundBatchImportMode_
+  commentId: Overload:Stem.SoundBank.SoundBatchImportMode
+  isSpec: "True"
+  fullName: Stem.SoundBank.SoundBatchImportMode
+  nameWithType: SoundBank.SoundBatchImportMode
 - uid: Stem.SoundBank.Sounds
   name: Sounds
   href: api/Stem.SoundBank.html#Stem_SoundBank_Sounds
@@ -1036,6 +1155,24 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.Sounds
   nameWithType: SoundBank.Sounds
+- uid: Stem.SoundBatchImportMode
+  name: SoundBatchImportMode
+  href: api/Stem.SoundBatchImportMode.html
+  commentId: T:Stem.SoundBatchImportMode
+  fullName: Stem.SoundBatchImportMode
+  nameWithType: SoundBatchImportMode
+- uid: Stem.SoundBatchImportMode.MultiplePerClip
+  name: MultiplePerClip
+  href: api/Stem.SoundBatchImportMode.html#Stem_SoundBatchImportMode_MultiplePerClip
+  commentId: F:Stem.SoundBatchImportMode.MultiplePerClip
+  fullName: Stem.SoundBatchImportMode.MultiplePerClip
+  nameWithType: SoundBatchImportMode.MultiplePerClip
+- uid: Stem.SoundBatchImportMode.SingleWithVariations
+  name: SingleWithVariations
+  href: api/Stem.SoundBatchImportMode.html#Stem_SoundBatchImportMode_SingleWithVariations
+  commentId: F:Stem.SoundBatchImportMode.SingleWithVariations
+  fullName: Stem.SoundBatchImportMode.SingleWithVariations
+  nameWithType: SoundBatchImportMode.SingleWithVariations
 - uid: Stem.SoundBus
   name: SoundBus
   href: api/Stem.SoundBus.html
@@ -1146,6 +1283,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBus.Soloed
   nameWithType: SoundBus.Soloed
+- uid: Stem.SoundBus.Unfolded
+  name: Unfolded
+  href: api/Stem.SoundBus.html#Stem_SoundBus_Unfolded
+  commentId: P:Stem.SoundBus.Unfolded
+  fullName: Stem.SoundBus.Unfolded
+  nameWithType: SoundBus.Unfolded
+- uid: Stem.SoundBus.Unfolded*
+  name: Unfolded
+  href: api/Stem.SoundBus.html#Stem_SoundBus_Unfolded_
+  commentId: Overload:Stem.SoundBus.Unfolded
+  isSpec: "True"
+  fullName: Stem.SoundBus.Unfolded
+  nameWithType: SoundBus.Unfolded
 - uid: Stem.SoundBus.Volume
   name: Volume
   href: api/Stem.SoundBus.html#Stem_SoundBus_Volume
@@ -1389,6 +1539,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.Banks
   nameWithType: SoundManager.Banks
+- uid: Stem.SoundManager.GetSound(System.String)
+  name: GetSound(String)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_String_
+  commentId: M:Stem.SoundManager.GetSound(System.String)
+  fullName: Stem.SoundManager.GetSound(System.String)
+  nameWithType: SoundManager.GetSound(String)
+- uid: Stem.SoundManager.GetSound*
+  name: GetSound
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSound_
+  commentId: Overload:Stem.SoundManager.GetSound
+  isSpec: "True"
+  fullName: Stem.SoundManager.GetSound
+  nameWithType: SoundManager.GetSound
 - uid: Stem.SoundManager.GrabSound
   name: GrabSound()
   href: api/Stem.SoundManager.html#Stem_SoundManager_GrabSound
@@ -1496,19 +1659,6 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.PrimaryBank
   nameWithType: SoundManager.PrimaryBank
-- uid: Stem.SoundManager.RegisterAllBanks
-  name: RegisterAllBanks()
-  href: api/Stem.SoundManager.html#Stem_SoundManager_RegisterAllBanks
-  commentId: M:Stem.SoundManager.RegisterAllBanks
-  fullName: Stem.SoundManager.RegisterAllBanks()
-  nameWithType: SoundManager.RegisterAllBanks()
-- uid: Stem.SoundManager.RegisterAllBanks*
-  name: RegisterAllBanks
-  href: api/Stem.SoundManager.html#Stem_SoundManager_RegisterAllBanks_
-  commentId: Overload:Stem.SoundManager.RegisterAllBanks
-  isSpec: "True"
-  fullName: Stem.SoundManager.RegisterAllBanks
-  nameWithType: SoundManager.RegisterAllBanks
 - uid: Stem.SoundManager.RegisterBank(Stem.SoundBank)
   name: RegisterBank(SoundBank)
   href: api/Stem.SoundManager.html#Stem_SoundManager_RegisterBank_Stem_SoundBank_

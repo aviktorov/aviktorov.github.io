@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.AttenuationMode.html",
-          "hash": "EWdxUhnBIw5ISD6xgnahng=="
+          "hash": "IyVkr7SmrHoDwFFX3m/Y2w=="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicBank.html",
-          "hash": "U6RLtdNjNuah212IW2mUXw=="
+          "hash": "kqYget4Lb/U8j3L6YpN/YQ=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicManager.html",
-          "hash": "sfuZVKvnxVRueq6uD9pSCw=="
+          "hash": "ZI4H0mhGUpeYwpZd+ZFAew=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicPlayer.html",
-          "hash": "DLb1QNZcmu0iCXjS9gP5hg=="
+          "hash": "naBAMlQesFWeSZouY0Z3IQ=="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.Playlist.html",
-          "hash": "vzzqMu5gzw2ranJSRRAyGw=="
+          "hash": "F3cWffqtRn8aBER6134S9Q=="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.Sound.html",
-          "hash": "yeBivKU4qVMChF8kwmL1Uw=="
+          "hash": "Mf9ZyTZ64JvHME3iM7zN6Q=="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundBank.html",
-          "hash": "cUwmg/aBwdTKWF6zNgCRcQ=="
+          "hash": "fjVZmnlFmzPBj0aRIW+KAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Stem.SoundBatchImportMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Stem.SoundBatchImportMode.html",
+          "hash": "F3zoXtf2sFzR1T+R4HtYXw=="
         }
       },
       "is_incremental": true,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundBus.html",
-          "hash": "PdRyOCxMSxzYhibiCImLcA=="
+          "hash": "CxqHc59fHv3a8lk/S0dZmA=="
         }
       },
       "is_incremental": true,
@@ -141,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundManager.html",
-          "hash": "pbam3zlY+Y1hj7sqgPl+sg=="
+          "hash": "odbZezJxwN+1XJeXk/zGiA=="
         }
       },
       "is_incremental": true,
@@ -153,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundVariation.html",
-          "hash": "elvj2kXYj4SWE5PGp2uqHg=="
+          "hash": "sSRt3bwYBvVRR2FLKaghAA=="
         }
       },
       "is_incremental": true,
@@ -165,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.html",
-          "hash": "mSBrlbEkYVfKI4uMErwUIQ=="
+          "hash": "qZSKKCeXPplMJfBS26YUKA=="
         }
       },
       "is_incremental": true,
@@ -177,7 +189,260 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZIV3c6KuYpPnAl7KPPoJ3w=="
+          "hash": "yM+FEDABEncKYITQUvcpIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_music_bank_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_music_bank_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_music_player_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_music_player_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_playlist_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_playlist_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_sound_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_sound_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_sound_bank_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_sound_bank_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts_sound_bus_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts_sound_bus_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step2_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step2_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step2_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step2_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step2_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step2_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step2_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step2_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step2_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting_started_quickstart_step3_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting_started_quickstart_step3_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/music_bank.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/music_bank.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/sound_bank.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/sound_bank.png"
         }
       },
       "is_incremental": false,
@@ -196,84 +461,156 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
+      "type": "Conceptual",
+      "source_relative_path": "manual/code_music_manager.md",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "Hisxa7xWof8aT1fo/XlANA=="
+          "relative_path": "manual/code_music_manager.html",
+          "hash": "K+SBr4N/8qaaTgXlrxUAiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/code_sound_instance.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/code_sound_instance.html",
+          "hash": "Rd0xdJEg6HN0+5NoHTmqhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/code_sound_manager.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/code_sound_manager.html",
+          "hash": "V3WRrr8WcOg5+f+mgyXftA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_music_bank.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_music_bank.html",
+          "hash": "+RyqqHFe1rT+bYPpYz5LFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_music_player.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_music_player.html",
+          "hash": "sABAxeH2MlZSAXWgL9LYDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_playlist.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_playlist.html",
+          "hash": "8uUwI67wn9gVvzShfVuZhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_sound.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_sound.html",
+          "hash": "4S1jsOYa2Y8vHal/JcJ8gw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_sound_bank.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_sound_bank.html",
+          "hash": "uefI8BpcpUPLAyc7jTgDNw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/content_sound_bus.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/content_sound_bus.html",
+          "hash": "uZ2S/USagqREolTaR/oqjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting_started_introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting_started_introduction.html",
+          "hash": "xIottxd38/LjjYcHguknLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting_started_quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting_started_quickstart.html",
+          "hash": "5qheGPN39OXhyn9jDFR9dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "N8EuKASDDTI94JagvKzQWQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "tutorials/GettingStarted.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorials/GettingStarted.html",
-          "hash": "ZabAyaCbF8rargjCWUmWIQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorials/Overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorials/Overview.html",
-          "hash": "weSUU+iSY7PGLqErDJovkQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorials/UsingMultipleBanks.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorials/UsingMultipleBanks.html",
-          "hash": "h3kP/IP2xiwj04fFR/1gJg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorials/WorkingWithMusic.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorials/WorkingWithMusic.html",
-          "hash": "9JdaiWCZI8rRCs+4ojskYg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorials/WorkingWithSounds.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorials/WorkingWithSounds.html",
-          "hash": "1Ym2XTsHcI9ZD3H2e1Io6A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
       "type": "Toc",
-      "source_relative_path": "tutorials/toc.yml",
+      "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "tutorials/toc.html",
-          "hash": "e8acF8z+48EzKGBxMW78vQ=="
+          "relative_path": "toc.html",
+          "hash": "vBisy9loub41aK4YUgRiVA=="
         }
       },
       "is_incremental": false,
@@ -290,6 +627,11 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {

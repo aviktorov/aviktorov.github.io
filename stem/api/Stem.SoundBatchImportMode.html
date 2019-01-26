@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum AttenuationMode
+    <title>Enum SoundBatchImportMode
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum AttenuationMode
+    <meta name="title" content="Enum SoundBatchImportMode
    ">
     <meta name="generator" content="docfx 2.40.7.0">
     
@@ -68,20 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stem.AttenuationMode">
+            <article class="content wrap" id="_content" data-uid="Stem.SoundBatchImportMode">
   
   
-  <h1 id="Stem_AttenuationMode" data-uid="Stem.AttenuationMode" class="text-break">Enum AttenuationMode
+  <h1 id="Stem_SoundBatchImportMode" data-uid="Stem.SoundBatchImportMode" class="text-break">Enum SoundBatchImportMode
   </h1>
-  <div class="markdown level0 summary"><p>Defines how sound volume will be lowered over the distance.</p>
+  <div class="markdown level0 summary"><p>Defines how new sounds will be created after the drag-drop event.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
-  <h5 id="Stem_AttenuationMode_syntax">Syntax</h5>
+  <h5 id="Stem_SoundBatchImportMode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public enum AttenuationMode</code></pre>
+    <pre><code class="lang-csharp hljs">public enum SoundBatchImportMode</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -94,13 +93,13 @@ public enum AttenuationMode</code></pre>
     <thead>
     <tbody>
       <tr>
-        <td id="Stem_AttenuationMode_Linear">Linear</td>
-        <td><p>A linear rolloff.</p>
+        <td id="Stem_SoundBatchImportMode_MultiplePerClip">MultiplePerClip</td>
+        <td><p>A sound with a single variation will be created per each provided audio clip.</p>
 </td>
       </tr>
       <tr>
-        <td id="Stem_AttenuationMode_Logarithmic">Logarithmic</td>
-        <td><p>A real-world rolloff.</p>
+        <td id="Stem_SoundBatchImportMode_SingleWithVariations">SingleWithVariations</td>
+        <td><p>A single sound will be created. Provided audio clips will be used as variations.</p>
 </td>
       </tr>
     </tbody>

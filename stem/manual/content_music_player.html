@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER </title>
+    <title>Music Player </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER ">
+    <meta name="title" content="Music Player ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,87 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
+<h1 id="music-player">Music Player</h1>
 
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<p><a class="xref" href="../api/Stem.MusicPlayer.html">API Reference</a></p>
+<h2 id="description">Description</h2>
+<p>A music player is a part of the music bank. It represents an entry point for music playback and defines how it will play the playlist tracks. It also integrates into a Unity Audio Mixer.</p>
+<p><img src="../images/concepts_music_player_1.png" alt="Music Player"></p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>The name of the music player.</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>The master volume of the music player.</td>
+</tr>
+<tr>
+<td>Playlist</td>
+<td>The drop-down menu allowing to select a playlist. <em>None</em> option will require to set the playlist in order to play.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>The reference to AudioMixerGroup. Please refer to Unity Manual for details.</td>
+</tr>
+<tr>
+<td>Fade</td>
+<td>The crossfade duration used by the music player during transitions between tracks or playback state changes.</td>
+</tr>
+<tr>
+<td>Shuffle</td>
+<td>The flag indicating whether the music player should play tracks in random order.</td>
+</tr>
+<tr>
+<td>Auto Advance</td>
+<td>The flag indicating whether the music player should auto advance to next playlist track it finishes.</td>
+</tr>
+<tr>
+<td>Loop</td>
+<td>The flag indicating whether the music player should repeat playlist tracks after they finish.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Loop</em> and <em>Auto Advance</em> flags work in pair. There are four possible combinations:</p>
+<table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Auto Advance</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>Play the current track once and then stop.</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>Play all playlist tracks once and then stop.</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>Play the current track in a loop and never stop.</td>
+</tr>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>Play all playlist tracks in a loop and never stop.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

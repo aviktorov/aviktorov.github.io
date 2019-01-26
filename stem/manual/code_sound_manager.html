@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sound Manager </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sound Manager ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sound-manager">Sound Manager</h1>
+
+<p><a class="xref" href="../api/Stem.SoundManager.html">API Reference</a></p>
+<h2 id="description">Description</h2>
+<p>Sound Manager is the entry point for sound playback and sound bank management. It does not require to create any additional game objects in order to use it.</p>
+<p>All currently playing sounds represented by the <a href="code_sound_instance.html">Sound Instance</a> class. There are two use cases:</p>
+<ol>
+<li>One-shot sounds — they are played and managed internally by the sound manager. When playing a sound, Sound Manager will look up for available sound instance and use it for playback.</li>
+<li>Custom user logic — the sound manager allows getting a reference to a sound instance from the sound pool for manual playback.</li>
+</ol>
+<h2 id="managed-one-shot-sound-instances">Managed one-shot sound instances</h2>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_System_String_">Stem.SoundManager.Play</a> to play a one-shot sound.</p>
+<pre><code class="lang-csharp">// Note that volume, pitch and delay values from the sound will be used by default.
+
+// Will do a lookup for sound with the name &quot;Footstep&quot; in all sound banks,
+// create an internal sound instance and play it once.
+Stem.SoundManager.Play(&quot;Footstep&quot;);
+
+// It's possible to override sound instance volume, pitch and delay values.
+float newVolume = 0.5f;
+float newPitch = 0.9f;
+float newDelay = 0.1f;
+Stem.SoundManager.Play(&quot;Footstep&quot;, newVolume, newPitch, newDelay);
+</code></pre>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_">Stem.SoundManager.Play3D</a> to play a one-shot sound in 3D space.</p>
+<pre><code class="lang-csharp">// Note that volume, pitch and delay values from the sound will be used by default.
+
+// Will do a lookup for sound with the name &quot;Explosion&quot; in all sound banks,
+// create an internal sound instance and play it once.
+Vector3 hitPosition = new Vector3(100.0f, 0.0f, 0.0f);
+Stem.SoundManager.Play3D(&quot;Explosion&quot;, hitPosition);
+
+// Each method allow to override volume, pitch and delay values.
+float newVolume = 0.5f;
+float newPitch = 0.9f;
+float newDelay = 0.1f;
+Stem.SoundManager.Play3D(&quot;Explosion&quot;, hitPosition, newVolume, newPitch, newDelay);
+</code></pre>
+<h2 id="manual-sound-instances">Manual sound instances</h2>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GrabSound">Stem.SoundManager.GrabSound</a> to get a reference to a sound instance from the sound pool. Once the sound instance is not needed anymore, call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_ReleaseSound_Stem_SoundInstance_">Stem.SoundManager.ReleaseSound</a> to return it back to the sound pool.</p>
+<pre><code class="lang-csharp">// Note that volume, pitch and delay values from the sound will be used by default.
+
+// Will do a lookup for sound with the name &quot;GunShot&quot; in all sound banks
+// and return a reference to a sound instance from the sound pool.
+Stem.SoundInstance soundInstance = Stem.SoundManager.GrabSound(&quot;GunShot&quot;);
+
+// Play one-shot sound
+soundInstance.Play();
+
+// It's possible to override sound instance volume, pitch and delay values.
+float newVolume = 0.5f;
+float newPitch = 0.9f;
+float newDelay = 0.1f;
+soundInstance.Play(newVolume, newPitch, newDelay);
+
+// Or play one-shot sound in 3D space
+Vector3 hitPosition = new Vector3(100.0f, 0.0f, 0.0f);
+soundInstance.Play3D(hitPosition);
+
+// Also with overrides
+soundInstance.Play3D(hitPosition, newVolume, newPitch, newDelay);
+
+// Return the instance to the sound pool
+Stem.SoundManager.ReleaseSound(soundInstance);
+</code></pre>
+<h2 id="global-sound-playback-control">Global sound playback control</h2>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Pause">Stem.SoundManager.Pause</a>, <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_UnPause">Stem.SoundManager.UnPause</a> and <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Stop">Stem.SoundManager.Stop</a> to pause, resume and stop all sound instances immediately.</p>
+<pre><code class="lang-csharp">// Get a reference to a sound instance from the sound pool
+Stem.SoundInstance soundInstance = Stem.SoundManager.GrabSound(&quot;GunShot&quot;);
+
+// Play one-shot sound manually
+soundInstance.Play();
+
+// Play one-shot sound automatically
+Stem.SoundManager.Play(&quot;GunShot&quot;);
+
+// Stop all playing sound instances (including ones from the sound pool)
+Stem.SoundManager.Pause();
+
+// Resume all playing sound instances (including ones from the sound pool)
+Stem.SoundManager.UnPause();
+
+// Stop all playing sound instances (including ones from the sound pool)
+Stem.SoundManager.Stop();
+
+// Return the instance to the sound pool
+Stem.SoundManager.ReleaseSound(soundInstance);
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
