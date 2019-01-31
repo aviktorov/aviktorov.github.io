@@ -171,6 +171,54 @@
   </h3>
   
   
+  <a id="Stem_MusicManager_GetMusicPlayer_" data-uid="Stem.MusicManager.GetMusicPlayer*"></a>
+  <h4 id="Stem_MusicManager_GetMusicPlayer_System_String_" data-uid="Stem.MusicManager.GetMusicPlayer(System.String)">GetMusicPlayer(String)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified music player with a matching name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MusicPlayer GetMusicPlayer(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a></td>
+        <td><p>A reference to a music player, if found. Null reference otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicManager_GetMusicPlayer_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If multiple banks have music players with a matching name, primary music bank will be checked first.
+Within a bank, the first occurrence of found music player will be used.</p>
+</div>
+  
+  
   <a id="Stem_MusicManager_Next_" data-uid="Stem.MusicManager.Next*"></a>
   <h4 id="Stem_MusicManager_Next_System_String_" data-uid="Stem.MusicManager.Next(System.String)">Next(String)</h4>
   <div class="markdown level1 summary"><p>Advances music player to next track.</p>

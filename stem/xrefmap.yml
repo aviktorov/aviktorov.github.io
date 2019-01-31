@@ -219,6 +219,19 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Banks
   nameWithType: MusicManager.Banks
+- uid: Stem.MusicManager.GetMusicPlayer(System.String)
+  name: GetMusicPlayer(String)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_String_
+  commentId: M:Stem.MusicManager.GetMusicPlayer(System.String)
+  fullName: Stem.MusicManager.GetMusicPlayer(System.String)
+  nameWithType: MusicManager.GetMusicPlayer(String)
+- uid: Stem.MusicManager.GetMusicPlayer*
+  name: GetMusicPlayer
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_
+  commentId: Overload:Stem.MusicManager.GetMusicPlayer
+  isSpec: "True"
+  fullName: Stem.MusicManager.GetMusicPlayer
+  nameWithType: MusicManager.GetMusicPlayer
 - uid: Stem.MusicManager.Next(System.String)
   name: Next(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Next_System_String_
