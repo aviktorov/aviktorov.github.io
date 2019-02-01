@@ -263,6 +263,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/features_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/features_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/features_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/features_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/features_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/features_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/features_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/getting_started_quickstart_step1.png",
       "output": {
         "resource": {
@@ -427,12 +493,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/title.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/title.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "SvVLjJM+krDZkwdd9fAwDw=="
+          "hash": "QG/mwBBdjGx0yNfE1Futbg=="
         }
       },
       "is_incremental": true,
@@ -552,7 +629,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting_started_introduction.html",
-          "hash": "M/GnxaYrL/7L4XzuJG0VLA=="
+          "hash": "2jmj+juJlVnA3BqpycFckQ=="
         }
       },
       "is_incremental": true,
@@ -602,21 +679,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
