@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.AttenuationMode.html",
-          "hash": "IyVkr7SmrHoDwFFX3m/Y2w=="
+          "hash": "OWmCHO/LZc585zW8kJSGlQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicBank.html",
-          "hash": "kqYget4Lb/U8j3L6YpN/YQ=="
+          "hash": "v0FzPnAQOavD7DueMt+NTQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicManager.html",
-          "hash": "g1Cv++7gb8hsL6l3s2zJsw=="
+          "hash": "mJWoOMaqHYUgAupgSJ4wkQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.MusicPlayer.html",
-          "hash": "naBAMlQesFWeSZouY0Z3IQ=="
+          "hash": "WtHqRnBKZDEIpsKS7JoeLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.Playlist.html",
-          "hash": "F3cWffqtRn8aBER6134S9Q=="
+          "hash": "zJwJWz74h6Rx8jcg2/CkLQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.PlaylistTrack.html",
-          "hash": "hGyKcwkkEXjF7+aUwJO6Kg=="
+          "hash": "laSmXnP1skSyoHABrytkvQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.RetriggerMode.html",
-          "hash": "YkDqngzb8CTppeESZFCXmw=="
+          "hash": "W4NH75vUQeHQ1lU7Pz4j/g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.Sound.html",
-          "hash": "Mf9ZyTZ64JvHME3iM7zN6Q=="
+          "hash": "JNiqWML5d9EIKVT+th5+/g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundBank.html",
-          "hash": "fjVZmnlFmzPBj0aRIW+KAQ=="
+          "hash": "n11gODMuNDTxdtzleuVSqA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundBatchImportMode.html",
-          "hash": "F3zoXtf2sFzR1T+R4HtYXw=="
+          "hash": "J0pjCeNtVx5lVJktmc8LBw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundBus.html",
-          "hash": "CxqHc59fHv3a8lk/S0dZmA=="
+          "hash": "7zYxG24xQkImPrQutj7hYw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundInstance.html",
-          "hash": "rpX8hBHHrEPY2Z+XsiXhpA=="
+          "hash": "tRPxu2oFw49r6FJ2Q2QVgQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundManager.html",
-          "hash": "odbZezJxwN+1XJeXk/zGiA=="
+          "hash": "eLpN66d1YjmTrbOzb/Ka9A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.SoundVariation.html",
-          "hash": "sSRt3bwYBvVRR2FLKaghAA=="
+          "hash": "idirmxOpZrUqBPKJnfQo5Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Stem.html",
-          "hash": "qZSKKCeXPplMJfBS26YUKA=="
+          "hash": "UhWZ0oT7p6FOUBPjGQI4gg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,10 +432,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "T1QRspXa8Ran6f63f0T2eA=="
+          "hash": "SvVLjJM+krDZkwdd9fAwDw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,10 +444,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/code_music_manager.html",
-          "hash": "K+SBr4N/8qaaTgXlrxUAiA=="
+          "hash": "9TEGL/O2aLfqcW+0kwUkEw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -456,10 +456,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/code_sound_instance.html",
-          "hash": "Rd0xdJEg6HN0+5NoHTmqhQ=="
+          "hash": "D+nF1QGGE7khYOW1a3f+0w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,10 +468,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/code_sound_manager.html",
-          "hash": "V3WRrr8WcOg5+f+mgyXftA=="
+          "hash": "KgVsKHZeAzaNrNbUDRvusw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -480,10 +480,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_music_bank.html",
-          "hash": "+RyqqHFe1rT+bYPpYz5LFQ=="
+          "hash": "eF5txOtt2yY4Ma/pM9UvVg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -492,10 +492,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_music_player.html",
-          "hash": "sABAxeH2MlZSAXWgL9LYDQ=="
+          "hash": "nQ3Bhwb5zm6M0DvaD5OAeA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -504,10 +504,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_playlist.html",
-          "hash": "8uUwI67wn9gVvzShfVuZhA=="
+          "hash": "fm6JzWEemAI0wQquZoQ3iA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -516,10 +516,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_sound.html",
-          "hash": "4S1jsOYa2Y8vHal/JcJ8gw=="
+          "hash": "bwoSQPMIXE6IkHBxkDnEMw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -528,10 +528,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_sound_bank.html",
-          "hash": "uefI8BpcpUPLAyc7jTgDNw=="
+          "hash": "co96JSwhEc07qvhFaorrOA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -540,10 +540,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/content_sound_bus.html",
-          "hash": "uZ2S/USagqREolTaR/oqjg=="
+          "hash": "GBP3cu92KftQrlpoEjjRwg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -552,10 +552,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting_started_introduction.html",
-          "hash": "xIottxd38/LjjYcHguknLw=="
+          "hash": "M/GnxaYrL/7L4XzuJG0VLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -564,10 +564,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting_started_quickstart.html",
-          "hash": "5qheGPN39OXhyn9jDFR9dA=="
+          "hash": "//vyQsJup53u2uTCVQ0aBA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -598,8 +598,7 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
@@ -614,11 +613,11 @@
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
