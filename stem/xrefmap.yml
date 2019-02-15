@@ -1038,6 +1038,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.ContainsAsset
   nameWithType: SoundBank.ContainsAsset
+- uid: Stem.SoundBank.DefaultBus
+  name: DefaultBus
+  href: api/Stem.SoundBank.html#Stem_SoundBank_DefaultBus
+  commentId: P:Stem.SoundBank.DefaultBus
+  fullName: Stem.SoundBank.DefaultBus
+  nameWithType: SoundBank.DefaultBus
+- uid: Stem.SoundBank.DefaultBus*
+  name: DefaultBus
+  href: api/Stem.SoundBank.html#Stem_SoundBank_DefaultBus_
+  commentId: Overload:Stem.SoundBank.DefaultBus
+  isSpec: "True"
+  fullName: Stem.SoundBank.DefaultBus
+  nameWithType: SoundBank.DefaultBus
 - uid: Stem.SoundBank.GetSound(System.String)
   name: GetSound(String)
   href: api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_String_
