@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bank Content </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bank Content ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bank-content">Bank Content</h1>
+
+<h2 id="description">Description</h2>
+<p>Both sound and music banks are filled with the content. While most of them have been created and modified in the editor, it's also possible to do that in the code.</p>
+<h2 id="adding-content">Adding content</h2>
+<p>Call these methods to add new content to the bank:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_">Stem.SoundBank.AddSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_AddSoundBus_System_String_">Stem.SoundBank.AddSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_AddPlaylist_System_String_">Stem.MusicBank.AddPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_AddMusicPlayer_System_String_">Stem.MusicBank.AddMusicPlayer</a></li>
+</ul>
+<pre><code class="lang-csharp">AudioClip clip;
+AudioClip[] clips;
+
+Stem.Sound soundEmpty = bank.AddSound(&quot;Sound name&quot;);
+Stem.Sound soundSingle = bank.AddSound(&quot;Sound name&quot;, clip);
+Stem.Sound soundWithVariations = bank.AddSound(&quot;Sound name&quot;, slips);
+</code></pre>
+<pre><code class="lang-csharp">Stem.SoundBus newBus = bank.AddSoundBus(&quot;Sound bus name&quot;);
+</code></pre>
+<pre><code class="lang-csharp">AudioClip track;
+AudioClip[] tracks;
+
+Stem.Playlist playlistEmpty = bank.AddPlaylist(&quot;Playlist name&quot;);
+Stem.Playlist playlistSingleTrack = bank.AddPlaylist(&quot;Playlist name&quot;, track);
+Stem.Playlist playlistMultipleTracks = bank.AddPlaylist(&quot;Playlist name&quot;, tracks);
+</code></pre>
+<pre><code class="lang-csharp">Stem.MusicPlayer newPlayer = bank.AddMusicPlayer(&quot;Music player name&quot;);
+</code></pre>
+<h2 id="global-search-in-all-banks">Global search in all banks</h2>
+<p>It's recommended to use IDs instead of string references by default. However, string references might be useful in case there're multiple banks with same content names but different audio data. In this case, referencing by string allows using multiple banks as audio skins by changing <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property in the corresponding manager.</p>
+<h3 id="by-id">By ID</h3>
+<p>Call these methods to search for existing content in all banks:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_Int32_">Stem.SoundManager.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_Int32_">Stem.SoundManager.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_Int32_">Stem.MusicManager.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_Int32_">Stem.MusicManager.GetMusicPlayer</a></li>
+</ul>
+<p>As all IDs are unique, the <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property has no effect on the search results. Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
+<pre><code class="lang-csharp">int soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+int soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
+
+Stem.Sound sound = SoundManager.GetSound(soundId);
+Stem.SoundBus soundBus = SoundManager.GetSoundBus(soundBusId);
+</code></pre>
+<pre><code class="lang-csharp">int playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+int musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+
+Stem.Playlist playlist = MusicManager.GetPlaylist(playlistId);
+Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(musicPlayerId);
+</code></pre>
+<h3 id="by-name">By name</h3>
+<p>Call these methods to search for existing content in all banks:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_String_">Stem.SoundManager.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_String_">Stem.SoundManager.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_String_">Stem.MusicManager.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_String_">Stem.MusicManager.GetMusicPlayer</a></li>
+</ul>
+<p>In the case of name collisions, if multiple banks have content with the matching name, the <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property will be checked first. Within a bank, the first occurrence of found content will be used.</p>
+<pre><code class="lang-csharp">Stem.Sound sound = SoundManager.GetSound(&quot;Sound name&quot;);
+Stem.SoundBus soundBus = SoundManager.GetSoundBus(&quot;Sound bus name&quot;);
+</code></pre>
+<pre><code class="lang-csharp">Stem.Playlist playlist = MusicManager.GetPlaylist(&quot;Playlist name&quot;);
+Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(&quot;Music player name&quot;);
+</code></pre>
+<h2 id="local-search-in-specific-bank">Local search in specific bank</h2>
+<h3 id="by-id-1">By ID</h3>
+<p>Call these methods to search for existing content in the bank:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_Int32_">Stem.SoundBank.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_Int32_">Stem.SoundBank.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_Int32_">Stem.MusicBank.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_Int32_">Stem.MusicBank.GetMusicPlayer</a></li>
+</ul>
+<p>Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
+<pre><code class="lang-csharp">int soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+int soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
+
+Stem.Sound sound = bank.GetSound(soundId);
+Stem.SoundBus soundBus = bank.GetSoundBus(soundBusId);
+</code></pre>
+<pre><code class="lang-csharp">int playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+int musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+
+Stem.Playlist playlist = bank.GetPlaylist(playlistId);
+Stem.MusicPlayer musicPlayer = bank.GetMusicPlayer(musicPlayerId);
+</code></pre>
+<h3 id="by-name-1">By name</h3>
+<p>Call these methods to search for existing content in the bank:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_String_">Stem.SoundBank.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_String_">Stem.SoundBank.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_String_">Stem.MusicBank.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_String_">Stem.MusicBank.GetMusicPlayer</a></li>
+</ul>
+<p>In the case of name collisions, the first occurrence of found content will be used.</p>
+<pre><code class="lang-csharp">Stem.Sound sound = bank.GetSound(&quot;Sound name&quot;);
+Stem.SoundBus soundBus = bank.GetSoundBus(&quot;Sound bus name&quot;);
+</code></pre>
+<pre><code class="lang-csharp">Stem.Playlist playlist = bank.GetPlaylist(&quot;Playlist name&quot;);
+Stem.MusicPlayer musicPlayer = bank.GetMusicPlayer(&quot;Music player name&quot;);
+</code></pre>
+<h2 id="removing-content">Removing content</h2>
+<p>Call these methods to remove existing content from the bank:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_RemoveSound_Stem_Sound_">Stem.SoundBank.RemoveSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_RemoveSoundBus_Stem_SoundBus_">Stem.SoundBank.RemoveSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_RemovePlaylist_Stem_Playlist_">Stem.MusicBank.RemovePlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_RemoveMusicPlayer_Stem_MusicPlayer_">Stem.MusicBank.RemoveMusicPlayer</a></li>
+</ul>
+<p>Note that it's not possible to remove all sound buses from a sound bank.</p>
+<pre><code class="lang-csharp">Stem.Sound sound; // Assume it's filled earlier in the code
+Stem.SoundBus soundBus; // Assume it's filled earlier in the code
+
+bank.RemoveSound(sound);
+bank.RemoveSoundBus(soundBus);
+</code></pre>
+<pre><code class="lang-csharp">Stem.Playlist playlist; // Assume it's filled earlier in the code
+Stem.MusicPlayer musicPlayer; // Assume it's filled earlier in the code
+
+bank.RemovePlaylist(playlist);
+bank.RemoveMusicPlayer(musicPlayer);
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/programming_bank_content.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

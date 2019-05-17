@@ -86,8 +86,14 @@
       <h4><a class="xref" href="Stem.MusicPlayer.html">MusicPlayer</a></h4>
       <section><p>The persistent storage for playback rules of a particular playlist.</p>
 </section>
+      <h4><a class="xref" href="Stem.MusicPlayerIDAttribute.html">MusicPlayerIDAttribute</a></h4>
+      <section><p>The attribute class used to make an int variable in a script be restricted to a music player id.</p>
+</section>
       <h4><a class="xref" href="Stem.Playlist.html">Playlist</a></h4>
       <section><p>The persistent collection of playlist tracks.</p>
+</section>
+      <h4><a class="xref" href="Stem.PlaylistIDAttribute.html">PlaylistIDAttribute</a></h4>
+      <section><p>The attribute class used to make an int variable in a script be restricted to a playlist id.</p>
 </section>
       <h4><a class="xref" href="Stem.PlaylistTrack.html">PlaylistTrack</a></h4>
       <section><p>The persistent storage for music audio data.</p>
@@ -100,6 +106,12 @@
 </section>
       <h4><a class="xref" href="Stem.SoundBus.html">SoundBus</a></h4>
       <section><p>The persistent storage for playback rules of a group of sounds.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundBusIDAttribute.html">SoundBusIDAttribute</a></h4>
+      <section><p>The attribute class used to make an int variable in a script be restricted to a sound bus id.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundIDAttribute.html">SoundIDAttribute</a></h4>
+      <section><p>The attribute class used to make an int variable in a script be restricted to a sound id.</p>
 </section>
       <h4><a class="xref" href="Stem.SoundInstance.html">SoundInstance</a></h4>
       <section><p>The game object with audio source component. Used for manual playback and custom mixing logic.</p>
@@ -115,11 +127,58 @@
       <h4><a class="xref" href="Stem.AttenuationMode.html">AttenuationMode</a></h4>
       <section><p>Defines how sound volume will be lowered over the distance.</p>
 </section>
+      <h4><a class="xref" href="Stem.PlaylistBatchImportMode.html">PlaylistBatchImportMode</a></h4>
+      <section><p>Defines how new playlists will be created after the drag-drop event.</p>
+</section>
       <h4><a class="xref" href="Stem.RetriggerMode.html">RetriggerMode</a></h4>
       <section><p>Defines how sound will play its variations.</p>
 </section>
       <h4><a class="xref" href="Stem.SoundBatchImportMode.html">SoundBatchImportMode</a></h4>
       <section><p>Defines how new sounds will be created after the drag-drop event.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Stem.MusicPlayerAddedDelegate.html">MusicPlayerAddedDelegate</a></h4>
+      <section><p>A music bank callback function, called after adding music player to the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.MusicPlayerRemovedDelegate.html">MusicPlayerRemovedDelegate</a></h4>
+      <section><p>A music bank callback function, called before removing the music player from the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.MusicPlayerRenamedDelegate.html">MusicPlayerRenamedDelegate</a></h4>
+      <section><p>A music bank callback function, called after changing music player name.</p>
+</section>
+      <h4><a class="xref" href="Stem.PlaybackChangedDelegate.html">PlaybackChangedDelegate</a></h4>
+      <section><p>A music callback function, called when the music player changes playback state (playing, stopped, paused).</p>
+</section>
+      <h4><a class="xref" href="Stem.PlaylistAddedDelegate.html">PlaylistAddedDelegate</a></h4>
+      <section><p>A music bank callback function, called after adding playlist to the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.PlaylistRemovedDelegate.html">PlaylistRemovedDelegate</a></h4>
+      <section><p>A music bank callback function, called before removing the playlist from the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.PlaylistRenamedDelegate.html">PlaylistRenamedDelegate</a></h4>
+      <section><p>A music bank callback function, called after changing playlist name.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundAddedDelegate.html">SoundAddedDelegate</a></h4>
+      <section><p>A sound bank callback function, called after adding sound to the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundBusAddedDelegate.html">SoundBusAddedDelegate</a></h4>
+      <section><p>A sound bank callback function, called after adding sound bus to the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundBusRemovedDelegate.html">SoundBusRemovedDelegate</a></h4>
+      <section><p>A sound bank callback function, called before removing the sound bus from the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundBusRenamedDelegate.html">SoundBusRenamedDelegate</a></h4>
+      <section><p>A sound bank callback function, called after changing sound bus name.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundRemovedDelegate.html">SoundRemovedDelegate</a></h4>
+      <section><p>A sound bank callback function, called before removing the sound from the bank.</p>
+</section>
+      <h4><a class="xref" href="Stem.SoundRenamedDelegate.html">SoundRenamedDelegate</a></h4>
+      <section><p>A sound bank callback function, called after changing sound name.</p>
+</section>
+      <h4><a class="xref" href="Stem.TrackChangedDelegate.html">TrackChangedDelegate</a></h4>
+      <section><p>A music callback function, called when the music player transitions to a new track.</p>
 </section>
 </article>
           </div>

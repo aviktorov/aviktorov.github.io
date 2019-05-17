@@ -50,6 +50,21 @@ references:
   commentId: M:Stem.MusicBank.AddPlaylist(System.String)
   fullName: Stem.MusicBank.AddPlaylist(System.String)
   nameWithType: MusicBank.AddPlaylist(String)
+- uid: Stem.MusicBank.AddPlaylist(System.String,AudioClip)
+  name: AddPlaylist(String, AudioClip)
+  href: api/Stem.MusicBank.html#Stem_MusicBank_AddPlaylist_System_String_AudioClip_
+  commentId: M:Stem.MusicBank.AddPlaylist(System.String,AudioClip)
+  fullName: Stem.MusicBank.AddPlaylist(System.String, AudioClip)
+  nameWithType: MusicBank.AddPlaylist(String, AudioClip)
+- uid: Stem.MusicBank.AddPlaylist(System.String,AudioClip[])
+  name: AddPlaylist(String, AudioClip[])
+  href: api/Stem.MusicBank.html#Stem_MusicBank_AddPlaylist_System_String_AudioClip___
+  commentId: M:Stem.MusicBank.AddPlaylist(System.String,AudioClip[])
+  name.vb: AddPlaylist(String, AudioClip())
+  fullName: Stem.MusicBank.AddPlaylist(System.String, AudioClip[])
+  fullName.vb: Stem.MusicBank.AddPlaylist(System.String, AudioClip())
+  nameWithType: MusicBank.AddPlaylist(String, AudioClip[])
+  nameWithType.vb: MusicBank.AddPlaylist(String, AudioClip())
 - uid: Stem.MusicBank.AddPlaylist*
   name: AddPlaylist
   href: api/Stem.MusicBank.html#Stem_MusicBank_AddPlaylist_
@@ -57,19 +72,25 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.AddPlaylist
   nameWithType: MusicBank.AddPlaylist
-- uid: Stem.MusicBank.ContainsAsset(System.String)
-  name: ContainsAsset(String)
-  href: api/Stem.MusicBank.html#Stem_MusicBank_ContainsAsset_System_String_
-  commentId: M:Stem.MusicBank.ContainsAsset(System.String)
-  fullName: Stem.MusicBank.ContainsAsset(System.String)
-  nameWithType: MusicBank.ContainsAsset(String)
-- uid: Stem.MusicBank.ContainsAsset*
-  name: ContainsAsset
-  href: api/Stem.MusicBank.html#Stem_MusicBank_ContainsAsset_
-  commentId: Overload:Stem.MusicBank.ContainsAsset
+- uid: Stem.MusicBank.ClearRuntime
+  name: ClearRuntime()
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ClearRuntime
+  commentId: M:Stem.MusicBank.ClearRuntime
+  fullName: Stem.MusicBank.ClearRuntime()
+  nameWithType: MusicBank.ClearRuntime()
+- uid: Stem.MusicBank.ClearRuntime*
+  name: ClearRuntime
+  href: api/Stem.MusicBank.html#Stem_MusicBank_ClearRuntime_
+  commentId: Overload:Stem.MusicBank.ClearRuntime
   isSpec: "True"
-  fullName: Stem.MusicBank.ContainsAsset
-  nameWithType: MusicBank.ContainsAsset
+  fullName: Stem.MusicBank.ClearRuntime
+  nameWithType: MusicBank.ClearRuntime
+- uid: Stem.MusicBank.GetMusicPlayer(System.Int32)
+  name: GetMusicPlayer(Int32)
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_Int32_
+  commentId: M:Stem.MusicBank.GetMusicPlayer(System.Int32)
+  fullName: Stem.MusicBank.GetMusicPlayer(System.Int32)
+  nameWithType: MusicBank.GetMusicPlayer(Int32)
 - uid: Stem.MusicBank.GetMusicPlayer(System.String)
   name: GetMusicPlayer(String)
   href: api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_String_
@@ -83,6 +104,12 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.GetMusicPlayer
   nameWithType: MusicBank.GetMusicPlayer
+- uid: Stem.MusicBank.GetPlaylist(System.Int32)
+  name: GetPlaylist(Int32)
+  href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_Int32_
+  commentId: M:Stem.MusicBank.GetPlaylist(System.Int32)
+  fullName: Stem.MusicBank.GetPlaylist(System.Int32)
+  nameWithType: MusicBank.GetPlaylist(Int32)
 - uid: Stem.MusicBank.GetPlaylist(System.String)
   name: GetPlaylist(String)
   href: api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_String_
@@ -122,6 +149,42 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.OnBeforeSerialize
   nameWithType: MusicBank.OnBeforeSerialize
+- uid: Stem.MusicBank.OnMusicPlayerAdded
+  name: OnMusicPlayerAdded
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnMusicPlayerAdded
+  commentId: E:Stem.MusicBank.OnMusicPlayerAdded
+  fullName: Stem.MusicBank.OnMusicPlayerAdded
+  nameWithType: MusicBank.OnMusicPlayerAdded
+- uid: Stem.MusicBank.OnMusicPlayerRemoved
+  name: OnMusicPlayerRemoved
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnMusicPlayerRemoved
+  commentId: E:Stem.MusicBank.OnMusicPlayerRemoved
+  fullName: Stem.MusicBank.OnMusicPlayerRemoved
+  nameWithType: MusicBank.OnMusicPlayerRemoved
+- uid: Stem.MusicBank.OnMusicPlayerRenamed
+  name: OnMusicPlayerRenamed
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnMusicPlayerRenamed
+  commentId: E:Stem.MusicBank.OnMusicPlayerRenamed
+  fullName: Stem.MusicBank.OnMusicPlayerRenamed
+  nameWithType: MusicBank.OnMusicPlayerRenamed
+- uid: Stem.MusicBank.OnPlaylistAdded
+  name: OnPlaylistAdded
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnPlaylistAdded
+  commentId: E:Stem.MusicBank.OnPlaylistAdded
+  fullName: Stem.MusicBank.OnPlaylistAdded
+  nameWithType: MusicBank.OnPlaylistAdded
+- uid: Stem.MusicBank.OnPlaylistRemoved
+  name: OnPlaylistRemoved
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnPlaylistRemoved
+  commentId: E:Stem.MusicBank.OnPlaylistRemoved
+  fullName: Stem.MusicBank.OnPlaylistRemoved
+  nameWithType: MusicBank.OnPlaylistRemoved
+- uid: Stem.MusicBank.OnPlaylistRenamed
+  name: OnPlaylistRenamed
+  href: api/Stem.MusicBank.html#Stem_MusicBank_OnPlaylistRenamed
+  commentId: E:Stem.MusicBank.OnPlaylistRenamed
+  fullName: Stem.MusicBank.OnPlaylistRenamed
+  nameWithType: MusicBank.OnPlaylistRenamed
 - uid: Stem.MusicBank.Players
   name: Players
   href: api/Stem.MusicBank.html#Stem_MusicBank_Players
@@ -135,6 +198,19 @@ references:
   isSpec: "True"
   fullName: Stem.MusicBank.Players
   nameWithType: MusicBank.Players
+- uid: Stem.MusicBank.PlaylistBatchImportMode
+  name: PlaylistBatchImportMode
+  href: api/Stem.MusicBank.html#Stem_MusicBank_PlaylistBatchImportMode
+  commentId: P:Stem.MusicBank.PlaylistBatchImportMode
+  fullName: Stem.MusicBank.PlaylistBatchImportMode
+  nameWithType: MusicBank.PlaylistBatchImportMode
+- uid: Stem.MusicBank.PlaylistBatchImportMode*
+  name: PlaylistBatchImportMode
+  href: api/Stem.MusicBank.html#Stem_MusicBank_PlaylistBatchImportMode_
+  commentId: Overload:Stem.MusicBank.PlaylistBatchImportMode
+  isSpec: "True"
+  fullName: Stem.MusicBank.PlaylistBatchImportMode
+  nameWithType: MusicBank.PlaylistBatchImportMode
 - uid: Stem.MusicBank.Playlists
   name: Playlists
   href: api/Stem.MusicBank.html#Stem_MusicBank_Playlists
@@ -219,6 +295,25 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Banks
   nameWithType: MusicManager.Banks
+- uid: Stem.MusicManager.DeregisterBank(Stem.MusicBank)
+  name: DeregisterBank(MusicBank)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_DeregisterBank_Stem_MusicBank_
+  commentId: M:Stem.MusicManager.DeregisterBank(Stem.MusicBank)
+  fullName: Stem.MusicManager.DeregisterBank(Stem.MusicBank)
+  nameWithType: MusicManager.DeregisterBank(MusicBank)
+- uid: Stem.MusicManager.DeregisterBank*
+  name: DeregisterBank
+  href: api/Stem.MusicManager.html#Stem_MusicManager_DeregisterBank_
+  commentId: Overload:Stem.MusicManager.DeregisterBank
+  isSpec: "True"
+  fullName: Stem.MusicManager.DeregisterBank
+  nameWithType: MusicManager.DeregisterBank
+- uid: Stem.MusicManager.GetMusicPlayer(System.Int32)
+  name: GetMusicPlayer(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_Int32_
+  commentId: M:Stem.MusicManager.GetMusicPlayer(System.Int32)
+  fullName: Stem.MusicManager.GetMusicPlayer(System.Int32)
+  nameWithType: MusicManager.GetMusicPlayer(Int32)
 - uid: Stem.MusicManager.GetMusicPlayer(System.String)
   name: GetMusicPlayer(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_String_
@@ -232,6 +327,56 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.GetMusicPlayer
   nameWithType: MusicManager.GetMusicPlayer
+- uid: Stem.MusicManager.GetPlaylist(System.Int32)
+  name: GetPlaylist(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_Int32_
+  commentId: M:Stem.MusicManager.GetPlaylist(System.Int32)
+  fullName: Stem.MusicManager.GetPlaylist(System.Int32)
+  nameWithType: MusicManager.GetPlaylist(Int32)
+- uid: Stem.MusicManager.GetPlaylist(System.String)
+  name: GetPlaylist(String)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_String_
+  commentId: M:Stem.MusicManager.GetPlaylist(System.String)
+  fullName: Stem.MusicManager.GetPlaylist(System.String)
+  nameWithType: MusicManager.GetPlaylist(String)
+- uid: Stem.MusicManager.GetPlaylist*
+  name: GetPlaylist
+  href: api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_
+  commentId: Overload:Stem.MusicManager.GetPlaylist
+  isSpec: "True"
+  fullName: Stem.MusicManager.GetPlaylist
+  nameWithType: MusicManager.GetPlaylist
+- uid: Stem.MusicManager.IsPlaying(System.Int32)
+  name: IsPlaying(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_IsPlaying_System_Int32_
+  commentId: M:Stem.MusicManager.IsPlaying(System.Int32)
+  fullName: Stem.MusicManager.IsPlaying(System.Int32)
+  nameWithType: MusicManager.IsPlaying(Int32)
+- uid: Stem.MusicManager.IsPlaying(System.String)
+  name: IsPlaying(String)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_IsPlaying_System_String_
+  commentId: M:Stem.MusicManager.IsPlaying(System.String)
+  fullName: Stem.MusicManager.IsPlaying(System.String)
+  nameWithType: MusicManager.IsPlaying(String)
+- uid: Stem.MusicManager.IsPlaying*
+  name: IsPlaying
+  href: api/Stem.MusicManager.html#Stem_MusicManager_IsPlaying_
+  commentId: Overload:Stem.MusicManager.IsPlaying
+  isSpec: "True"
+  fullName: Stem.MusicManager.IsPlaying
+  nameWithType: MusicManager.IsPlaying
+- uid: Stem.MusicManager.Next(System.Int32)
+  name: Next(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Next_System_Int32_
+  commentId: M:Stem.MusicManager.Next(System.Int32)
+  fullName: Stem.MusicManager.Next(System.Int32)
+  nameWithType: MusicManager.Next(Int32)
+- uid: Stem.MusicManager.Next(System.Int32,System.Single)
+  name: Next(Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Next_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Next(System.Int32,System.Single)
+  fullName: Stem.MusicManager.Next(System.Int32, System.Single)
+  nameWithType: MusicManager.Next(Int32, Single)
 - uid: Stem.MusicManager.Next(System.String)
   name: Next(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Next_System_String_
@@ -251,6 +396,42 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Next
   nameWithType: MusicManager.Next
+- uid: Stem.MusicManager.OnPlaybackPaused
+  name: OnPlaybackPaused
+  href: api/Stem.MusicManager.html#Stem_MusicManager_OnPlaybackPaused
+  commentId: E:Stem.MusicManager.OnPlaybackPaused
+  fullName: Stem.MusicManager.OnPlaybackPaused
+  nameWithType: MusicManager.OnPlaybackPaused
+- uid: Stem.MusicManager.OnPlaybackStarted
+  name: OnPlaybackStarted
+  href: api/Stem.MusicManager.html#Stem_MusicManager_OnPlaybackStarted
+  commentId: E:Stem.MusicManager.OnPlaybackStarted
+  fullName: Stem.MusicManager.OnPlaybackStarted
+  nameWithType: MusicManager.OnPlaybackStarted
+- uid: Stem.MusicManager.OnPlaybackStopped
+  name: OnPlaybackStopped
+  href: api/Stem.MusicManager.html#Stem_MusicManager_OnPlaybackStopped
+  commentId: E:Stem.MusicManager.OnPlaybackStopped
+  fullName: Stem.MusicManager.OnPlaybackStopped
+  nameWithType: MusicManager.OnPlaybackStopped
+- uid: Stem.MusicManager.OnTrackChanged
+  name: OnTrackChanged
+  href: api/Stem.MusicManager.html#Stem_MusicManager_OnTrackChanged
+  commentId: E:Stem.MusicManager.OnTrackChanged
+  fullName: Stem.MusicManager.OnTrackChanged
+  nameWithType: MusicManager.OnTrackChanged
+- uid: Stem.MusicManager.Pause(System.Int32)
+  name: Pause(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Pause_System_Int32_
+  commentId: M:Stem.MusicManager.Pause(System.Int32)
+  fullName: Stem.MusicManager.Pause(System.Int32)
+  nameWithType: MusicManager.Pause(Int32)
+- uid: Stem.MusicManager.Pause(System.Int32,System.Single)
+  name: Pause(Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Pause_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Pause(System.Int32,System.Single)
+  fullName: Stem.MusicManager.Pause(System.Int32, System.Single)
+  nameWithType: MusicManager.Pause(Int32, Single)
 - uid: Stem.MusicManager.Pause(System.String)
   name: Pause(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Pause_System_String_
@@ -270,6 +451,18 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Pause
   nameWithType: MusicManager.Pause
+- uid: Stem.MusicManager.Play(System.Int32)
+  name: Play(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Play_System_Int32_
+  commentId: M:Stem.MusicManager.Play(System.Int32)
+  fullName: Stem.MusicManager.Play(System.Int32)
+  nameWithType: MusicManager.Play(Int32)
+- uid: Stem.MusicManager.Play(System.Int32,System.Single)
+  name: Play(Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Play_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Play(System.Int32,System.Single)
+  fullName: Stem.MusicManager.Play(System.Int32, System.Single)
+  nameWithType: MusicManager.Play(Int32, Single)
 - uid: Stem.MusicManager.Play(System.String)
   name: Play(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Play_System_String_
@@ -289,6 +482,18 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Play
   nameWithType: MusicManager.Play
+- uid: Stem.MusicManager.Prev(System.Int32)
+  name: Prev(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Prev_System_Int32_
+  commentId: M:Stem.MusicManager.Prev(System.Int32)
+  fullName: Stem.MusicManager.Prev(System.Int32)
+  nameWithType: MusicManager.Prev(Int32)
+- uid: Stem.MusicManager.Prev(System.Int32,System.Single)
+  name: Prev(Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Prev_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Prev(System.Int32,System.Single)
+  fullName: Stem.MusicManager.Prev(System.Int32, System.Single)
+  nameWithType: MusicManager.Prev(Int32, Single)
 - uid: Stem.MusicManager.Prev(System.String)
   name: Prev(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Prev_System_String_
@@ -334,6 +539,42 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.RegisterBank
   nameWithType: MusicManager.RegisterBank
+- uid: Stem.MusicManager.Seek(System.Int32,System.Int32)
+  name: Seek(Int32, Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_Int32_
+  commentId: M:Stem.MusicManager.Seek(System.Int32,System.Int32)
+  fullName: Stem.MusicManager.Seek(System.Int32, System.Int32)
+  nameWithType: MusicManager.Seek(Int32, Int32)
+- uid: Stem.MusicManager.Seek(System.Int32,System.Int32,System.Single)
+  name: Seek(Int32, Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Seek(System.Int32,System.Int32,System.Single)
+  fullName: Stem.MusicManager.Seek(System.Int32, System.Int32, System.Single)
+  nameWithType: MusicManager.Seek(Int32, Int32, Single)
+- uid: Stem.MusicManager.Seek(System.Int32,System.String)
+  name: Seek(Int32, String)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_String_
+  commentId: M:Stem.MusicManager.Seek(System.Int32,System.String)
+  fullName: Stem.MusicManager.Seek(System.Int32, System.String)
+  nameWithType: MusicManager.Seek(Int32, String)
+- uid: Stem.MusicManager.Seek(System.Int32,System.String,System.Single)
+  name: Seek(Int32, String, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_String_System_Single_
+  commentId: M:Stem.MusicManager.Seek(System.Int32,System.String,System.Single)
+  fullName: Stem.MusicManager.Seek(System.Int32, System.String, System.Single)
+  nameWithType: MusicManager.Seek(Int32, String, Single)
+- uid: Stem.MusicManager.Seek(System.String,System.Int32)
+  name: Seek(String, Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_String_System_Int32_
+  commentId: M:Stem.MusicManager.Seek(System.String,System.Int32)
+  fullName: Stem.MusicManager.Seek(System.String, System.Int32)
+  nameWithType: MusicManager.Seek(String, Int32)
+- uid: Stem.MusicManager.Seek(System.String,System.Int32,System.Single)
+  name: Seek(String, Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_String_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Seek(System.String,System.Int32,System.Single)
+  fullName: Stem.MusicManager.Seek(System.String, System.Int32, System.Single)
+  nameWithType: MusicManager.Seek(String, Int32, Single)
 - uid: Stem.MusicManager.Seek(System.String,System.String)
   name: Seek(String, String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_String_System_String_
@@ -353,6 +594,42 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Seek
   nameWithType: MusicManager.Seek
+- uid: Stem.MusicManager.SetPlaylist(System.Int32,System.Int32)
+  name: SetPlaylist(Int32, Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_Int32_System_Int32_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.Int32,System.Int32)
+  fullName: Stem.MusicManager.SetPlaylist(System.Int32, System.Int32)
+  nameWithType: MusicManager.SetPlaylist(Int32, Int32)
+- uid: Stem.MusicManager.SetPlaylist(System.Int32,System.Int32,System.Single)
+  name: SetPlaylist(Int32, Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_Int32_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.Int32,System.Int32,System.Single)
+  fullName: Stem.MusicManager.SetPlaylist(System.Int32, System.Int32, System.Single)
+  nameWithType: MusicManager.SetPlaylist(Int32, Int32, Single)
+- uid: Stem.MusicManager.SetPlaylist(System.Int32,System.String)
+  name: SetPlaylist(Int32, String)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_Int32_System_String_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.Int32,System.String)
+  fullName: Stem.MusicManager.SetPlaylist(System.Int32, System.String)
+  nameWithType: MusicManager.SetPlaylist(Int32, String)
+- uid: Stem.MusicManager.SetPlaylist(System.Int32,System.String,System.Single)
+  name: SetPlaylist(Int32, String, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_Int32_System_String_System_Single_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.Int32,System.String,System.Single)
+  fullName: Stem.MusicManager.SetPlaylist(System.Int32, System.String, System.Single)
+  nameWithType: MusicManager.SetPlaylist(Int32, String, Single)
+- uid: Stem.MusicManager.SetPlaylist(System.String,System.Int32)
+  name: SetPlaylist(String, Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_Int32_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.String,System.Int32)
+  fullName: Stem.MusicManager.SetPlaylist(System.String, System.Int32)
+  nameWithType: MusicManager.SetPlaylist(String, Int32)
+- uid: Stem.MusicManager.SetPlaylist(System.String,System.Int32,System.Single)
+  name: SetPlaylist(String, Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.SetPlaylist(System.String,System.Int32,System.Single)
+  fullName: Stem.MusicManager.SetPlaylist(System.String, System.Int32, System.Single)
+  nameWithType: MusicManager.SetPlaylist(String, Int32, Single)
 - uid: Stem.MusicManager.SetPlaylist(System.String,System.String)
   name: SetPlaylist(String, String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_String_System_String_
@@ -372,6 +649,18 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.SetPlaylist
   nameWithType: MusicManager.SetPlaylist
+- uid: Stem.MusicManager.Stop(System.Int32)
+  name: Stop(Int32)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Stop_System_Int32_
+  commentId: M:Stem.MusicManager.Stop(System.Int32)
+  fullName: Stem.MusicManager.Stop(System.Int32)
+  nameWithType: MusicManager.Stop(Int32)
+- uid: Stem.MusicManager.Stop(System.Int32,System.Single)
+  name: Stop(Int32, Single)
+  href: api/Stem.MusicManager.html#Stem_MusicManager_Stop_System_Int32_System_Single_
+  commentId: M:Stem.MusicManager.Stop(System.Int32,System.Single)
+  fullName: Stem.MusicManager.Stop(System.Int32, System.Single)
+  nameWithType: MusicManager.Stop(Int32, Single)
 - uid: Stem.MusicManager.Stop(System.String)
   name: Stop(String)
   href: api/Stem.MusicManager.html#Stem_MusicManager_Stop_System_String_
@@ -391,25 +680,6 @@ references:
   isSpec: "True"
   fullName: Stem.MusicManager.Stop
   nameWithType: MusicManager.Stop
-- uid: Stem.MusicManager.UnPause(System.String)
-  name: UnPause(String)
-  href: api/Stem.MusicManager.html#Stem_MusicManager_UnPause_System_String_
-  commentId: M:Stem.MusicManager.UnPause(System.String)
-  fullName: Stem.MusicManager.UnPause(System.String)
-  nameWithType: MusicManager.UnPause(String)
-- uid: Stem.MusicManager.UnPause(System.String,System.Single)
-  name: UnPause(String, Single)
-  href: api/Stem.MusicManager.html#Stem_MusicManager_UnPause_System_String_System_Single_
-  commentId: M:Stem.MusicManager.UnPause(System.String,System.Single)
-  fullName: Stem.MusicManager.UnPause(System.String, System.Single)
-  nameWithType: MusicManager.UnPause(String, Single)
-- uid: Stem.MusicManager.UnPause*
-  name: UnPause
-  href: api/Stem.MusicManager.html#Stem_MusicManager_UnPause_
-  commentId: Overload:Stem.MusicManager.UnPause
-  isSpec: "True"
-  fullName: Stem.MusicManager.UnPause
-  nameWithType: MusicManager.UnPause
 - uid: Stem.MusicPlayer
   name: MusicPlayer
   href: api/Stem.MusicPlayer.html
@@ -468,6 +738,19 @@ references:
   isSpec: "True"
   fullName: Stem.MusicPlayer.Fade
   nameWithType: MusicPlayer.Fade
+- uid: Stem.MusicPlayer.ID
+  name: ID
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_ID
+  commentId: P:Stem.MusicPlayer.ID
+  fullName: Stem.MusicPlayer.ID
+  nameWithType: MusicPlayer.ID
+- uid: Stem.MusicPlayer.ID*
+  name: ID
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_ID_
+  commentId: Overload:Stem.MusicPlayer.ID
+  isSpec: "True"
+  fullName: Stem.MusicPlayer.ID
+  nameWithType: MusicPlayer.ID
 - uid: Stem.MusicPlayer.Loop
   name: Loop
   href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Loop
@@ -520,6 +803,56 @@ references:
   isSpec: "True"
   fullName: Stem.MusicPlayer.Name
   nameWithType: MusicPlayer.Name
+- uid: Stem.MusicPlayer.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnAfterDeserialize
+  commentId: M:Stem.MusicPlayer.OnAfterDeserialize
+  fullName: Stem.MusicPlayer.OnAfterDeserialize()
+  nameWithType: MusicPlayer.OnAfterDeserialize()
+- uid: Stem.MusicPlayer.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnAfterDeserialize_
+  commentId: Overload:Stem.MusicPlayer.OnAfterDeserialize
+  isSpec: "True"
+  fullName: Stem.MusicPlayer.OnAfterDeserialize
+  nameWithType: MusicPlayer.OnAfterDeserialize
+- uid: Stem.MusicPlayer.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnBeforeSerialize
+  commentId: M:Stem.MusicPlayer.OnBeforeSerialize
+  fullName: Stem.MusicPlayer.OnBeforeSerialize()
+  nameWithType: MusicPlayer.OnBeforeSerialize()
+- uid: Stem.MusicPlayer.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnBeforeSerialize_
+  commentId: Overload:Stem.MusicPlayer.OnBeforeSerialize
+  isSpec: "True"
+  fullName: Stem.MusicPlayer.OnBeforeSerialize
+  nameWithType: MusicPlayer.OnBeforeSerialize
+- uid: Stem.MusicPlayer.OnPlaybackPaused
+  name: OnPlaybackPaused
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnPlaybackPaused
+  commentId: E:Stem.MusicPlayer.OnPlaybackPaused
+  fullName: Stem.MusicPlayer.OnPlaybackPaused
+  nameWithType: MusicPlayer.OnPlaybackPaused
+- uid: Stem.MusicPlayer.OnPlaybackStarted
+  name: OnPlaybackStarted
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnPlaybackStarted
+  commentId: E:Stem.MusicPlayer.OnPlaybackStarted
+  fullName: Stem.MusicPlayer.OnPlaybackStarted
+  nameWithType: MusicPlayer.OnPlaybackStarted
+- uid: Stem.MusicPlayer.OnPlaybackStopped
+  name: OnPlaybackStopped
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnPlaybackStopped
+  commentId: E:Stem.MusicPlayer.OnPlaybackStopped
+  fullName: Stem.MusicPlayer.OnPlaybackStopped
+  nameWithType: MusicPlayer.OnPlaybackStopped
+- uid: Stem.MusicPlayer.OnTrackChanged
+  name: OnTrackChanged
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_OnTrackChanged
+  commentId: E:Stem.MusicPlayer.OnTrackChanged
+  fullName: Stem.MusicPlayer.OnTrackChanged
+  nameWithType: MusicPlayer.OnTrackChanged
 - uid: Stem.MusicPlayer.Playlist
   name: Playlist
   href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Playlist
@@ -533,6 +866,19 @@ references:
   isSpec: "True"
   fullName: Stem.MusicPlayer.Playlist
   nameWithType: MusicPlayer.Playlist
+- uid: Stem.MusicPlayer.PlayOnStart
+  name: PlayOnStart
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_PlayOnStart
+  commentId: P:Stem.MusicPlayer.PlayOnStart
+  fullName: Stem.MusicPlayer.PlayOnStart
+  nameWithType: MusicPlayer.PlayOnStart
+- uid: Stem.MusicPlayer.PlayOnStart*
+  name: PlayOnStart
+  href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_PlayOnStart_
+  commentId: Overload:Stem.MusicPlayer.PlayOnStart
+  isSpec: "True"
+  fullName: Stem.MusicPlayer.PlayOnStart
+  nameWithType: MusicPlayer.PlayOnStart
 - uid: Stem.MusicPlayer.Shuffle
   name: Shuffle
   href: api/Stem.MusicPlayer.html#Stem_MusicPlayer_Shuffle
@@ -585,6 +931,36 @@ references:
   isSpec: "True"
   fullName: Stem.MusicPlayer.Volume
   nameWithType: MusicPlayer.Volume
+- uid: Stem.MusicPlayerAddedDelegate
+  name: MusicPlayerAddedDelegate
+  href: api/Stem.MusicPlayerAddedDelegate.html
+  commentId: T:Stem.MusicPlayerAddedDelegate
+  fullName: Stem.MusicPlayerAddedDelegate
+  nameWithType: MusicPlayerAddedDelegate
+- uid: Stem.MusicPlayerIDAttribute
+  name: MusicPlayerIDAttribute
+  href: api/Stem.MusicPlayerIDAttribute.html
+  commentId: T:Stem.MusicPlayerIDAttribute
+  fullName: Stem.MusicPlayerIDAttribute
+  nameWithType: MusicPlayerIDAttribute
+- uid: Stem.MusicPlayerRemovedDelegate
+  name: MusicPlayerRemovedDelegate
+  href: api/Stem.MusicPlayerRemovedDelegate.html
+  commentId: T:Stem.MusicPlayerRemovedDelegate
+  fullName: Stem.MusicPlayerRemovedDelegate
+  nameWithType: MusicPlayerRemovedDelegate
+- uid: Stem.MusicPlayerRenamedDelegate
+  name: MusicPlayerRenamedDelegate
+  href: api/Stem.MusicPlayerRenamedDelegate.html
+  commentId: T:Stem.MusicPlayerRenamedDelegate
+  fullName: Stem.MusicPlayerRenamedDelegate
+  nameWithType: MusicPlayerRenamedDelegate
+- uid: Stem.PlaybackChangedDelegate
+  name: PlaybackChangedDelegate
+  href: api/Stem.PlaybackChangedDelegate.html
+  commentId: T:Stem.PlaybackChangedDelegate
+  fullName: Stem.PlaybackChangedDelegate
+  nameWithType: PlaybackChangedDelegate
 - uid: Stem.Playlist
   name: Playlist
   href: api/Stem.Playlist.html
@@ -604,6 +980,19 @@ references:
   isSpec: "True"
   fullName: Stem.Playlist.Bank
   nameWithType: Playlist.Bank
+- uid: Stem.Playlist.ID
+  name: ID
+  href: api/Stem.Playlist.html#Stem_Playlist_ID
+  commentId: P:Stem.Playlist.ID
+  fullName: Stem.Playlist.ID
+  nameWithType: Playlist.ID
+- uid: Stem.Playlist.ID*
+  name: ID
+  href: api/Stem.Playlist.html#Stem_Playlist_ID_
+  commentId: Overload:Stem.Playlist.ID
+  isSpec: "True"
+  fullName: Stem.Playlist.ID
+  nameWithType: Playlist.ID
 - uid: Stem.Playlist.Name
   name: Name
   href: api/Stem.Playlist.html#Stem_Playlist_Name
@@ -669,6 +1058,48 @@ references:
   isSpec: "True"
   fullName: Stem.Playlist.Unfolded
   nameWithType: Playlist.Unfolded
+- uid: Stem.PlaylistAddedDelegate
+  name: PlaylistAddedDelegate
+  href: api/Stem.PlaylistAddedDelegate.html
+  commentId: T:Stem.PlaylistAddedDelegate
+  fullName: Stem.PlaylistAddedDelegate
+  nameWithType: PlaylistAddedDelegate
+- uid: Stem.PlaylistBatchImportMode
+  name: PlaylistBatchImportMode
+  href: api/Stem.PlaylistBatchImportMode.html
+  commentId: T:Stem.PlaylistBatchImportMode
+  fullName: Stem.PlaylistBatchImportMode
+  nameWithType: PlaylistBatchImportMode
+- uid: Stem.PlaylistBatchImportMode.MultiplePerClip
+  name: MultiplePerClip
+  href: api/Stem.PlaylistBatchImportMode.html#Stem_PlaylistBatchImportMode_MultiplePerClip
+  commentId: F:Stem.PlaylistBatchImportMode.MultiplePerClip
+  fullName: Stem.PlaylistBatchImportMode.MultiplePerClip
+  nameWithType: PlaylistBatchImportMode.MultiplePerClip
+- uid: Stem.PlaylistBatchImportMode.SingleWithTracks
+  name: SingleWithTracks
+  href: api/Stem.PlaylistBatchImportMode.html#Stem_PlaylistBatchImportMode_SingleWithTracks
+  commentId: F:Stem.PlaylistBatchImportMode.SingleWithTracks
+  fullName: Stem.PlaylistBatchImportMode.SingleWithTracks
+  nameWithType: PlaylistBatchImportMode.SingleWithTracks
+- uid: Stem.PlaylistIDAttribute
+  name: PlaylistIDAttribute
+  href: api/Stem.PlaylistIDAttribute.html
+  commentId: T:Stem.PlaylistIDAttribute
+  fullName: Stem.PlaylistIDAttribute
+  nameWithType: PlaylistIDAttribute
+- uid: Stem.PlaylistRemovedDelegate
+  name: PlaylistRemovedDelegate
+  href: api/Stem.PlaylistRemovedDelegate.html
+  commentId: T:Stem.PlaylistRemovedDelegate
+  fullName: Stem.PlaylistRemovedDelegate
+  nameWithType: PlaylistRemovedDelegate
+- uid: Stem.PlaylistRenamedDelegate
+  name: PlaylistRenamedDelegate
+  href: api/Stem.PlaylistRenamedDelegate.html
+  commentId: T:Stem.PlaylistRenamedDelegate
+  fullName: Stem.PlaylistRenamedDelegate
+  nameWithType: PlaylistRenamedDelegate
 - uid: Stem.PlaylistTrack
   name: PlaylistTrack
   href: api/Stem.PlaylistTrack.html
@@ -822,6 +1253,19 @@ references:
   isSpec: "True"
   fullName: Stem.Sound.DopplerLevel
   nameWithType: Sound.DopplerLevel
+- uid: Stem.Sound.ID
+  name: ID
+  href: api/Stem.Sound.html#Stem_Sound_ID
+  commentId: P:Stem.Sound.ID
+  fullName: Stem.Sound.ID
+  nameWithType: Sound.ID
+- uid: Stem.Sound.ID*
+  name: ID
+  href: api/Stem.Sound.html#Stem_Sound_ID_
+  commentId: Overload:Stem.Sound.ID
+  isSpec: "True"
+  fullName: Stem.Sound.ID
+  nameWithType: Sound.ID
 - uid: Stem.Sound.MaxDistance
   name: MaxDistance
   href: api/Stem.Sound.html#Stem_Sound_MaxDistance
@@ -874,6 +1318,32 @@ references:
   isSpec: "True"
   fullName: Stem.Sound.Name
   nameWithType: Sound.Name
+- uid: Stem.Sound.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/Stem.Sound.html#Stem_Sound_OnAfterDeserialize
+  commentId: M:Stem.Sound.OnAfterDeserialize
+  fullName: Stem.Sound.OnAfterDeserialize()
+  nameWithType: Sound.OnAfterDeserialize()
+- uid: Stem.Sound.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/Stem.Sound.html#Stem_Sound_OnAfterDeserialize_
+  commentId: Overload:Stem.Sound.OnAfterDeserialize
+  isSpec: "True"
+  fullName: Stem.Sound.OnAfterDeserialize
+  nameWithType: Sound.OnAfterDeserialize
+- uid: Stem.Sound.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/Stem.Sound.html#Stem_Sound_OnBeforeSerialize
+  commentId: M:Stem.Sound.OnBeforeSerialize
+  fullName: Stem.Sound.OnBeforeSerialize()
+  nameWithType: Sound.OnBeforeSerialize()
+- uid: Stem.Sound.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/Stem.Sound.html#Stem_Sound_OnBeforeSerialize_
+  commentId: Overload:Stem.Sound.OnBeforeSerialize
+  isSpec: "True"
+  fullName: Stem.Sound.OnBeforeSerialize
+  nameWithType: Sound.OnBeforeSerialize
 - uid: Stem.Sound.PanStereo
   name: PanStereo
   href: api/Stem.Sound.html#Stem_Sound_PanStereo
@@ -965,6 +1435,12 @@ references:
   isSpec: "True"
   fullName: Stem.Sound.Variations
   nameWithType: Sound.Variations
+- uid: Stem.SoundAddedDelegate
+  name: SoundAddedDelegate
+  href: api/Stem.SoundAddedDelegate.html
+  commentId: T:Stem.SoundAddedDelegate
+  fullName: Stem.SoundAddedDelegate
+  nameWithType: SoundAddedDelegate
 - uid: Stem.SoundBank
   name: SoundBank
   href: api/Stem.SoundBank.html
@@ -977,19 +1453,19 @@ references:
   commentId: M:Stem.SoundBank.AddSound(System.String)
   fullName: Stem.SoundBank.AddSound(System.String)
   nameWithType: SoundBank.AddSound(String)
-- uid: Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip)
+- uid: Stem.SoundBank.AddSound(System.String,AudioClip)
   name: AddSound(String, AudioClip)
-  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip_
-  commentId: M:Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip)
-  fullName: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_AudioClip_
+  commentId: M:Stem.SoundBank.AddSound(System.String,AudioClip)
+  fullName: Stem.SoundBank.AddSound(System.String, AudioClip)
   nameWithType: SoundBank.AddSound(String, AudioClip)
-- uid: Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip[])
+- uid: Stem.SoundBank.AddSound(System.String,AudioClip[])
   name: AddSound(String, AudioClip[])
-  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_UnityEngine_AudioClip___
-  commentId: M:Stem.SoundBank.AddSound(System.String,UnityEngine.AudioClip[])
+  href: api/Stem.SoundBank.html#Stem_SoundBank_AddSound_System_String_AudioClip___
+  commentId: M:Stem.SoundBank.AddSound(System.String,AudioClip[])
   name.vb: AddSound(String, AudioClip())
-  fullName: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip[])
-  fullName.vb: Stem.SoundBank.AddSound(System.String, UnityEngine.AudioClip())
+  fullName: Stem.SoundBank.AddSound(System.String, AudioClip[])
+  fullName.vb: Stem.SoundBank.AddSound(System.String, AudioClip())
   nameWithType: SoundBank.AddSound(String, AudioClip[])
   nameWithType.vb: SoundBank.AddSound(String, AudioClip())
 - uid: Stem.SoundBank.AddSound*
@@ -1025,19 +1501,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.Buses
   nameWithType: SoundBank.Buses
-- uid: Stem.SoundBank.ContainsAsset(System.String)
-  name: ContainsAsset(String)
-  href: api/Stem.SoundBank.html#Stem_SoundBank_ContainsAsset_System_String_
-  commentId: M:Stem.SoundBank.ContainsAsset(System.String)
-  fullName: Stem.SoundBank.ContainsAsset(System.String)
-  nameWithType: SoundBank.ContainsAsset(String)
-- uid: Stem.SoundBank.ContainsAsset*
-  name: ContainsAsset
-  href: api/Stem.SoundBank.html#Stem_SoundBank_ContainsAsset_
-  commentId: Overload:Stem.SoundBank.ContainsAsset
+- uid: Stem.SoundBank.ClearRuntime
+  name: ClearRuntime()
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ClearRuntime
+  commentId: M:Stem.SoundBank.ClearRuntime
+  fullName: Stem.SoundBank.ClearRuntime()
+  nameWithType: SoundBank.ClearRuntime()
+- uid: Stem.SoundBank.ClearRuntime*
+  name: ClearRuntime
+  href: api/Stem.SoundBank.html#Stem_SoundBank_ClearRuntime_
+  commentId: Overload:Stem.SoundBank.ClearRuntime
   isSpec: "True"
-  fullName: Stem.SoundBank.ContainsAsset
-  nameWithType: SoundBank.ContainsAsset
+  fullName: Stem.SoundBank.ClearRuntime
+  nameWithType: SoundBank.ClearRuntime
 - uid: Stem.SoundBank.DefaultBus
   name: DefaultBus
   href: api/Stem.SoundBank.html#Stem_SoundBank_DefaultBus
@@ -1051,6 +1527,12 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.DefaultBus
   nameWithType: SoundBank.DefaultBus
+- uid: Stem.SoundBank.GetSound(System.Int32)
+  name: GetSound(Int32)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_Int32_
+  commentId: M:Stem.SoundBank.GetSound(System.Int32)
+  fullName: Stem.SoundBank.GetSound(System.Int32)
+  nameWithType: SoundBank.GetSound(Int32)
 - uid: Stem.SoundBank.GetSound(System.String)
   name: GetSound(String)
   href: api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_String_
@@ -1064,6 +1546,12 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.GetSound
   nameWithType: SoundBank.GetSound
+- uid: Stem.SoundBank.GetSoundBus(System.Int32)
+  name: GetSoundBus(Int32)
+  href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_Int32_
+  commentId: M:Stem.SoundBank.GetSoundBus(System.Int32)
+  fullName: Stem.SoundBank.GetSoundBus(System.Int32)
+  nameWithType: SoundBank.GetSoundBus(Int32)
 - uid: Stem.SoundBank.GetSoundBus(System.String)
   name: GetSoundBus(String)
   href: api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_String_
@@ -1103,6 +1591,42 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBank.OnBeforeSerialize
   nameWithType: SoundBank.OnBeforeSerialize
+- uid: Stem.SoundBank.OnSoundAdded
+  name: OnSoundAdded
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundAdded
+  commentId: E:Stem.SoundBank.OnSoundAdded
+  fullName: Stem.SoundBank.OnSoundAdded
+  nameWithType: SoundBank.OnSoundAdded
+- uid: Stem.SoundBank.OnSoundBusAdded
+  name: OnSoundBusAdded
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundBusAdded
+  commentId: E:Stem.SoundBank.OnSoundBusAdded
+  fullName: Stem.SoundBank.OnSoundBusAdded
+  nameWithType: SoundBank.OnSoundBusAdded
+- uid: Stem.SoundBank.OnSoundBusRemoved
+  name: OnSoundBusRemoved
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundBusRemoved
+  commentId: E:Stem.SoundBank.OnSoundBusRemoved
+  fullName: Stem.SoundBank.OnSoundBusRemoved
+  nameWithType: SoundBank.OnSoundBusRemoved
+- uid: Stem.SoundBank.OnSoundBusRenamed
+  name: OnSoundBusRenamed
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundBusRenamed
+  commentId: E:Stem.SoundBank.OnSoundBusRenamed
+  fullName: Stem.SoundBank.OnSoundBusRenamed
+  nameWithType: SoundBank.OnSoundBusRenamed
+- uid: Stem.SoundBank.OnSoundRemoved
+  name: OnSoundRemoved
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundRemoved
+  commentId: E:Stem.SoundBank.OnSoundRemoved
+  fullName: Stem.SoundBank.OnSoundRemoved
+  nameWithType: SoundBank.OnSoundRemoved
+- uid: Stem.SoundBank.OnSoundRenamed
+  name: OnSoundRenamed
+  href: api/Stem.SoundBank.html#Stem_SoundBank_OnSoundRenamed
+  commentId: E:Stem.SoundBank.OnSoundRenamed
+  fullName: Stem.SoundBank.OnSoundRenamed
+  nameWithType: SoundBank.OnSoundRenamed
 - uid: Stem.SoundBank.RemoveSound(Stem.Sound)
   name: RemoveSound(Sound)
   href: api/Stem.SoundBank.html#Stem_SoundBank_RemoveSound_Stem_Sound_
@@ -1244,6 +1768,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBus.Bank
   nameWithType: SoundBus.Bank
+- uid: Stem.SoundBus.ID
+  name: ID
+  href: api/Stem.SoundBus.html#Stem_SoundBus_ID
+  commentId: P:Stem.SoundBus.ID
+  fullName: Stem.SoundBus.ID
+  nameWithType: SoundBus.ID
+- uid: Stem.SoundBus.ID*
+  name: ID
+  href: api/Stem.SoundBus.html#Stem_SoundBus_ID_
+  commentId: Overload:Stem.SoundBus.ID
+  isSpec: "True"
+  fullName: Stem.SoundBus.ID
+  nameWithType: SoundBus.ID
 - uid: Stem.SoundBus.MixerGroup
   name: MixerGroup
   href: api/Stem.SoundBus.html#Stem_SoundBus_MixerGroup
@@ -1283,6 +1820,32 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBus.Name
   nameWithType: SoundBus.Name
+- uid: Stem.SoundBus.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/Stem.SoundBus.html#Stem_SoundBus_OnAfterDeserialize
+  commentId: M:Stem.SoundBus.OnAfterDeserialize
+  fullName: Stem.SoundBus.OnAfterDeserialize()
+  nameWithType: SoundBus.OnAfterDeserialize()
+- uid: Stem.SoundBus.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/Stem.SoundBus.html#Stem_SoundBus_OnAfterDeserialize_
+  commentId: Overload:Stem.SoundBus.OnAfterDeserialize
+  isSpec: "True"
+  fullName: Stem.SoundBus.OnAfterDeserialize
+  nameWithType: SoundBus.OnAfterDeserialize
+- uid: Stem.SoundBus.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/Stem.SoundBus.html#Stem_SoundBus_OnBeforeSerialize
+  commentId: M:Stem.SoundBus.OnBeforeSerialize
+  fullName: Stem.SoundBus.OnBeforeSerialize()
+  nameWithType: SoundBus.OnBeforeSerialize()
+- uid: Stem.SoundBus.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/Stem.SoundBus.html#Stem_SoundBus_OnBeforeSerialize_
+  commentId: Overload:Stem.SoundBus.OnBeforeSerialize
+  isSpec: "True"
+  fullName: Stem.SoundBus.OnBeforeSerialize
+  nameWithType: SoundBus.OnBeforeSerialize
 - uid: Stem.SoundBus.Polyphony
   name: Polyphony
   href: api/Stem.SoundBus.html#Stem_SoundBus_Polyphony
@@ -1335,6 +1898,36 @@ references:
   isSpec: "True"
   fullName: Stem.SoundBus.Volume
   nameWithType: SoundBus.Volume
+- uid: Stem.SoundBusAddedDelegate
+  name: SoundBusAddedDelegate
+  href: api/Stem.SoundBusAddedDelegate.html
+  commentId: T:Stem.SoundBusAddedDelegate
+  fullName: Stem.SoundBusAddedDelegate
+  nameWithType: SoundBusAddedDelegate
+- uid: Stem.SoundBusIDAttribute
+  name: SoundBusIDAttribute
+  href: api/Stem.SoundBusIDAttribute.html
+  commentId: T:Stem.SoundBusIDAttribute
+  fullName: Stem.SoundBusIDAttribute
+  nameWithType: SoundBusIDAttribute
+- uid: Stem.SoundBusRemovedDelegate
+  name: SoundBusRemovedDelegate
+  href: api/Stem.SoundBusRemovedDelegate.html
+  commentId: T:Stem.SoundBusRemovedDelegate
+  fullName: Stem.SoundBusRemovedDelegate
+  nameWithType: SoundBusRemovedDelegate
+- uid: Stem.SoundBusRenamedDelegate
+  name: SoundBusRenamedDelegate
+  href: api/Stem.SoundBusRenamedDelegate.html
+  commentId: T:Stem.SoundBusRenamedDelegate
+  fullName: Stem.SoundBusRenamedDelegate
+  nameWithType: SoundBusRenamedDelegate
+- uid: Stem.SoundIDAttribute
+  name: SoundIDAttribute
+  href: api/Stem.SoundIDAttribute.html
+  commentId: T:Stem.SoundIDAttribute
+  fullName: Stem.SoundIDAttribute
+  nameWithType: SoundIDAttribute
 - uid: Stem.SoundInstance
   name: SoundInstance
   href: api/Stem.SoundInstance.html
@@ -1424,29 +2017,29 @@ references:
   isSpec: "True"
   fullName: Stem.SoundInstance.Play
   nameWithType: SoundInstance.Play
-- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3)
+- uid: Stem.SoundInstance.Play3D(Vector3)
   name: Play3D(Vector3)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_
-  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3)
-  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_
+  commentId: M:Stem.SoundInstance.Play3D(Vector3)
+  fullName: Stem.SoundInstance.Play3D(Vector3)
   nameWithType: SoundInstance.Play3D(Vector3)
-- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single)
+- uid: Stem.SoundInstance.Play3D(Vector3,System.Single)
   name: Play3D(Vector3, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single)
-  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single)
+  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single)
-- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single)
+- uid: Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single)
   name: Play3D(Vector3, Single, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single)
-  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single)
+  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single, Single)
-- uid: Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single,System.Single)
+- uid: Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single,System.Single)
   name: Play3D(Vector3, Single, Single, Single)
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_UnityEngine_Vector3_System_Single_System_Single_System_Single_
-  commentId: M:Stem.SoundInstance.Play3D(UnityEngine.Vector3,System.Single,System.Single,System.Single)
-  fullName: Stem.SoundInstance.Play3D(UnityEngine.Vector3, System.Single, System.Single, System.Single)
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundInstance.Play3D(Vector3,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundInstance.Play3D(Vector3, System.Single, System.Single, System.Single)
   nameWithType: SoundInstance.Play3D(Vector3, Single, Single, Single)
 - uid: Stem.SoundInstance.Play3D*
   name: Play3D
@@ -1468,6 +2061,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundInstance.Playing
   nameWithType: SoundInstance.Playing
+- uid: Stem.SoundInstance.Position
+  name: Position
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Position
+  commentId: P:Stem.SoundInstance.Position
+  fullName: Stem.SoundInstance.Position
+  nameWithType: SoundInstance.Position
+- uid: Stem.SoundInstance.Position*
+  name: Position
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Position_
+  commentId: Overload:Stem.SoundInstance.Position
+  isSpec: "True"
+  fullName: Stem.SoundInstance.Position
+  nameWithType: SoundInstance.Position
 - uid: Stem.SoundInstance.Sound
   name: Sound
   href: api/Stem.SoundInstance.html#Stem_SoundInstance_Sound
@@ -1494,6 +2100,19 @@ references:
   isSpec: "True"
   fullName: Stem.SoundInstance.Stop
   nameWithType: SoundInstance.Stop
+- uid: Stem.SoundInstance.Target
+  name: Target
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Target
+  commentId: P:Stem.SoundInstance.Target
+  fullName: Stem.SoundInstance.Target
+  nameWithType: SoundInstance.Target
+- uid: Stem.SoundInstance.Target*
+  name: Target
+  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Target_
+  commentId: Overload:Stem.SoundInstance.Target
+  isSpec: "True"
+  fullName: Stem.SoundInstance.Target
+  nameWithType: SoundInstance.Target
 - uid: Stem.SoundInstance.TimeSamples
   name: TimeSamples
   href: api/Stem.SoundInstance.html#Stem_SoundInstance_TimeSamples
@@ -1507,19 +2126,6 @@ references:
   isSpec: "True"
   fullName: Stem.SoundInstance.TimeSamples
   nameWithType: SoundInstance.TimeSamples
-- uid: Stem.SoundInstance.Transform
-  name: Transform
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Transform
-  commentId: P:Stem.SoundInstance.Transform
-  fullName: Stem.SoundInstance.Transform
-  nameWithType: SoundInstance.Transform
-- uid: Stem.SoundInstance.Transform*
-  name: Transform
-  href: api/Stem.SoundInstance.html#Stem_SoundInstance_Transform_
-  commentId: Overload:Stem.SoundInstance.Transform
-  isSpec: "True"
-  fullName: Stem.SoundInstance.Transform
-  nameWithType: SoundInstance.Transform
 - uid: Stem.SoundInstance.UnPause
   name: UnPause()
   href: api/Stem.SoundInstance.html#Stem_SoundInstance_UnPause
@@ -1565,6 +2171,25 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.Banks
   nameWithType: SoundManager.Banks
+- uid: Stem.SoundManager.DeregisterBank(Stem.SoundBank)
+  name: DeregisterBank(SoundBank)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_DeregisterBank_Stem_SoundBank_
+  commentId: M:Stem.SoundManager.DeregisterBank(Stem.SoundBank)
+  fullName: Stem.SoundManager.DeregisterBank(Stem.SoundBank)
+  nameWithType: SoundManager.DeregisterBank(SoundBank)
+- uid: Stem.SoundManager.DeregisterBank*
+  name: DeregisterBank
+  href: api/Stem.SoundManager.html#Stem_SoundManager_DeregisterBank_
+  commentId: Overload:Stem.SoundManager.DeregisterBank
+  isSpec: "True"
+  fullName: Stem.SoundManager.DeregisterBank
+  nameWithType: SoundManager.DeregisterBank
+- uid: Stem.SoundManager.GetSound(System.Int32)
+  name: GetSound(Int32)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_Int32_
+  commentId: M:Stem.SoundManager.GetSound(System.Int32)
+  fullName: Stem.SoundManager.GetSound(System.Int32)
+  nameWithType: SoundManager.GetSound(Int32)
 - uid: Stem.SoundManager.GetSound(System.String)
   name: GetSound(String)
   href: api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_String_
@@ -1578,12 +2203,37 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.GetSound
   nameWithType: SoundManager.GetSound
+- uid: Stem.SoundManager.GetSoundBus(System.Int32)
+  name: GetSoundBus(Int32)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_Int32_
+  commentId: M:Stem.SoundManager.GetSoundBus(System.Int32)
+  fullName: Stem.SoundManager.GetSoundBus(System.Int32)
+  nameWithType: SoundManager.GetSoundBus(Int32)
+- uid: Stem.SoundManager.GetSoundBus(System.String)
+  name: GetSoundBus(String)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_String_
+  commentId: M:Stem.SoundManager.GetSoundBus(System.String)
+  fullName: Stem.SoundManager.GetSoundBus(System.String)
+  nameWithType: SoundManager.GetSoundBus(String)
+- uid: Stem.SoundManager.GetSoundBus*
+  name: GetSoundBus
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_
+  commentId: Overload:Stem.SoundManager.GetSoundBus
+  isSpec: "True"
+  fullName: Stem.SoundManager.GetSoundBus
+  nameWithType: SoundManager.GetSoundBus
 - uid: Stem.SoundManager.GrabSound
   name: GrabSound()
   href: api/Stem.SoundManager.html#Stem_SoundManager_GrabSound
   commentId: M:Stem.SoundManager.GrabSound
   fullName: Stem.SoundManager.GrabSound()
   nameWithType: SoundManager.GrabSound()
+- uid: Stem.SoundManager.GrabSound(System.Int32)
+  name: GrabSound(Int32)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_GrabSound_System_Int32_
+  commentId: M:Stem.SoundManager.GrabSound(System.Int32)
+  fullName: Stem.SoundManager.GrabSound(System.Int32)
+  nameWithType: SoundManager.GrabSound(Int32)
 - uid: Stem.SoundManager.GrabSound(System.String)
   name: GrabSound(String)
   href: api/Stem.SoundManager.html#Stem_SoundManager_GrabSound_System_String_
@@ -1610,6 +2260,30 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.Pause
   nameWithType: SoundManager.Pause
+- uid: Stem.SoundManager.Play(System.Int32)
+  name: Play(Int32)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play_System_Int32_
+  commentId: M:Stem.SoundManager.Play(System.Int32)
+  fullName: Stem.SoundManager.Play(System.Int32)
+  nameWithType: SoundManager.Play(Int32)
+- uid: Stem.SoundManager.Play(System.Int32,System.Single)
+  name: Play(Int32, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play_System_Int32_System_Single_
+  commentId: M:Stem.SoundManager.Play(System.Int32,System.Single)
+  fullName: Stem.SoundManager.Play(System.Int32, System.Single)
+  nameWithType: SoundManager.Play(Int32, Single)
+- uid: Stem.SoundManager.Play(System.Int32,System.Single,System.Single)
+  name: Play(Int32, Single, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play_System_Int32_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play(System.Int32,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play(System.Int32, System.Single, System.Single)
+  nameWithType: SoundManager.Play(Int32, Single, Single)
+- uid: Stem.SoundManager.Play(System.Int32,System.Single,System.Single,System.Single)
+  name: Play(Int32, Single, Single, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play_System_Int32_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play(System.Int32,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play(System.Int32, System.Single, System.Single, System.Single)
+  nameWithType: SoundManager.Play(Int32, Single, Single, Single)
 - uid: Stem.SoundManager.Play(System.String)
   name: Play(String)
   href: api/Stem.SoundManager.html#Stem_SoundManager_Play_System_String_
@@ -1641,29 +2315,53 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.Play
   nameWithType: SoundManager.Play
-- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3)
+- uid: Stem.SoundManager.Play3D(System.Int32,Vector3)
+  name: Play3D(Int32, Vector3)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_Int32_Vector3_
+  commentId: M:Stem.SoundManager.Play3D(System.Int32,Vector3)
+  fullName: Stem.SoundManager.Play3D(System.Int32, Vector3)
+  nameWithType: SoundManager.Play3D(Int32, Vector3)
+- uid: Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single)
+  name: Play3D(Int32, Vector3, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_Int32_Vector3_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.Int32, Vector3, System.Single)
+  nameWithType: SoundManager.Play3D(Int32, Vector3, Single)
+- uid: Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single,System.Single)
+  name: Play3D(Int32, Vector3, Single, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_Int32_Vector3_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.Int32, Vector3, System.Single, System.Single)
+  nameWithType: SoundManager.Play3D(Int32, Vector3, Single, Single)
+- uid: Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single,System.Single,System.Single)
+  name: Play3D(Int32, Vector3, Single, Single, Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_Int32_Vector3_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.Int32,Vector3,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.Int32, Vector3, System.Single, System.Single, System.Single)
+  nameWithType: SoundManager.Play3D(Int32, Vector3, Single, Single, Single)
+- uid: Stem.SoundManager.Play3D(System.String,Vector3)
   name: Play3D(String, Vector3)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_
-  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3)
-  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_
+  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3)
+  fullName: Stem.SoundManager.Play3D(System.String, Vector3)
   nameWithType: SoundManager.Play3D(String, Vector3)
-- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single)
   name: Play3D(String, Vector3, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single)
-- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single)
   name: Play3D(String, Vector3, Single, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single, Single)
-- uid: Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single,System.Single)
+- uid: Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single,System.Single)
   name: Play3D(String, Vector3, Single, Single, Single)
-  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_UnityEngine_Vector3_System_Single_System_Single_System_Single_
-  commentId: M:Stem.SoundManager.Play3D(System.String,UnityEngine.Vector3,System.Single,System.Single,System.Single)
-  fullName: Stem.SoundManager.Play3D(System.String, UnityEngine.Vector3, System.Single, System.Single, System.Single)
+  href: api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_String_Vector3_System_Single_System_Single_System_Single_
+  commentId: M:Stem.SoundManager.Play3D(System.String,Vector3,System.Single,System.Single,System.Single)
+  fullName: Stem.SoundManager.Play3D(System.String, Vector3, System.Single, System.Single, System.Single)
   nameWithType: SoundManager.Play3D(String, Vector3, Single, Single, Single)
 - uid: Stem.SoundManager.Play3D*
   name: Play3D
@@ -1737,6 +2435,18 @@ references:
   isSpec: "True"
   fullName: Stem.SoundManager.UnPause
   nameWithType: SoundManager.UnPause
+- uid: Stem.SoundRemovedDelegate
+  name: SoundRemovedDelegate
+  href: api/Stem.SoundRemovedDelegate.html
+  commentId: T:Stem.SoundRemovedDelegate
+  fullName: Stem.SoundRemovedDelegate
+  nameWithType: SoundRemovedDelegate
+- uid: Stem.SoundRenamedDelegate
+  name: SoundRenamedDelegate
+  href: api/Stem.SoundRenamedDelegate.html
+  commentId: T:Stem.SoundRenamedDelegate
+  fullName: Stem.SoundRenamedDelegate
+  nameWithType: SoundRenamedDelegate
 - uid: Stem.SoundVariation
   name: SoundVariation
   href: api/Stem.SoundVariation.html
@@ -1925,3 +2635,9 @@ references:
   isSpec: "True"
   fullName: Stem.SoundVariation.Volume
   nameWithType: SoundVariation.Volume
+- uid: Stem.TrackChangedDelegate
+  name: TrackChangedDelegate
+  href: api/Stem.TrackChangedDelegate.html
+  commentId: T:Stem.TrackChangedDelegate
+  fullName: Stem.TrackChangedDelegate
+  nameWithType: TrackChangedDelegate

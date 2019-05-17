@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum AttenuationMode
-   </title>
+    <title>ID Attributes </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum AttenuationMode
-   ">
+    <meta name="title" content="ID Attributes ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,43 +66,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stem.AttenuationMode">
-  
-  
-  <h1 id="Stem_AttenuationMode" data-uid="Stem.AttenuationMode" class="text-break">Enum AttenuationMode
-  </h1>
-  <div class="markdown level0 summary"><p>Defines how sound volume will be lowered over the distance.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
-  <h6><strong>Assembly</strong>: Stem.dll</h6>
-  <h5 id="Stem_AttenuationMode_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public enum AttenuationMode</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Stem_AttenuationMode_Linear">Linear</td>
-        <td><p>A linear rolloff.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Stem_AttenuationMode_Logarithmic">Logarithmic</td>
-        <td><p>A real-world rolloff.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="id-attributes">ID Attributes</h1>
+
+<h2 id="description">Description</h2>
+<p>All content in Stem has unique and persistent identifiers. That means once the content is created, it's ID is fixed, thus allowing to reference it. There are four attributes for each type of content (sound, sound bus, playlist, music player) which help to easily assign content ID in the Inspector:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundIDAttribute.html">SoundID</a></li>
+<li><a class="xref" href="../api/Stem.SoundBusIDAttribute.html">SoundBusID</a></li>
+<li><a class="xref" href="../api/Stem.PlaylistIDAttribute.html">PlaylistID</a></li>
+<li><a class="xref" href="../api/Stem.MusicPlayerIDAttribute.html">MusicPlayerID</a></li>
+</ul>
+<p>It's recommended to use IDs instead of string references by default. However, string references might be useful in case there're multiple banks with same content names but different audio data. In this case, referencing by string allows using multiple banks as audio skins by changing <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property in the corresponding manager.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="inspector">Inspector</h3>
+<p><img src="../images/programming_id_attributes_ui.png" alt="Inspector"></p>
+<h3 id="code">Code</h3>
+<pre><code class="lang-csharp">using UnityEngine;
+
+public class IDTester : MonoBehaviour
+{
+	[Stem.SoundID]
+	public int soundId = 0;
+
+	[Stem.SoundBusID]
+	public int soundBusId = 0;
+
+	[Stem.PlaylistID]
+	public int playlistId = 0;
+
+	[Stem.MusicPlayerID]
+	public int musicPlayerId = 0;
+
+	private void Start()
+	{
+		Stem.Sound sound = Stem.SoundManager.GetSound(soundId);
+		if (sound != null)
+			Debug.LogFormat(&quot;Found sound: {0}&quot;, sound.Name);
+
+		Stem.SoundBus soundBus = Stem.SoundManager.GetSoundBus(soundBusId);
+		if (soundBus != null)
+			Debug.LogFormat(&quot;Found sound bus: {0}&quot;, soundBus.Name);
+
+		Stem.Playlist playlist = Stem.MusicManager.GetPlaylist(playlistId);
+		if (playlist != null)
+			Debug.LogFormat(&quot;Found playlist: {0}&quot;, playlist.Name);
+
+		Stem.MusicPlayer musicPlayer = Stem.MusicManager.GetMusicPlayer(musicPlayerId);
+		if (musicPlayer != null)
+			Debug.LogFormat(&quot;Found music player: {0}&quot;, musicPlayer.Name);
+	}
+}
+
+</code></pre>
 </article>
           </div>
           
@@ -113,10 +127,7 @@ public enum AttenuationMode</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_AttenuationMode.md&amp;value=---%0Auid%3A%20Stem.AttenuationMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/programming_id_attributes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

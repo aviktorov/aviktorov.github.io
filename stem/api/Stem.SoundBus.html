@@ -81,41 +81,22 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SoundBus</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_SoundBus_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class SoundBus</code></pre>
+public class SoundBus : ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_AllowVoiceStealing.md&amp;value=---%0Auid%3A%20Stem.SoundBus.AllowVoiceStealing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L205">View Source</a>
+  </span>
   <a id="Stem_SoundBus_AllowVoiceStealing_" data-uid="Stem.SoundBus.AllowVoiceStealing*"></a>
   <h4 id="Stem_SoundBus_AllowVoiceStealing" data-uid="Stem.SoundBus.AllowVoiceStealing">AllowVoiceStealing</h4>
   <div class="markdown level1 summary"><p>The flag indicating whether the sound bus can stop the oldest playing sound and play the new one if <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Polyphony">Polyphony</a> limit is exceeded.</p>
@@ -141,8 +122,13 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Audible.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Audible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L84">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Audible_" data-uid="Stem.SoundBus.Audible*"></a>
   <h4 id="Stem_SoundBus_Audible" data-uid="Stem.SoundBus.Audible">Audible</h4>
   <div class="markdown level1 summary"><p>The flag indicating if the sound bus can be heard.</p>
@@ -168,8 +154,13 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Bank.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Bank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L99">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Bank_" data-uid="Stem.SoundBus.Bank*"></a>
   <h4 id="Stem_SoundBus_Bank" data-uid="Stem.SoundBus.Bank">Bank</h4>
   <div class="markdown level1 summary"><p>The sound bank the sound bus belongs to.</p>
@@ -195,8 +186,45 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_ID.md&amp;value=---%0Auid%3A%20Stem.SoundBus.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L75">View Source</a>
+  </span>
+  <a id="Stem_SoundBus_ID_" data-uid="Stem.SoundBus.ID*"></a>
+  <h4 id="Stem_SoundBus_ID" data-uid="Stem.SoundBus.ID">ID</h4>
+  <div class="markdown level1 summary"><p>The unique identifier for fast access to the sound bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A unique identifier value of the sound bus.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_MixerGroup.md&amp;value=---%0Auid%3A%20Stem.SoundBus.MixerGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L175">View Source</a>
+  </span>
   <a id="Stem_SoundBus_MixerGroup_" data-uid="Stem.SoundBus.MixerGroup*"></a>
   <h4 id="Stem_SoundBus_MixerGroup" data-uid="Stem.SoundBus.MixerGroup">MixerGroup</h4>
   <div class="markdown level1 summary"><p>The reference to an audio mixer group. Please refer to Unity Scripting Reference for details.</p>
@@ -216,14 +244,19 @@ public class SoundBus</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Audio.AudioMixerGroup</span></td>
+        <td><span class="xref">AudioMixerGroup</span></td>
         <td><p>A reference to a mixer group.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Muted.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Muted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L143">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Muted_" data-uid="Stem.SoundBus.Muted*"></a>
   <h4 id="Stem_SoundBus_Muted" data-uid="Stem.SoundBus.Muted">Muted</h4>
   <div class="markdown level1 summary"><p>The flag indicating if the sound bus is muted and can't be heard.</p>
@@ -252,8 +285,13 @@ public class SoundBus</code></pre>
   <h5 id="Stem_SoundBus_Muted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This flag may be overridden by the <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Soloed">Soloed</a> flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Name.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L121">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Name_" data-uid="Stem.SoundBus.Name*"></a>
   <h4 id="Stem_SoundBus_Name" data-uid="Stem.SoundBus.Name">Name</h4>
   <div class="markdown level1 summary"><p>The name of the sound bus. Used for fast search in corresponding sound bank.</p>
@@ -279,8 +317,13 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Polyphony.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Polyphony%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L195">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Polyphony_" data-uid="Stem.SoundBus.Polyphony*"></a>
   <h4 id="Stem_SoundBus_Polyphony" data-uid="Stem.SoundBus.Polyphony">Polyphony</h4>
   <div class="markdown level1 summary"><p>The number of maximum allowed simultaneously playing sounds in the sound bus.</p>
@@ -306,8 +349,13 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Soloed.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Soloed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L156">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Soloed_" data-uid="Stem.SoundBus.Soloed*"></a>
   <h4 id="Stem_SoundBus_Soloed" data-uid="Stem.SoundBus.Soloed">Soloed</h4>
   <div class="markdown level1 summary"><p>The flag indicating if the sound bus is soloed. If set to true, all other non-solo sound buses won't be audible.</p>
@@ -336,8 +384,13 @@ public class SoundBus</code></pre>
   <h5 id="Stem_SoundBus_Soloed_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This flag may override the <a class="xref" href="Stem.SoundBus.html#Stem_SoundBus_Muted">Muted</a> flag, i.e. if the sound bus is simultaneously muted and soloed it&apos;ll be audible.</p>
 </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Unfolded.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Unfolded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L218">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Unfolded_" data-uid="Stem.SoundBus.Unfolded*"></a>
   <h4 id="Stem_SoundBus_Unfolded" data-uid="Stem.SoundBus.Unfolded">Unfolded</h4>
   <div class="markdown level1 summary"><p>The flag indicating whether the sound bank inspector should show advanced settings for the sound bus.</p>
@@ -366,8 +419,13 @@ public class SoundBus</code></pre>
   <h5 id="Stem_SoundBus_Unfolded_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is used only by the sound bank inspector and does nothing during runtime.</p>
 </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_Volume.md&amp;value=---%0Auid%3A%20Stem.SoundBus.Volume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L185">View Source</a>
+  </span>
   <a id="Stem_SoundBus_Volume_" data-uid="Stem.SoundBus.Volume*"></a>
   <h4 id="Stem_SoundBus_Volume" data-uid="Stem.SoundBus.Volume">Volume</h4>
   <div class="markdown level1 summary"><p>The volume of the sound bus.</p>
@@ -393,6 +451,46 @@ public class SoundBus</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.SoundBus.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L65">View Source</a>
+  </span>
+  <a id="Stem_SoundBus_OnAfterDeserialize_" data-uid="Stem.SoundBus.OnAfterDeserialize*"></a>
+  <h4 id="Stem_SoundBus_OnAfterDeserialize" data-uid="Stem.SoundBus.OnAfterDeserialize">OnAfterDeserialize()</h4>
+  <div class="markdown level1 summary"><p>Prepares sound for runtime use after deserialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
+  </div>
+  <h5 id="Stem_SoundBus_OnAfterDeserialize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is automatically called by Unity during deserialization process. Don&apos;t call it manually.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.SoundBus.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L55">View Source</a>
+  </span>
+  <a id="Stem_SoundBus_OnBeforeSerialize_" data-uid="Stem.SoundBus.OnBeforeSerialize*"></a>
+  <h4 id="Stem_SoundBus_OnBeforeSerialize" data-uid="Stem.SoundBus.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"><p>Prepares sound for serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  <h5 id="Stem_SoundBus_OnBeforeSerialize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is automatically called by Unity during serialization process. Don&apos;t call it manually.</p>
+</div>
 </article>
           </div>
           
@@ -400,6 +498,12 @@ public class SoundBus</code></pre>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBus.md&amp;value=---%0Auid%3A%20Stem.SoundBus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBus.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

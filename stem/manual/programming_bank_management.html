@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bank Management </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bank Management ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bank-management">Bank Management</h1>
+
+<h2 id="description">Description</h2>
+<p>By default, Stem automatically manages all banks assets. In case of a manually created bank, it's required to register it in the corresponding manager for proper use.</p>
+<h2 id="creating-banks-at-runtime">Creating banks at runtime</h2>
+<p>As banks are inherited from ScriptableObject, use ScriptableObject.CreateInstance to create a bank instance. Note that there'll be no .asset file created in the project.</p>
+<pre><code class="lang-csharp">Stem.SoundBank bank = ScriptableObject.CreateInstance&lt;Stem.SoundBank&gt;();
+// add bank content here
+</code></pre>
+<pre><code class="lang-csharp">Stem.MusicBank bank = ScriptableObject.CreateInstance&lt;Stem.MusicBank&gt;();
+// add bank content here
+</code></pre>
+<h2 id="registration">Registration</h2>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_RegisterBank_Stem_SoundBank_">Stem.SoundManager.RegisterBank</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_RegisterBank_Stem_MusicBank_">Stem.MusicManager.RegisterBank</a> to register a bank in the corresponding manager. If the return value is true, the bank was successfully registered and is ready to use.</p>
+<p>Stem will automatically create all required runtime data like game objects, audio sources, etc.</p>
+<pre><code class="lang-csharp">if (Stem.SoundManager.RegisterBank(bank))
+{
+	// it's ready to use
+}
+</code></pre>
+<pre><code class="lang-csharp">if (Stem.MusicManager.RegisterBank(bank))
+{
+	// it's ready to use
+}
+</code></pre>
+<h2 id="primary-bank">Primary bank</h2>
+<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_PrimaryBank">Stem.SoundManager.PrimaryBank</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_PrimaryBank">Stem.MusicManager.PrimaryBank</a> property to set a primary bank to the corresponding manager. Primary banks are used to resolve name collisions during the search. Please refer to <a href="programming_bank_content.html">Bank Content</a> article to learn more.</p>
+<p>This might be useful in case there're multiple banks with similar content but different audio data. Think of it as audio skin.</p>
+<pre><code class="lang-csharp">Stem.SoundManager.PrimaryBank = bank;
+</code></pre>
+<pre><code class="lang-csharp">Stem.MusicManager.PrimaryBank = bank;
+</code></pre>
+<h2 id="bank-collection">Bank collection</h2>
+<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Banks">Stem.SoundManager.Banks</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Banks">Stem.MusicManager.Banks</a> property to get a read-only collection of registered banks.</p>
+<pre><code class="lang-csharp">int totalSounds = 0;
+int totalSoundBuses = 0;
+foreach (Stem.SoundBank bank in Stem.SoundManager.Banks)
+{
+	totalSounds += bank.Sounds.Count;
+	totalSoundBuses += bank.Buses.Count;
+}
+</code></pre>
+<pre><code class="lang-csharp">int totalPlaylists = 0;
+int totalMusicPlayers = 0;
+foreach (Stem.MusicBank bank in Stem.MusicManager.Banks)
+{
+	totalPlaylists += bank.Playlists.Count;
+	totalMusicPlayers += bank.Players.Count;
+}
+</code></pre>
+<h2 id="deregistration">Deregistration</h2>
+<p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_DeregisterBank_Stem_SoundBank_">Stem.SoundManager.DeregisterBank</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_DeregisterBank_Stem_MusicBank_">Stem.MusicManager.DeregisterBank</a> to deregister a bank in the corresponding manager so it won't be in the search.</p>
+<p>Stem will automatically destroy all bank's runtime data like game objects, audio sources, etc.</p>
+<pre><code class="lang-csharp">Stem.SoundManager.DeregisterBank(bank);
+</code></pre>
+<pre><code class="lang-csharp">Stem.MusicManager.DeregisterBank(bank);
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/programming_bank_management.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
