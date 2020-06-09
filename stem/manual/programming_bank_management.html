@@ -92,13 +92,6 @@
 	// it's ready to use
 }
 </code></pre>
-<h2 id="primary-bank">Primary bank</h2>
-<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_PrimaryBank">Stem.SoundManager.PrimaryBank</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_PrimaryBank">Stem.MusicManager.PrimaryBank</a> property to set a primary bank to the corresponding manager. Primary banks are used to resolve name collisions during the search. Please refer to <a href="programming_bank_content.html">Bank Content</a> article to learn more.</p>
-<p>This might be useful in case there're multiple banks with similar content but different audio data. Think of it as audio skin.</p>
-<pre><code class="lang-csharp">Stem.SoundManager.PrimaryBank = bank;
-</code></pre>
-<pre><code class="lang-csharp">Stem.MusicManager.PrimaryBank = bank;
-</code></pre>
 <h2 id="bank-collection">Bank collection</h2>
 <p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Banks">Stem.SoundManager.Banks</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Banks">Stem.MusicManager.Banks</a> property to get a read-only collection of registered banks.</p>
 <pre><code class="lang-csharp">int totalSounds = 0;
@@ -132,7 +125,7 @@ foreach (Stem.MusicBank bank in Stem.MusicManager.Banks)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/programming_bank_management.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/programming_bank_management.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

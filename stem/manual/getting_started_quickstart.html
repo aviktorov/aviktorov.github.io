@@ -70,92 +70,83 @@
 <h1 id="quickstart">Quickstart</h1>
 
 <h2 id="create-assets">Create assets</h2>
-<p>Press right mouse button on some folder within Assets folder.</p>
+<p>Press the right mouse button on any folder to open the Assets menu.</p>
 <ol>
-<li>Choose &quot;Create -&gt; Stem -&gt; Music Bank&quot; to create a music bank.</li>
-<li>Choose &quot;Create -&gt; Stem -&gt; Sound Bank&quot; to create a sound bank.</li>
+<li>Choose &quot;Create -&gt; Stem -&gt; Music Bank&quot; to create new music bank.</li>
+<li>Choose &quot;Create -&gt; Stem -&gt; Sound Bank&quot; to create new sound bank.</li>
 </ol>
 <p><img src="../images/getting_started_quickstart_step1.png" alt="Adding sound and music bank assets"></p>
 <h2 id="setup-sound-bank">Setup sound bank</h2>
-<p>Select a sound bank asset and add a new sound by pressing the &quot;Add Sound&quot; button in the inspector window.</p>
+<p>1. Select a sound bank asset and add a new sound by pressing the &quot;Add Sound&quot; button in the inspector window.</p>
 <p><img src="../images/getting_started_quickstart_step2_1.png" alt="Adding new sound to the bank"></p>
-<p>Expand sound settings by toggling the &quot;Edit&quot; button.</p>
+<p>2. Expand sound settings by clicking the arrow near the sound name.</p>
 <p><img src="../images/getting_started_quickstart_step2_2.png" alt="Expanding sound settings"></p>
-<p>Add the first variation to the sound by pressing the &quot;+&quot; button in the &quot;Variations&quot; list.</p>
+<p>3. Add the first variation to the sound by pressing the &quot;+&quot; button in the &quot;Variations&quot; list.</p>
 <p><img src="../images/getting_started_quickstart_step2_3.png" alt="Adding first variation"></p>
-<p>Assign an audio clip to the variation by dragging it into the &quot;Clip&quot; property.</p>
+<p>4. Assign an audio clip to the variation by dragging it into the &quot;Clip&quot; property.</p>
 <p><img src="../images/getting_started_quickstart_step2_4.png" alt="Dragging AudioClip"></p>
-<p>Set sound name, adjust parameters and randomization settings.</p>
+<p>5. Set sound name, adjust parameters and randomization settings.</p>
 <p><img src="../images/getting_started_quickstart_step2_5.png" alt="Adjusting sound parameters"></p>
 <h2 id="setup-music-bank">Setup music bank</h2>
-<p>Select a music bank asset and add a new playlist by pressing the &quot;Add Playlist&quot; button in the inspector window.</p>
+<p>1. Select a music bank asset and add a new playlist by pressing the &quot;Add Playlist&quot; button in the inspector window.</p>
 <p><img src="../images/getting_started_quickstart_step3_1.png" alt="Adding new playlist to the bank"></p>
-<p>Expand playlist settings by toggling the &quot;Edit&quot; button.</p>
+<p>2. Expand playlist settings by clicking the arrow near the playlist name.</p>
 <p><img src="../images/getting_started_quickstart_step3_2.png" alt="Expanding playlist settings"></p>
-<p>Add the first track to the playlist by pressing the &quot;+&quot; button in the &quot;Tracks&quot; list.</p>
+<p>3. Add the first track to the playlist by pressing the &quot;+&quot; button in the &quot;Tracks&quot; list.</p>
 <p><img src="../images/getting_started_quickstart_step3_3.png" alt="Adding first track"></p>
-<p>Assign an audio clip to the track.</p>
+<p>4. Assign an audio clip to the track.</p>
 <p><img src="../images/getting_started_quickstart_step3_4.png" alt="Dragging AudioClip"></p>
-<p>Set playlist name, adjust track volume.</p>
+<p>5. Set playlist name, adjust track volume.</p>
 <p><img src="../images/getting_started_quickstart_step3_5.png" alt="Adjusting playlist parameters"></p>
-<p>Add a new music player by pressing the &quot;Add Player&quot; button in the inspector window.</p>
+<p>6. Add a new music player by pressing the &quot;Add Player&quot; button in the inspector window.</p>
 <p><img src="../images/getting_started_quickstart_step3_6.png" alt="Adding new music player to the bank"></p>
-<p>Expand music player settings by toggling the &quot;Edit&quot; button.</p>
+<p>7. Expand music player settings by clicking the arrow near the music player name.</p>
 <p><img src="../images/getting_started_quickstart_step3_7.png" alt="Expanding playlist settings"></p>
-<p>Choose the playlist from the &quot;Playlist&quot; drop-down menu.</p>
+<p>8. Choose the playlist from the &quot;Playlist&quot; drop-down menu.</p>
 <p><img src="../images/getting_started_quickstart_step3_8.png" alt="Adding first track"></p>
-<p>Set music player name, adjust parameters.</p>
+<p>9. Set music player name, adjust parameters.</p>
 <p><img src="../images/getting_started_quickstart_step3_9.png" alt="Adjusting music player parameters"></p>
 <h2 id="play-one-shot-sounds">Play one-shot sounds</h2>
+<h3 id="by-sound-id-in-the-script">By sound ID in the script</h3>
 <p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_System_String_">Stem.SoundManager.Play</a> to play one-shot sounds.</p>
-<h3 id="by-sound-id">By sound ID</h3>
 <pre><code class="lang-csharp">using UnityEngine;
 
-public class SimpleGun : MonoBehaviour
+public class PlayerHit : MonoBehaviour
 {
 	[Stem.SoundID]
 	public int soundID = 0;
 
-	public float timeBetweenBullets = 0.15f;
-	private float timer = 0.0f;
-
-	private void Update()
+	private void OnTriggerEnter(Collider collider)
 	{
-		timer += Time.deltaTime;
-
-		if(Input.GetButton(&quot;Fire1&quot;) &amp;&amp; timer &gt;= timeBetweenBullets)
-		{
-			timer = 0.0f;
-			Stem.SoundManager.Play(soundID);
-		}
+		if (collider.tag == &quot;Enemy&quot;)
+			Stem.SoundManager.Play3D(soundID, transform.position);
 	}
 }
 </code></pre>
-<h3 id="by-sound-name">By sound name</h3>
+<h3 id="by-sound-name-in-the-script">By sound name in the script</h3>
+<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_System_String_">Stem.SoundManager.Play</a> to play one-shot sounds.</p>
 <pre><code class="lang-csharp">using UnityEngine;
 
-public class SimpleGun : MonoBehaviour
+public class PlayerHit : MonoBehaviour
 {
-	public string soundName = &quot;Shoot&quot;;
+	public string soundName = &quot;Hit&quot;;
 
-	public float timeBetweenBullets = 0.15f;
-	private float timer = 0.0f;
-
-	private void Update()
+	private void OnTriggerEnter(Collider collider)
 	{
-		timer += Time.deltaTime;
-
-		if(Input.GetButton(&quot;Fire1&quot;) &amp;&amp; timer &gt;= timeBetweenBullets)
-		{
-			timer = 0.0f;
-			Stem.SoundManager.Play(soundName);
-		}
+		if (collider.tag == &quot;Enemy&quot;)
+			Stem.SoundManager.Play3D(soundName, transform.position);
 	}
 }
 </code></pre>
+<h3 id="stem-pro-with-audioevents-component"><strong>(Stem Pro)</strong> With AudioEvents component</h3>
+<p>Add new audio event, set event type to &quot;On Trigger Enter&quot;, add a single condition and &quot;Play Sound&quot; action.</p>
+<p><img src="../images/getting_started_quickstart_audio_events.png" alt="Adjusting music player parameters"></p>
 <h2 id="start-music-playback">Start music playback</h2>
+<h3 id="via-play-on-start-option-in-the-music-bank">Via &quot;Play On Start&quot; option in the music bank</h3>
+<p>Check &quot;Play On Start&quot; option to automatically play current music player when the game starts.</p>
+<p><img src="../images/getting_started_quickstart_play_on_start.png" alt="Play On Start checkbox"></p>
+<h3 id="by-music-player-id-in-the-script">By music player ID in the script</h3>
 <p>Use <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_System_String_">Stem.MusicManager.Play</a> to start music playback during level startup.</p>
-<h3 id="by-music-player-id">By music player ID</h3>
 <pre><code class="lang-csharp">using UnityEngine;
 
 public class LevelStartup : MonoBehaviour
@@ -169,7 +160,8 @@ public class LevelStartup : MonoBehaviour
 	}
 }
 </code></pre>
-<h3 id="by-music-player-name">By music player name</h3>
+<h3 id="by-music-player-name-in-the-script">By music player name in the script</h3>
+<p>Use <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_System_String_">Stem.MusicManager.Play</a> to start music playback during level startup.</p>
 <pre><code class="lang-csharp">using UnityEngine;
 
 public class LevelStartup : MonoBehaviour
@@ -190,7 +182,7 @@ public class LevelStartup : MonoBehaviour
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/getting_started_quickstart.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/getting_started_quickstart.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

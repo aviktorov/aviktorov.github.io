@@ -81,21 +81,120 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Playlist</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stem.IAudioClipContainer.html">IAudioClipContainer</a></div>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_Playlist_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class Playlist : ISerializationCallbackReceiver</code></pre>
+public class Playlist : IAudioClipContainer, ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_Bank.md&amp;value=---%0Auid%3A%20Stem.Playlist.Bank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_AudioClipManagementMode.md&amp;value=---%0Auid%3A%20Stem.Playlist.AudioClipManagementMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L103">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L251">View Source</a>
+  </span>
+  <a id="Stem_Playlist_AudioClipManagementMode_" data-uid="Stem.Playlist.AudioClipManagementMode*"></a>
+  <h4 id="Stem_Playlist_AudioClipManagementMode" data-uid="Stem.Playlist.AudioClipManagementMode">AudioClipManagementMode</h4>
+  <div class="markdown level1 summary"><p>The audio clip management mode of the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClipManagementMode AudioClipManagementMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.AudioClipManagementMode.html">AudioClipManagementMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Playlist_AudioClipManagementMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used only if <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag is true.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_AudioClipUnloadInterval.md&amp;value=---%0Auid%3A%20Stem.Playlist.AudioClipUnloadInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L264">View Source</a>
+  </span>
+  <a id="Stem_Playlist_AudioClipUnloadInterval_" data-uid="Stem.Playlist.AudioClipUnloadInterval*"></a>
+  <h4 id="Stem_Playlist_AudioClipUnloadInterval" data-uid="Stem.Playlist.AudioClipUnloadInterval">AudioClipUnloadInterval</h4>
+  <div class="markdown level1 summary"><p>The audio clip unload interval of the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AudioClipUnloadInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>A time interval in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Playlist_AudioClipUnloadInterval_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used only if <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag is true and <a class="xref" href="Stem.Playlist.html#Stem_Playlist_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> return value is <a class="xref" href="Stem.AudioClipManagementMode.html#Stem_AudioClipManagementMode_UnloadUnused">UnloadUnused</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_Bank.md&amp;value=---%0Auid%3A%20Stem.Playlist.Bank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L175">View Source</a>
   </span>
   <a id="Stem_Playlist_Bank_" data-uid="Stem.Playlist.Bank*"></a>
   <h4 id="Stem_Playlist_Bank" data-uid="Stem.Playlist.Bank">Bank</h4>
@@ -124,10 +223,10 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_ID.md&amp;value=---%0Auid%3A%20Stem.Playlist.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_ID.md&amp;value=---%0Auid%3A%20Stem.Playlist.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L65">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L137">View Source</a>
   </span>
   <a id="Stem_Playlist_ID_" data-uid="Stem.Playlist.ID*"></a>
   <h4 id="Stem_Playlist_ID" data-uid="Stem.Playlist.ID">ID</h4>
@@ -156,10 +255,10 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_Name.md&amp;value=---%0Auid%3A%20Stem.Playlist.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_Name.md&amp;value=---%0Auid%3A%20Stem.Playlist.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L125">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L197">View Source</a>
   </span>
   <a id="Stem_Playlist_Name_" data-uid="Stem.Playlist.Name*"></a>
   <h4 id="Stem_Playlist_Name" data-uid="Stem.Playlist.Name">Name</h4>
@@ -188,10 +287,49 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_Tracks.md&amp;value=---%0Auid%3A%20Stem.Playlist.Tracks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_OverrideAudioClipManagement.md&amp;value=---%0Auid%3A%20Stem.Playlist.OverrideAudioClipManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L88">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L238">View Source</a>
+  </span>
+  <a id="Stem_Playlist_OverrideAudioClipManagement_" data-uid="Stem.Playlist.OverrideAudioClipManagement*"></a>
+  <h4 id="Stem_Playlist_OverrideAudioClipManagement" data-uid="Stem.Playlist.OverrideAudioClipManagement">OverrideAudioClipManagement</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the playlist should use its own audio clip management mode and unload interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverrideAudioClipManagement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the playlist has overridden audio clip management and unload interval. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Playlist_OverrideAudioClipManagement_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This flag defines the behaviour of <a class="xref" href="Stem.Playlist.html#Stem_Playlist_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> and <a class="xref" href="Stem.Playlist.html#Stem_Playlist_GetAudioClipUnloadInterval">GetAudioClipUnloadInterval()</a> methods.</p>
+<p>
+If true, the playlist will use its own <a class="xref" href="Stem.Playlist.html#Stem_Playlist_AudioClipManagementMode">AudioClipManagementMode</a> and <a class="xref" href="Stem.Playlist.html#Stem_Playlist_AudioClipUnloadInterval">AudioClipUnloadInterval</a> properties.
+Otherwise, <a class="xref" href="Stem.MusicBank.html#Stem_MusicBank_PlaylistManagementMode">PlaylistManagementMode</a> and <a class="xref" href="Stem.MusicBank.html#Stem_MusicBank_PlaylistUnloadInterval">PlaylistUnloadInterval</a> properties of the containing bank will be used.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_Tracks.md&amp;value=---%0Auid%3A%20Stem.Playlist.Tracks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L160">View Source</a>
   </span>
   <a id="Stem_Playlist_Tracks_" data-uid="Stem.Playlist.Tracks*"></a>
   <h4 id="Stem_Playlist_Tracks" data-uid="Stem.Playlist.Tracks">Tracks</h4>
@@ -220,10 +358,10 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_Unfolded.md&amp;value=---%0Auid%3A%20Stem.Playlist.Unfolded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_Unfolded.md&amp;value=---%0Auid%3A%20Stem.Playlist.Unfolded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L147">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L219">View Source</a>
   </span>
   <a id="Stem_Playlist_Unfolded_" data-uid="Stem.Playlist.Unfolded*"></a>
   <h4 id="Stem_Playlist_Unfolded" data-uid="Stem.Playlist.Unfolded">Unfolded</h4>
@@ -257,10 +395,247 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.Playlist.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_AddTrack_AudioClip_.md&amp;value=---%0Auid%3A%20Stem.Playlist.AddTrack(AudioClip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L52">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L277">View Source</a>
+  </span>
+  <a id="Stem_Playlist_AddTrack_" data-uid="Stem.Playlist.AddTrack*"></a>
+  <h4 id="Stem_Playlist_AddTrack_AudioClip_" data-uid="Stem.Playlist.AddTrack(AudioClip)">AddTrack(AudioClip)</h4>
+  <div class="markdown level1 summary"><p>Adds a single music track to the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlaylistTrack AddTrack(AudioClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>A reference to the audio clip with music data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.PlaylistTrack.html">PlaylistTrack</a></td>
+        <td><p>A reference to a newly created playlist track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_AddTracks_AudioClip___.md&amp;value=---%0Auid%3A%20Stem.Playlist.AddTracks(AudioClip%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L291">View Source</a>
+  </span>
+  <a id="Stem_Playlist_AddTracks_" data-uid="Stem.Playlist.AddTracks*"></a>
+  <h4 id="Stem_Playlist_AddTracks_AudioClip___" data-uid="Stem.Playlist.AddTracks(AudioClip[])">AddTracks(AudioClip[])</h4>
+  <div class="markdown level1 summary"><p>Adds multiple music tracks (one per audio clip) to the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTracks(AudioClip[] clips)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span>[]</td>
+        <td><span class="parametername">clips</span></td>
+        <td><p>An array of audio clips with music data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_GetAudioClip_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.Playlist.GetAudioClip(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L65">View Source</a>
+  </span>
+  <a id="Stem_Playlist_GetAudioClip_" data-uid="Stem.Playlist.GetAudioClip*"></a>
+  <h4 id="Stem_Playlist_GetAudioClip_System_Int32_" data-uid="Stem.Playlist.GetAudioClip(System.Int32)">GetAudioClip(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip GetAudioClip(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the audio clip to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><p>A reference to an audio clip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_GetAudioClipManagementMode.md&amp;value=---%0Auid%3A%20Stem.Playlist.GetAudioClipManagementMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L100">View Source</a>
+  </span>
+  <a id="Stem_Playlist_GetAudioClipManagementMode_" data-uid="Stem.Playlist.GetAudioClipManagementMode*"></a>
+  <h4 id="Stem_Playlist_GetAudioClipManagementMode" data-uid="Stem.Playlist.GetAudioClipManagementMode">GetAudioClipManagementMode()</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip management mode of the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClipManagementMode GetAudioClipManagementMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.AudioClipManagementMode.html">AudioClipManagementMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Playlist_GetAudioClipManagementMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> value is true, <a class="xref" href="Stem.Playlist.html#Stem_Playlist_AudioClipManagementMode">AudioClipManagementMode</a> will be used. Otherwise, <a class="xref" href="Stem.MusicBank.html#Stem_MusicBank_PlaylistManagementMode">PlaylistManagementMode</a> value of the containing bank will be used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_GetAudioClipUnloadInterval.md&amp;value=---%0Auid%3A%20Stem.Playlist.GetAudioClipUnloadInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L83">View Source</a>
+  </span>
+  <a id="Stem_Playlist_GetAudioClipUnloadInterval_" data-uid="Stem.Playlist.GetAudioClipUnloadInterval*"></a>
+  <h4 id="Stem_Playlist_GetAudioClipUnloadInterval" data-uid="Stem.Playlist.GetAudioClipUnloadInterval">GetAudioClipUnloadInterval()</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip unload interval of the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAudioClipUnloadInterval()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The time interval in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Playlist_GetAudioClipUnloadInterval_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is only used if <a class="xref" href="Stem.Playlist.html#Stem_Playlist_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> return value is <a class="xref" href="Stem.AudioClipManagementMode.html#Stem_AudioClipManagementMode_UnloadUnused">UnloadUnused</a></p>
+<p>If <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> value is true, <a class="xref" href="Stem.Playlist.html#Stem_Playlist_AudioClipUnloadInterval">AudioClipUnloadInterval</a> will be used. Otherwise, <a class="xref" href="Stem.MusicBank.html#Stem_MusicBank_PlaylistUnloadInterval">PlaylistUnloadInterval</a> value of the containing bank will be used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_GetNumAudioClips.md&amp;value=---%0Auid%3A%20Stem.Playlist.GetNumAudioClips%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L53">View Source</a>
+  </span>
+  <a id="Stem_Playlist_GetNumAudioClips_" data-uid="Stem.Playlist.GetNumAudioClips*"></a>
+  <h4 id="Stem_Playlist_GetNumAudioClips" data-uid="Stem.Playlist.GetNumAudioClips">GetNumAudioClips()</h4>
+  <div class="markdown level1 summary"><p>Gets the number of audio clips in the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumAudioClips()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of audio clips.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.Playlist.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L124">View Source</a>
   </span>
   <a id="Stem_Playlist_OnAfterDeserialize_" data-uid="Stem.Playlist.OnAfterDeserialize*"></a>
   <h4 id="Stem_Playlist_OnAfterDeserialize" data-uid="Stem.Playlist.OnAfterDeserialize">OnAfterDeserialize()</h4>
@@ -276,10 +651,10 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.Playlist.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.Playlist.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L42">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L114">View Source</a>
   </span>
   <a id="Stem_Playlist_OnBeforeSerialize_" data-uid="Stem.Playlist.OnBeforeSerialize*"></a>
   <h4 id="Stem_Playlist_OnBeforeSerialize" data-uid="Stem.Playlist.OnBeforeSerialize">OnBeforeSerialize()</h4>
@@ -293,6 +668,13 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
   <h5 id="Stem_Playlist_OnBeforeSerialize_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is automatically called by Unity during serialization process. Don&apos;t call it manually.</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stem.IAudioClipContainer.html">IAudioClipContainer</a>
+  </div>
+  <div>
+      <span class="xref">ISerializationCallbackReceiver</span>
+  </div>
 </article>
           </div>
           
@@ -301,10 +683,10 @@ public class Playlist : ISerializationCallbackReceiver</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Playlist.md&amp;value=---%0Auid%3A%20Stem.Playlist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Playlist.md&amp;value=---%0Auid%3A%20Stem.Playlist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Playlist.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Playlist.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

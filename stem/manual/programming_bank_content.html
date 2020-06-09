@@ -84,7 +84,7 @@ AudioClip[] clips;
 
 Stem.Sound soundEmpty = bank.AddSound(&quot;Sound name&quot;);
 Stem.Sound soundSingle = bank.AddSound(&quot;Sound name&quot;, clip);
-Stem.Sound soundWithVariations = bank.AddSound(&quot;Sound name&quot;, slips);
+Stem.Sound soundWithVariations = bank.AddSound(&quot;Sound name&quot;, clips);
 </code></pre>
 <pre><code class="lang-csharp">Stem.SoundBus newBus = bank.AddSoundBus(&quot;Sound bus name&quot;);
 </code></pre>
@@ -98,7 +98,29 @@ Stem.Playlist playlistMultipleTracks = bank.AddPlaylist(&quot;Playlist name&quot
 <pre><code class="lang-csharp">Stem.MusicPlayer newPlayer = bank.AddMusicPlayer(&quot;Music player name&quot;);
 </code></pre>
 <h2 id="global-search-in-all-banks">Global search in all banks</h2>
-<p>It's recommended to use IDs instead of string references by default. However, string references might be useful in case there're multiple banks with same content names but different audio data. In this case, referencing by string allows using multiple banks as audio skins by changing <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property in the corresponding manager.</p>
+<p>It's recommended to use IDs instead of string references by default. However, string references might be useful in case there're multiple banks with same content names but different audio data. In this case, referencing by string allows using multiple banks as audio skins by changing <a href="programming_bank_content.html#primary-bank">PrimaryBank</a> property in the corresponding manager.</p>
+<h3 id="primary-bank">Primary bank</h3>
+<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_PrimaryBank">Stem.SoundManager.PrimaryBank</a> or <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_PrimaryBank">Stem.MusicManager.PrimaryBank</a> property to set a primary bank to the corresponding manager. Primary banks are used to resolve name collisions during the search.</p>
+<p>This might be useful in case there're multiple banks with similar content but different audio data. Think of it as audio skin.</p>
+<pre><code class="lang-csharp">Stem.SoundManager.PrimaryBank = bank;
+</code></pre>
+<pre><code class="lang-csharp">Stem.MusicManager.PrimaryBank = bank;
+</code></pre>
+<h3 id="by-name">By name</h3>
+<p>Call these methods to search for existing content in all banks:</p>
+<ul>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_String_">Stem.SoundManager.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_String_">Stem.SoundManager.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_String_">Stem.MusicManager.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_String_">Stem.MusicManager.GetMusicPlayer</a></li>
+</ul>
+<p>In the case of name collisions, if multiple banks have content with the matching name, the <a href="programming_bank_content.html#primary-bank">PrimaryBank</a> property will be checked first. Within a bank, the first occurrence of found content will be used.</p>
+<pre><code class="lang-csharp">Stem.Sound sound = SoundManager.GetSound(&quot;Sound name&quot;);
+Stem.SoundBus soundBus = SoundManager.GetSoundBus(&quot;Sound bus name&quot;);
+</code></pre>
+<pre><code class="lang-csharp">Stem.Playlist playlist = MusicManager.GetPlaylist(&quot;Playlist name&quot;);
+Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(&quot;Music player name&quot;);
+</code></pre>
 <h3 id="by-id">By ID</h3>
 <p>Call these methods to search for existing content in all banks:</p>
 <ul>
@@ -107,7 +129,7 @@ Stem.Playlist playlistMultipleTracks = bank.AddPlaylist(&quot;Playlist name&quot
 <li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_Int32_">Stem.MusicManager.GetPlaylist</a></li>
 <li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_Int32_">Stem.MusicManager.GetMusicPlayer</a></li>
 </ul>
-<p>As all IDs are unique, the <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property has no effect on the search results. Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
+<p>As all IDs are unique, the <a href="programming_bank_content.html#primary-bank">PrimaryBank</a> property has no effect on the search results. Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
 <pre><code class="lang-csharp">int soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
 int soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
 
@@ -119,21 +141,6 @@ int musicPlayerId; // Assume it's filled earlier in the code or was set by the S
 
 Stem.Playlist playlist = MusicManager.GetPlaylist(playlistId);
 Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(musicPlayerId);
-</code></pre>
-<h3 id="by-name">By name</h3>
-<p>Call these methods to search for existing content in all banks:</p>
-<ul>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_String_">Stem.SoundManager.GetSound</a></li>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_String_">Stem.SoundManager.GetSoundBus</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_String_">Stem.MusicManager.GetPlaylist</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_String_">Stem.MusicManager.GetMusicPlayer</a></li>
-</ul>
-<p>In the case of name collisions, if multiple banks have content with the matching name, the <a href="programming_bank_management.html#primary-bank">PrimaryBank</a> property will be checked first. Within a bank, the first occurrence of found content will be used.</p>
-<pre><code class="lang-csharp">Stem.Sound sound = SoundManager.GetSound(&quot;Sound name&quot;);
-Stem.SoundBus soundBus = SoundManager.GetSoundBus(&quot;Sound bus name&quot;);
-</code></pre>
-<pre><code class="lang-csharp">Stem.Playlist playlist = MusicManager.GetPlaylist(&quot;Playlist name&quot;);
-Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(&quot;Music player name&quot;);
 </code></pre>
 <h2 id="local-search-in-specific-bank">Local search in specific bank</h2>
 <h3 id="by-id-1">By ID</h3>
@@ -201,7 +208,7 @@ bank.RemoveMusicPlayer(musicPlayer);
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/programming_bank_content.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/programming_bank_content.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

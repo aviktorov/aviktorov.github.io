@@ -72,7 +72,7 @@
 <p><a class="xref" href="../api/Stem.MusicPlayer.html">API Reference</a></p>
 <h2 id="description">Description</h2>
 <p>A music player is a part of the music bank. It represents an entry point for music playback and defines how it will play the playlist tracks. It also integrates into a Unity Audio Mixer.</p>
-<p><img src="../images/concepts_music_player_1.png" alt="Music Player"></p>
+<p><img src="../images/concepts_music_players.png" alt="Music Player"></p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -107,10 +107,6 @@
 <td>The flag indicating whether the music player should play tracks in random order.</td>
 </tr>
 <tr>
-<td>Auto Advance</td>
-<td>The flag indicating whether the music player should auto advance to next playlist track it finishes.</td>
-</tr>
-<tr>
 <td>Loop</td>
 <td>The flag indicating whether the music player should repeat playlist tracks after they finish.</td>
 </tr>
@@ -118,40 +114,62 @@
 <td>Play On Start</td>
 <td>The flag indicating whether the music player should start playing once the game started.</td>
 </tr>
+<tr>
+<td>Playback Mode</td>
+<td>The playback mode defining how music player should play its tracks. <em>Synced</em> option is available only in <strong>Stem Pro</strong>.</td>
+</tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Sync Group</td>
+<td>The sync group of the music player. Music players with the same sync group will share playback time.</td>
+</tr>
 </tbody>
 </table>
-<p><em>Loop</em> and <em>Auto Advance</em> flags work in pair. There are four possible combinations:</p>
+<h2 id="playback-mode">Playback Mode</h2>
+<p><em>Playback Mode</em> and <em>Loop</em> properties work in pair. There are six possible combinations:</p>
 <table>
 <thead>
 <tr>
+<th>Playback Mode</th>
 <th>Loop</th>
-<th>Auto Advance</th>
 <th>Behaviour</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>False</td>
+<td>Default</td>
 <td>False</td>
 <td>Play the current track once and then stop.</td>
 </tr>
 <tr>
-<td>False</td>
+<td></td>
 <td>True</td>
-<td>Play all playlist tracks once and then stop.</td>
-</tr>
-<tr>
-<td>True</td>
-<td>False</td>
 <td>Play the current track in a loop and never stop.</td>
 </tr>
 <tr>
-<td>True</td>
+<td>Auto Advance</td>
+<td>False</td>
+<td>Play all playlist tracks once and then stop.</td>
+</tr>
+<tr>
+<td></td>
 <td>True</td>
 <td>Play all playlist tracks in a loop and never stop.</td>
 </tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Synced</td>
+<td>False</td>
+<td>Play the current track once and then stop. Track time is synchronized between other music players with the same <em>Sync Group</em> value.</td>
+</tr>
+<tr>
+<td></td>
+<td>True</td>
+<td>Play the current track in a loop and never stop. Track time is synchronized between other music players with the same <em>Sync Group</em> value.</td>
+</tr>
 </tbody>
 </table>
+<h2 id="stem-pro-synchronized-music-players"><strong>(Stem Pro)</strong> Synchronized Music Players</h2>
+<p><strong>Stem Pro</strong> offers synchronization mechanism for music players. This allows switching between different tracks at runtime without worrying they will get out of sync.</p>
+<p>To use this feature set <em>Playback Mode</em> property to <em>Synced</em> and also assign a <em>Sync Group</em> property. <em>Synced</em> mode behaves the same way as <em>Default</em> except all music players with the same <em>Sync Group</em> value will share playback time.</p>
 </article>
           </div>
           
@@ -160,7 +178,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/key_concepts_music_player.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/key_concepts_music_player.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

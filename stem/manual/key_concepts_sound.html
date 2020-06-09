@@ -72,7 +72,7 @@
 <p><a class="xref" href="../api/Stem.Sound.html">API Reference</a></p>
 <h2 id="description">Description</h2>
 <p>A sound is a part of the sound bank. It represents a set of parameters defining how the sound will be mixed (most of them are duplicates from <em>Audio Source</em>). It could also have multiple audio clips serving as variations. Each sound variation can be randomized in volume, pitch and delay.</p>
-<p><img src="../images/concepts_sound_1.png" alt="Sound"></p>
+<p><img src="../images/concepts_sounds.png" alt="Sound"></p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -112,11 +112,23 @@
 </tr>
 <tr>
 <td>Max Distance</td>
-<td>The parameter defining the boundary outside which the sound will be inaudible or stop attenuating depending on ** Volume Rolloff** value.</td>
+<td>The parameter defining the boundary outside which the sound will be inaudible or stop attenuating depending on <strong>Volume Rolloff</strong> value.</td>
 </tr>
 <tr>
 <td>Retrigger Mode</td>
 <td>The rule defining how the sound will play variations.</td>
+</tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Override Memory Mode</td>
+<td>The flag indicating whether the sound should use its own memory management mode and unload interval.</td>
+</tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Memory Mode</td>
+<td>The mode defining how audio clips will be managed in memory.</td>
+</tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Unload Interval</td>
+<td>The interval after which audio clips will be unloaded from memory.</td>
 </tr>
 </tbody>
 </table>
@@ -171,7 +183,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/key_concepts_sound.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/key_concepts_sound.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

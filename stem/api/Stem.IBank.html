@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum SoundBatchImportMode
+    <title>Interface IBank
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum SoundBatchImportMode
+    <meta name="title" content="Interface IBank
    ">
     <meta name="generator" content="docfx 2.40.7.0">
     
@@ -68,42 +68,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Stem.SoundBatchImportMode">
+            <article class="content wrap" id="_content" data-uid="Stem.IBank">
   
   
-  <h1 id="Stem_SoundBatchImportMode" data-uid="Stem.SoundBatchImportMode" class="text-break">Enum SoundBatchImportMode
+  <h1 id="Stem_IBank" data-uid="Stem.IBank" class="text-break">Interface IBank
   </h1>
-  <div class="markdown level0 summary"><p>Defines how new sounds will be created after the drag-drop event.</p>
+  <div class="markdown level0 summary"><p>The common bank interface for runtime state management.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
-  <h5 id="Stem_SoundBatchImportMode_syntax">Syntax</h5>
+  <h5 id="Stem_IBank_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum SoundBatchImportMode</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBank</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Stem_SoundBatchImportMode_MultiplePerClip">MultiplePerClip</td>
-        <td><p>A sound with a single variation will be created for each provided audio clip.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Stem_SoundBatchImportMode_SingleWithVariations">SingleWithVariations</td>
-        <td><p>A single sound will be created. Provided audio clips will be used as variations.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_IBank_ClearRuntime.md&amp;value=---%0Auid%3A%20Stem.IBank.ClearRuntime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Common.cs/#L40">View Source</a>
+  </span>
+  <a id="Stem_IBank_ClearRuntime_" data-uid="Stem.IBank.ClearRuntime*"></a>
+  <h4 id="Stem_IBank_ClearRuntime" data-uid="Stem.IBank.ClearRuntime">ClearRuntime()</h4>
+  <div class="markdown level1 summary"><p>Removes runtime state from the bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearRuntime()</code></pre>
+  </div>
+  <h5 id="Stem_IBank_ClearRuntime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is automatically called during the build.</p>
+</div>
 </article>
           </div>
           
@@ -112,10 +111,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_SoundBatchImportMode.md&amp;value=---%0Auid%3A%20Stem.SoundBatchImportMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_IBank.md&amp;value=---%0Auid%3A%20Stem.IBank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/SoundBank.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Common.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

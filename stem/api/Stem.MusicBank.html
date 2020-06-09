@@ -83,22 +83,23 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Stem.IBank.html">IBank</a></div>
     <div><span class="xref">ISerializationCallbackReceiver</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_MusicBank_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MusicBank : ScriptableObject, ISerializationCallbackReceiver</code></pre>
+    <pre><code class="lang-csharp hljs">public class MusicBank : ScriptableObject, IBank, ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_Players.md&amp;value=---%0Auid%3A%20Stem.MusicBank.Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_Players.md&amp;value=---%0Auid%3A%20Stem.MusicBank.Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L206">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L212">View Source</a>
   </span>
   <a id="Stem_MusicBank_Players_" data-uid="Stem.MusicBank.Players*"></a>
   <h4 id="Stem_MusicBank_Players" data-uid="Stem.MusicBank.Players">Players</h4>
@@ -127,10 +128,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_PlaylistBatchImportMode.md&amp;value=---%0Auid%3A%20Stem.MusicBank.PlaylistBatchImportMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_PlaylistBatchImportMode.md&amp;value=---%0Auid%3A%20Stem.MusicBank.PlaylistBatchImportMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L247">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L253">View Source</a>
   </span>
   <a id="Stem_MusicBank_PlaylistBatchImportMode_" data-uid="Stem.MusicBank.PlaylistBatchImportMode*"></a>
   <h4 id="Stem_MusicBank_PlaylistBatchImportMode" data-uid="Stem.MusicBank.PlaylistBatchImportMode">PlaylistBatchImportMode</h4>
@@ -139,7 +140,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaylistBatchImportMode PlaylistBatchImportMode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public AudioClipImportMode PlaylistBatchImportMode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,7 +152,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Stem.PlaylistBatchImportMode.html">PlaylistBatchImportMode</a></td>
+        <td><a class="xref" href="Stem.AudioClipImportMode.html">AudioClipImportMode</a></td>
         <td><p>An enum value.</p>
 </td>
       </tr>
@@ -159,10 +160,45 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_Playlists.md&amp;value=---%0Auid%3A%20Stem.MusicBank.Playlists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_PlaylistManagementMode.md&amp;value=---%0Auid%3A%20Stem.MusicBank.PlaylistManagementMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L191">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L266">View Source</a>
+  </span>
+  <a id="Stem_MusicBank_PlaylistManagementMode_" data-uid="Stem.MusicBank.PlaylistManagementMode*"></a>
+  <h4 id="Stem_MusicBank_PlaylistManagementMode" data-uid="Stem.MusicBank.PlaylistManagementMode">PlaylistManagementMode</h4>
+  <div class="markdown level1 summary"><p>The default audio clip management mode for all playlists of the music bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClipManagementMode PlaylistManagementMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.AudioClipManagementMode.html">AudioClipManagementMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicBank_PlaylistManagementMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By default, all playlists will use this value for audio clip management, however, it can be overridden by the <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_Playlists.md&amp;value=---%0Auid%3A%20Stem.MusicBank.Playlists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L197">View Source</a>
   </span>
   <a id="Stem_MusicBank_Playlists_" data-uid="Stem.MusicBank.Playlists*"></a>
   <h4 id="Stem_MusicBank_Playlists" data-uid="Stem.MusicBank.Playlists">Playlists</h4>
@@ -191,10 +227,45 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_ShowPlayers.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ShowPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_PlaylistUnloadInterval.md&amp;value=---%0Auid%3A%20Stem.MusicBank.PlaylistUnloadInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L237">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L279">View Source</a>
+  </span>
+  <a id="Stem_MusicBank_PlaylistUnloadInterval_" data-uid="Stem.MusicBank.PlaylistUnloadInterval*"></a>
+  <h4 id="Stem_MusicBank_PlaylistUnloadInterval" data-uid="Stem.MusicBank.PlaylistUnloadInterval">PlaylistUnloadInterval</h4>
+  <div class="markdown level1 summary"><p>The default audio clip unload interval for all playlists of the the music bank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PlaylistUnloadInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>A time interval in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_MusicBank_PlaylistUnloadInterval_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By default, all playlists will use this value for audio clip unload interval, however, it can be overridden by the <a class="xref" href="Stem.Playlist.html#Stem_Playlist_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_ShowPlayers.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ShowPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L243">View Source</a>
   </span>
   <a id="Stem_MusicBank_ShowPlayers_" data-uid="Stem.MusicBank.ShowPlayers*"></a>
   <h4 id="Stem_MusicBank_ShowPlayers" data-uid="Stem.MusicBank.ShowPlayers">ShowPlayers</h4>
@@ -226,10 +297,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_ShowPlaylists.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ShowPlaylists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_ShowPlaylists.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ShowPlaylists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L224">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L230">View Source</a>
   </span>
   <a id="Stem_MusicBank_ShowPlaylists_" data-uid="Stem.MusicBank.ShowPlaylists*"></a>
   <h4 id="Stem_MusicBank_ShowPlaylists" data-uid="Stem.MusicBank.ShowPlaylists">ShowPlaylists</h4>
@@ -263,10 +334,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_AddMusicPlayer_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddMusicPlayer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_AddMusicPlayer_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddMusicPlayer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L412">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L434">View Source</a>
   </span>
   <a id="Stem_MusicBank_AddMusicPlayer_" data-uid="Stem.MusicBank.AddMusicPlayer*"></a>
   <h4 id="Stem_MusicBank_AddMusicPlayer_System_String_" data-uid="Stem.MusicBank.AddMusicPlayer(System.String)">AddMusicPlayer(String)</h4>
@@ -313,10 +384,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L289">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L321">View Source</a>
   </span>
   <a id="Stem_MusicBank_AddPlaylist_" data-uid="Stem.MusicBank.AddPlaylist*"></a>
   <h4 id="Stem_MusicBank_AddPlaylist_System_String_" data-uid="Stem.MusicBank.AddPlaylist(System.String)">AddPlaylist(String)</h4>
@@ -363,10 +434,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_AudioClip_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String%2CAudioClip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_AudioClip_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String%2CAudioClip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L310">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L342">View Source</a>
   </span>
   <a id="Stem_MusicBank_AddPlaylist_" data-uid="Stem.MusicBank.AddPlaylist*"></a>
   <h4 id="Stem_MusicBank_AddPlaylist_System_String_AudioClip_" data-uid="Stem.MusicBank.AddPlaylist(System.String,AudioClip)">AddPlaylist(String, AudioClip)</h4>
@@ -419,10 +490,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_AudioClip___.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String%2CAudioClip%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_AddPlaylist_System_String_AudioClip___.md&amp;value=---%0Auid%3A%20Stem.MusicBank.AddPlaylist(System.String%2CAudioClip%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L332">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L364">View Source</a>
   </span>
   <a id="Stem_MusicBank_AddPlaylist_" data-uid="Stem.MusicBank.AddPlaylist*"></a>
   <h4 id="Stem_MusicBank_AddPlaylist_System_String_AudioClip___" data-uid="Stem.MusicBank.AddPlaylist(System.String,AudioClip[])">AddPlaylist(String, AudioClip[])</h4>
@@ -475,14 +546,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_ClearRuntime.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ClearRuntime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_ClearRuntime.md&amp;value=---%0Auid%3A%20Stem.MusicBank.ClearRuntime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L451">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L139">View Source</a>
   </span>
   <a id="Stem_MusicBank_ClearRuntime_" data-uid="Stem.MusicBank.ClearRuntime*"></a>
   <h4 id="Stem_MusicBank_ClearRuntime" data-uid="Stem.MusicBank.ClearRuntime">ClearRuntime()</h4>
-  <div class="markdown level1 summary"><p>Removes runtime state from the music bank.</p>
+  <div class="markdown level1 summary"><p>Removes runtime state from the bank.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -490,14 +561,14 @@
     <pre><code class="lang-csharp hljs">public void ClearRuntime()</code></pre>
   </div>
   <h5 id="Stem_MusicBank_ClearRuntime_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method is automatically called by Stem, don&apos;t call it manually.</p>
+  <div class="markdown level1 remarks"><p>This method is automatically called during the build.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_GetMusicPlayer_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetMusicPlayer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_GetMusicPlayer_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetMusicPlayer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L388">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L410">View Source</a>
   </span>
   <a id="Stem_MusicBank_GetMusicPlayer_" data-uid="Stem.MusicBank.GetMusicPlayer*"></a>
   <h4 id="Stem_MusicBank_GetMusicPlayer_System_Int32_" data-uid="Stem.MusicBank.GetMusicPlayer(System.Int32)">GetMusicPlayer(Int32)</h4>
@@ -544,10 +615,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_GetMusicPlayer_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetMusicPlayer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_GetMusicPlayer_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetMusicPlayer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L400">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L422">View Source</a>
   </span>
   <a id="Stem_MusicBank_GetMusicPlayer_" data-uid="Stem.MusicBank.GetMusicPlayer*"></a>
   <h4 id="Stem_MusicBank_GetMusicPlayer_System_String_" data-uid="Stem.MusicBank.GetMusicPlayer(System.String)">GetMusicPlayer(String)</h4>
@@ -594,10 +665,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_GetPlaylist_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetPlaylist(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_GetPlaylist_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetPlaylist(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L265">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L297">View Source</a>
   </span>
   <a id="Stem_MusicBank_GetPlaylist_" data-uid="Stem.MusicBank.GetPlaylist*"></a>
   <h4 id="Stem_MusicBank_GetPlaylist_System_Int32_" data-uid="Stem.MusicBank.GetPlaylist(System.Int32)">GetPlaylist(Int32)</h4>
@@ -644,10 +715,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_GetPlaylist_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetPlaylist(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_GetPlaylist_System_String_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.GetPlaylist(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L277">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L309">View Source</a>
   </span>
   <a id="Stem_MusicBank_GetPlaylist_" data-uid="Stem.MusicBank.GetPlaylist*"></a>
   <h4 id="Stem_MusicBank_GetPlaylist_System_String_" data-uid="Stem.MusicBank.GetPlaylist(System.String)">GetPlaylist(String)</h4>
@@ -694,10 +765,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L163">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L169">View Source</a>
   </span>
   <a id="Stem_MusicBank_OnAfterDeserialize_" data-uid="Stem.MusicBank.OnAfterDeserialize*"></a>
   <h4 id="Stem_MusicBank_OnAfterDeserialize" data-uid="Stem.MusicBank.OnAfterDeserialize">OnAfterDeserialize()</h4>
@@ -713,10 +784,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L144">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L150">View Source</a>
   </span>
   <a id="Stem_MusicBank_OnBeforeSerialize_" data-uid="Stem.MusicBank.OnBeforeSerialize*"></a>
   <h4 id="Stem_MusicBank_OnBeforeSerialize" data-uid="Stem.MusicBank.OnBeforeSerialize">OnBeforeSerialize()</h4>
@@ -732,10 +803,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_RemoveMusicPlayer_Stem_MusicPlayer_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.RemoveMusicPlayer(Stem.MusicPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_RemoveMusicPlayer_Stem_MusicPlayer_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.RemoveMusicPlayer(Stem.MusicPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L432">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L454">View Source</a>
   </span>
   <a id="Stem_MusicBank_RemoveMusicPlayer_" data-uid="Stem.MusicBank.RemoveMusicPlayer*"></a>
   <h4 id="Stem_MusicBank_RemoveMusicPlayer_Stem_MusicPlayer_" data-uid="Stem.MusicBank.RemoveMusicPlayer(Stem.MusicPlayer)">RemoveMusicPlayer(MusicPlayer)</h4>
@@ -769,10 +840,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_RemovePlaylist_Stem_Playlist_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.RemovePlaylist(Stem.Playlist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_RemovePlaylist_Stem_Playlist_.md&amp;value=---%0Auid%3A%20Stem.MusicBank.RemovePlaylist(Stem.Playlist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L364">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L386">View Source</a>
   </span>
   <a id="Stem_MusicBank_RemovePlaylist_" data-uid="Stem.MusicBank.RemovePlaylist*"></a>
   <h4 id="Stem_MusicBank_RemovePlaylist_Stem_Playlist_" data-uid="Stem.MusicBank.RemovePlaylist(Stem.Playlist)">RemovePlaylist(Playlist)</h4>
@@ -809,10 +880,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerAdded.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerAdded.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L126">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L121">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnMusicPlayerAdded" data-uid="Stem.MusicBank.OnMusicPlayerAdded">OnMusicPlayerAdded</h4>
   <div class="markdown level1 summary"><p>The delegate informing about adding music players.</p>
@@ -839,10 +910,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerRemoved.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerRemoved.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L131">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L126">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnMusicPlayerRemoved" data-uid="Stem.MusicBank.OnMusicPlayerRemoved">OnMusicPlayerRemoved</h4>
   <div class="markdown level1 summary"><p>The delegate informing about removing music players.</p>
@@ -869,10 +940,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerRenamed.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerRenamed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnMusicPlayerRenamed.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnMusicPlayerRenamed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L136">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L131">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnMusicPlayerRenamed" data-uid="Stem.MusicBank.OnMusicPlayerRenamed">OnMusicPlayerRenamed</h4>
   <div class="markdown level1 summary"><p>The delegate informing about the change of music player names.</p>
@@ -899,10 +970,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnPlaylistAdded.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnPlaylistAdded.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L111">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L106">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnPlaylistAdded" data-uid="Stem.MusicBank.OnPlaylistAdded">OnPlaylistAdded</h4>
   <div class="markdown level1 summary"><p>The delegate informing about adding playlists.</p>
@@ -929,10 +1000,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnPlaylistRemoved.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnPlaylistRemoved.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L116">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L111">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnPlaylistRemoved" data-uid="Stem.MusicBank.OnPlaylistRemoved">OnPlaylistRemoved</h4>
   <div class="markdown level1 summary"><p>The delegate informing about removing playlists.</p>
@@ -959,10 +1030,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank_OnPlaylistRenamed.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistRenamed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank_OnPlaylistRenamed.md&amp;value=---%0Auid%3A%20Stem.MusicBank.OnPlaylistRenamed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L121">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L116">View Source</a>
   </span>
   <h4 id="Stem_MusicBank_OnPlaylistRenamed" data-uid="Stem.MusicBank.OnPlaylistRenamed">OnPlaylistRenamed</h4>
   <div class="markdown level1 summary"><p>The delegate informing about the change of playlist names.</p>
@@ -989,6 +1060,9 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <a class="xref" href="Stem.IBank.html">IBank</a>
+  </div>
+  <div>
       <span class="xref">ISerializationCallbackReceiver</span>
   </div>
 </article>
@@ -999,10 +1073,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_MusicBank.md&amp;value=---%0Auid%3A%20Stem.MusicBank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_MusicBank.md&amp;value=---%0Auid%3A%20Stem.MusicBank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L82" class="contribution-link">View Source</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/MusicBank.cs/#L71" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

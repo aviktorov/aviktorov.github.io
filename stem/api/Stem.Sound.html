@@ -81,21 +81,50 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Sound</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Stem.IAudioClipContainer.html">IAudioClipContainer</a></div>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Stem.html">Stem</a></h6>
   <h6><strong>Assembly</strong>: Stem.dll</h6>
   <h5 id="Stem_Sound_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class Sound : ISerializationCallbackReceiver</code></pre>
+public class Sound : IAudioClipContainer, ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_AttenuationMode.md&amp;value=---%0Auid%3A%20Stem.Sound.AttenuationMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_AttenuationMode.md&amp;value=---%0Auid%3A%20Stem.Sound.AttenuationMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L275">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L348">View Source</a>
   </span>
   <a id="Stem_Sound_AttenuationMode_" data-uid="Stem.Sound.AttenuationMode*"></a>
   <h4 id="Stem_Sound_AttenuationMode" data-uid="Stem.Sound.AttenuationMode">AttenuationMode</h4>
@@ -127,10 +156,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Audible.md&amp;value=---%0Auid%3A%20Stem.Sound.Audible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Audible.md&amp;value=---%0Auid%3A%20Stem.Sound.Audible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L136">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L209">View Source</a>
   </span>
   <a id="Stem_Sound_Audible_" data-uid="Stem.Sound.Audible*"></a>
   <h4 id="Stem_Sound_Audible" data-uid="Stem.Sound.Audible">Audible</h4>
@@ -162,10 +191,80 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Bank.md&amp;value=---%0Auid%3A%20Stem.Sound.Bank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_AudioClipManagementMode.md&amp;value=---%0Auid%3A%20Stem.Sound.AudioClipManagementMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L183">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L481">View Source</a>
+  </span>
+  <a id="Stem_Sound_AudioClipManagementMode_" data-uid="Stem.Sound.AudioClipManagementMode*"></a>
+  <h4 id="Stem_Sound_AudioClipManagementMode" data-uid="Stem.Sound.AudioClipManagementMode">AudioClipManagementMode</h4>
+  <div class="markdown level1 summary"><p>The audio clip management mode of the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClipManagementMode AudioClipManagementMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.AudioClipManagementMode.html">AudioClipManagementMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_AudioClipManagementMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used only if <a class="xref" href="Stem.Sound.html#Stem_Sound_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag is true.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_AudioClipUnloadInterval.md&amp;value=---%0Auid%3A%20Stem.Sound.AudioClipUnloadInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L494">View Source</a>
+  </span>
+  <a id="Stem_Sound_AudioClipUnloadInterval_" data-uid="Stem.Sound.AudioClipUnloadInterval*"></a>
+  <h4 id="Stem_Sound_AudioClipUnloadInterval" data-uid="Stem.Sound.AudioClipUnloadInterval">AudioClipUnloadInterval</h4>
+  <div class="markdown level1 summary"><p>The audio clip unload interval of the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AudioClipUnloadInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>A time interval in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_AudioClipUnloadInterval_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used only if <a class="xref" href="Stem.Sound.html#Stem_Sound_OverrideAudioClipManagement">OverrideAudioClipManagement</a> flag is true and <a class="xref" href="Stem.Sound.html#Stem_Sound_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> return value is <a class="xref" href="Stem.AudioClipManagementMode.html#Stem_AudioClipManagementMode_UnloadUnused">UnloadUnused</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Bank.md&amp;value=---%0Auid%3A%20Stem.Sound.Bank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L256">View Source</a>
   </span>
   <a id="Stem_Sound_Bank_" data-uid="Stem.Sound.Bank*"></a>
   <h4 id="Stem_Sound_Bank" data-uid="Stem.Sound.Bank">Bank</h4>
@@ -194,10 +293,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Bus.md&amp;value=---%0Auid%3A%20Stem.Sound.Bus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Bus.md&amp;value=---%0Auid%3A%20Stem.Sound.Bus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L227">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L300">View Source</a>
   </span>
   <a id="Stem_Sound_Bus_" data-uid="Stem.Sound.Bus*"></a>
   <h4 id="Stem_Sound_Bus" data-uid="Stem.Sound.Bus">Bus</h4>
@@ -229,10 +328,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_DopplerLevel.md&amp;value=---%0Auid%3A%20Stem.Sound.DopplerLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_DopplerLevel.md&amp;value=---%0Auid%3A%20Stem.Sound.DopplerLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L337">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L410">View Source</a>
   </span>
   <a id="Stem_Sound_DopplerLevel_" data-uid="Stem.Sound.DopplerLevel*"></a>
   <h4 id="Stem_Sound_DopplerLevel" data-uid="Stem.Sound.DopplerLevel">DopplerLevel</h4>
@@ -264,10 +363,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_ID.md&amp;value=---%0Auid%3A%20Stem.Sound.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_ID.md&amp;value=---%0Auid%3A%20Stem.Sound.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L124">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L197">View Source</a>
   </span>
   <a id="Stem_Sound_ID_" data-uid="Stem.Sound.ID*"></a>
   <h4 id="Stem_Sound_ID" data-uid="Stem.Sound.ID">ID</h4>
@@ -296,10 +395,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_MaxDistance.md&amp;value=---%0Auid%3A%20Stem.Sound.MaxDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_MaxDistance.md&amp;value=---%0Auid%3A%20Stem.Sound.MaxDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L363">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L436">View Source</a>
   </span>
   <a id="Stem_Sound_MaxDistance_" data-uid="Stem.Sound.MaxDistance*"></a>
   <h4 id="Stem_Sound_MaxDistance" data-uid="Stem.Sound.MaxDistance">MaxDistance</h4>
@@ -331,10 +430,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_MinDistance.md&amp;value=---%0Auid%3A%20Stem.Sound.MinDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_MinDistance.md&amp;value=---%0Auid%3A%20Stem.Sound.MinDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L350">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L423">View Source</a>
   </span>
   <a id="Stem_Sound_MinDistance_" data-uid="Stem.Sound.MinDistance*"></a>
   <h4 id="Stem_Sound_MinDistance" data-uid="Stem.Sound.MinDistance">MinDistance</h4>
@@ -366,10 +465,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Muted.md&amp;value=---%0Auid%3A%20Stem.Sound.Muted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Muted.md&amp;value=---%0Auid%3A%20Stem.Sound.Muted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L240">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L313">View Source</a>
   </span>
   <a id="Stem_Sound_Muted_" data-uid="Stem.Sound.Muted*"></a>
   <h4 id="Stem_Sound_Muted" data-uid="Stem.Sound.Muted">Muted</h4>
@@ -401,10 +500,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Name.md&amp;value=---%0Auid%3A%20Stem.Sound.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Name.md&amp;value=---%0Auid%3A%20Stem.Sound.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L205">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L278">View Source</a>
   </span>
   <a id="Stem_Sound_Name_" data-uid="Stem.Sound.Name*"></a>
   <h4 id="Stem_Sound_Name" data-uid="Stem.Sound.Name">Name</h4>
@@ -433,10 +532,49 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_PanStereo.md&amp;value=---%0Auid%3A%20Stem.Sound.PanStereo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_OverrideAudioClipManagement.md&amp;value=---%0Auid%3A%20Stem.Sound.OverrideAudioClipManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L298">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L468">View Source</a>
+  </span>
+  <a id="Stem_Sound_OverrideAudioClipManagement_" data-uid="Stem.Sound.OverrideAudioClipManagement*"></a>
+  <h4 id="Stem_Sound_OverrideAudioClipManagement" data-uid="Stem.Sound.OverrideAudioClipManagement">OverrideAudioClipManagement</h4>
+  <div class="markdown level1 summary"><p>The flag indicating whether the sound should use its own audio clip management mode and unload interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverrideAudioClipManagement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the sound has overridden audio clip management and unload interval. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_OverrideAudioClipManagement_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This flag defines the behaviour of <a class="xref" href="Stem.Sound.html#Stem_Sound_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> and <a class="xref" href="Stem.Sound.html#Stem_Sound_GetAudioClipUnloadInterval">GetAudioClipUnloadInterval()</a> methods.</p>
+<p>
+If true, the sound will use its own <a class="xref" href="Stem.Sound.html#Stem_Sound_AudioClipManagementMode">AudioClipManagementMode</a> and <a class="xref" href="Stem.Sound.html#Stem_Sound_AudioClipUnloadInterval">AudioClipUnloadInterval</a> properties.
+Otherwise, <a class="xref" href="Stem.SoundBank.html#Stem_SoundBank_SoundManagementMode">SoundManagementMode</a> and <a class="xref" href="Stem.SoundBank.html#Stem_SoundBank_SoundUnloadInterval">SoundUnloadInterval</a> properties of the containing bank will be used.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_PanStereo.md&amp;value=---%0Auid%3A%20Stem.Sound.PanStereo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L371">View Source</a>
   </span>
   <a id="Stem_Sound_PanStereo_" data-uid="Stem.Sound.PanStereo*"></a>
   <h4 id="Stem_Sound_PanStereo" data-uid="Stem.Sound.PanStereo">PanStereo</h4>
@@ -468,10 +606,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Soloed.md&amp;value=---%0Auid%3A%20Stem.Sound.Soloed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Soloed.md&amp;value=---%0Auid%3A%20Stem.Sound.Soloed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L253">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L326">View Source</a>
   </span>
   <a id="Stem_Sound_Soloed_" data-uid="Stem.Sound.Soloed*"></a>
   <h4 id="Stem_Sound_Soloed" data-uid="Stem.Sound.Soloed">Soloed</h4>
@@ -503,10 +641,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_SpatialBlend.md&amp;value=---%0Auid%3A%20Stem.Sound.SpatialBlend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_SpatialBlend.md&amp;value=---%0Auid%3A%20Stem.Sound.SpatialBlend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L311">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L384">View Source</a>
   </span>
   <a id="Stem_Sound_SpatialBlend_" data-uid="Stem.Sound.SpatialBlend*"></a>
   <h4 id="Stem_Sound_SpatialBlend" data-uid="Stem.Sound.SpatialBlend">SpatialBlend</h4>
@@ -538,10 +676,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Spread.md&amp;value=---%0Auid%3A%20Stem.Sound.Spread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Spread.md&amp;value=---%0Auid%3A%20Stem.Sound.Spread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L324">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L397">View Source</a>
   </span>
   <a id="Stem_Sound_Spread_" data-uid="Stem.Sound.Spread*"></a>
   <h4 id="Stem_Sound_Spread" data-uid="Stem.Sound.Spread">Spread</h4>
@@ -573,10 +711,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Unfolded.md&amp;value=---%0Auid%3A%20Stem.Sound.Unfolded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Unfolded.md&amp;value=---%0Auid%3A%20Stem.Sound.Unfolded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L376">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L449">View Source</a>
   </span>
   <a id="Stem_Sound_Unfolded_" data-uid="Stem.Sound.Unfolded*"></a>
   <h4 id="Stem_Sound_Unfolded" data-uid="Stem.Sound.Unfolded">Unfolded</h4>
@@ -608,10 +746,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_VariationRetriggerMode.md&amp;value=---%0Auid%3A%20Stem.Sound.VariationRetriggerMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_VariationRetriggerMode.md&amp;value=---%0Auid%3A%20Stem.Sound.VariationRetriggerMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L285">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L358">View Source</a>
   </span>
   <a id="Stem_Sound_VariationRetriggerMode_" data-uid="Stem.Sound.VariationRetriggerMode*"></a>
   <h4 id="Stem_Sound_VariationRetriggerMode" data-uid="Stem.Sound.VariationRetriggerMode">VariationRetriggerMode</h4>
@@ -640,10 +778,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_Variations.md&amp;value=---%0Auid%3A%20Stem.Sound.Variations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_Variations.md&amp;value=---%0Auid%3A%20Stem.Sound.Variations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L168">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L241">View Source</a>
   </span>
   <a id="Stem_Sound_Variations_" data-uid="Stem.Sound.Variations*"></a>
   <h4 id="Stem_Sound_Variations" data-uid="Stem.Sound.Variations">Variations</h4>
@@ -674,10 +812,247 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.Sound.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_AddVariation_AudioClip_.md&amp;value=---%0Auid%3A%20Stem.Sound.AddVariation(AudioClip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L114">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L507">View Source</a>
+  </span>
+  <a id="Stem_Sound_AddVariation_" data-uid="Stem.Sound.AddVariation*"></a>
+  <h4 id="Stem_Sound_AddVariation_AudioClip_" data-uid="Stem.Sound.AddVariation(AudioClip)">AddVariation(AudioClip)</h4>
+  <div class="markdown level1 summary"><p>Adds a single sound variation to the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundVariation AddVariation(AudioClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>A reference to the audio clip with audio data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.SoundVariation.html">SoundVariation</a></td>
+        <td><p>A reference to a newly created sound variation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_AddVariations_AudioClip___.md&amp;value=---%0Auid%3A%20Stem.Sound.AddVariations(AudioClip%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L520">View Source</a>
+  </span>
+  <a id="Stem_Sound_AddVariations_" data-uid="Stem.Sound.AddVariations*"></a>
+  <h4 id="Stem_Sound_AddVariations_AudioClip___" data-uid="Stem.Sound.AddVariations(AudioClip[])">AddVariations(AudioClip[])</h4>
+  <div class="markdown level1 summary"><p>Adds multiple sound variations (one per audio clip) to the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVariations(AudioClip[] clips)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span>[]</td>
+        <td><span class="parametername">clips</span></td>
+        <td><p>An array of audio clips with audio data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_GetAudioClip_System_Int32_.md&amp;value=---%0Auid%3A%20Stem.Sound.GetAudioClip(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L127">View Source</a>
+  </span>
+  <a id="Stem_Sound_GetAudioClip_" data-uid="Stem.Sound.GetAudioClip*"></a>
+  <h4 id="Stem_Sound_GetAudioClip_System_Int32_" data-uid="Stem.Sound.GetAudioClip(System.Int32)">GetAudioClip(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip GetAudioClip(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the audio clip to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><p>A reference to an audio clip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_GetAudioClipManagementMode.md&amp;value=---%0Auid%3A%20Stem.Sound.GetAudioClipManagementMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L163">View Source</a>
+  </span>
+  <a id="Stem_Sound_GetAudioClipManagementMode_" data-uid="Stem.Sound.GetAudioClipManagementMode*"></a>
+  <h4 id="Stem_Sound_GetAudioClipManagementMode" data-uid="Stem.Sound.GetAudioClipManagementMode">GetAudioClipManagementMode()</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip management mode of the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClipManagementMode GetAudioClipManagementMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Stem.AudioClipManagementMode.html">AudioClipManagementMode</a></td>
+        <td><p>An enum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_GetAudioClipManagementMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Stem.Sound.html#Stem_Sound_OverrideAudioClipManagement">OverrideAudioClipManagement</a> value is true, <a class="xref" href="Stem.Sound.html#Stem_Sound_AudioClipManagementMode">AudioClipManagementMode</a> will be used. Otherwise, <a class="xref" href="Stem.SoundBank.html#Stem_SoundBank_SoundManagementMode">SoundManagementMode</a> value of the containing bank will be used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_GetAudioClipUnloadInterval.md&amp;value=---%0Auid%3A%20Stem.Sound.GetAudioClipUnloadInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L145">View Source</a>
+  </span>
+  <a id="Stem_Sound_GetAudioClipUnloadInterval_" data-uid="Stem.Sound.GetAudioClipUnloadInterval*"></a>
+  <h4 id="Stem_Sound_GetAudioClipUnloadInterval" data-uid="Stem.Sound.GetAudioClipUnloadInterval">GetAudioClipUnloadInterval()</h4>
+  <div class="markdown level1 summary"><p>Gets the audio clip unload interval of the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAudioClipUnloadInterval()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The time interval in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Stem_Sound_GetAudioClipUnloadInterval_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is only used if <a class="xref" href="Stem.Sound.html#Stem_Sound_GetAudioClipManagementMode">GetAudioClipManagementMode()</a> return value is <a class="xref" href="Stem.AudioClipManagementMode.html#Stem_AudioClipManagementMode_UnloadUnused">UnloadUnused</a></p>
+<p>If <a class="xref" href="Stem.Sound.html#Stem_Sound_OverrideAudioClipManagement">OverrideAudioClipManagement</a> value is true, <a class="xref" href="Stem.Sound.html#Stem_Sound_AudioClipUnloadInterval">AudioClipUnloadInterval</a> will be used. Otherwise, <a class="xref" href="Stem.SoundBank.html#Stem_SoundBank_SoundUnloadInterval">SoundUnloadInterval</a> value of the containing bank will be used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_GetNumAudioClips.md&amp;value=---%0Auid%3A%20Stem.Sound.GetNumAudioClips%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L115">View Source</a>
+  </span>
+  <a id="Stem_Sound_GetNumAudioClips_" data-uid="Stem.Sound.GetNumAudioClips*"></a>
+  <h4 id="Stem_Sound_GetNumAudioClips" data-uid="Stem.Sound.GetNumAudioClips">GetNumAudioClips()</h4>
+  <div class="markdown level1 summary"><p>Gets the number of audio clips in the sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumAudioClips()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of audio clips.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Stem.Sound.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L187">View Source</a>
   </span>
   <a id="Stem_Sound_OnAfterDeserialize_" data-uid="Stem.Sound.OnAfterDeserialize*"></a>
   <h4 id="Stem_Sound_OnAfterDeserialize" data-uid="Stem.Sound.OnAfterDeserialize">OnAfterDeserialize()</h4>
@@ -693,10 +1068,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.Sound.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Stem.Sound.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L104">View Source</a>
+    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L177">View Source</a>
   </span>
   <a id="Stem_Sound_OnBeforeSerialize_" data-uid="Stem.Sound.OnBeforeSerialize*"></a>
   <h4 id="Stem_Sound_OnBeforeSerialize" data-uid="Stem.Sound.OnBeforeSerialize">OnBeforeSerialize()</h4>
@@ -710,6 +1085,13 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
   <h5 id="Stem_Sound_OnBeforeSerialize_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is automatically called by Unity during serialization process. Don&apos;t call it manually.</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Stem.IAudioClipContainer.html">IAudioClipContainer</a>
+  </div>
+  <div>
+      <span class="xref">ISerializationCallbackReceiver</span>
+  </div>
 </article>
           </div>
           
@@ -718,10 +1100,10 @@ public class Sound : ISerializationCallbackReceiver</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.1/apiSpec/new?filename=Stem_Sound.md&amp;value=---%0Auid%3A%20Stem.Sound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/new/stem-v1.2/apiSpec/new?filename=Stem_Sound.md&amp;value=---%0Auid%3A%20Stem.Sound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Assets/Stem/Scripts/Persistent/Sound.cs/#L37" class="contribution-link">View Source</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Assets/Stem/Scripts/Persistent/Sound.cs/#L37" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

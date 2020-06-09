@@ -75,7 +75,7 @@
 <p>It's possible to have several music banks. Stem will automatically search for the corresponding music bank during the playlist or music player lookup. In the case of name collisions, if multiple banks have music players or playlists with the same name, the primary music bank (which you can only set in the code) will be checked first. Within a bank, the first occurrence of music player or playlist will be used.</p>
 <p>All music tracks must be organized into playlists. It could be thematic playlists, i.e. gameplay music, menu music, outdoor ambience, etc. or big single playlist containing all the tracks.</p>
 <p>Each music player can only play a single playlist. Music bank allows doing a layered music playback by creating multiple music players and filling them with different playlists.</p>
-<p><img src="../images/concepts_music_bank_1.png" alt="Music Bank"></p>
+<p><img src="../images/concepts_music_bank.png" alt="Music Bank"></p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -86,12 +86,65 @@
 </thead>
 <tbody>
 <tr>
+<td><strong>(Stem Pro)</strong> Memory Mode</td>
+<td>The mode defining how audio clips will be managed in memory.</td>
+</tr>
+<tr>
+<td><strong>(Stem Pro)</strong> Unload Interval</td>
+<td>The interval after which audio clips will be unloaded from memory.</td>
+</tr>
+<tr>
 <td>Playlists</td>
-<td>A collection of playlists.</td>
+<td>The collection of playlists.</td>
 </tr>
 <tr>
 <td>Players</td>
-<td>A collection of music players.</td>
+<td>The collection of music players.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stem-pro-batch-import"><strong>(Stem Pro)</strong> Batch Import</h2>
+<p><strong>Stem Pro</strong> offers batch import via drag-and-drop. This greatly reduces the time spent on content creation. There are two import modes allowing to create either a new playlist per audio clip or a single playlist with all provided audio clips.</p>
+<table>
+<thead>
+<tr>
+<th>Batch Import Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single Item With All Clips</td>
+<td>A single playlist with all provided audio clips will be created.</td>
+</tr>
+<tr>
+<td>Multiple Items With Single Clip</td>
+<td>A multiple playlists will be created, one for each provided audio clip.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stem-pro-advanced-memory-management"><strong>(Stem Pro)</strong> Advanced Memory Management</h2>
+<p><strong>Stem Pro</strong> offers three different management modes which help to reduce overall audio memory usage. Feel free to combine all of them for your needs.</p>
+<p>For example, you can create a music bank which will hold all common tracks (e.g. ambience or stingers) and keep it in memory while also having separate music banks for each level with &quot;Unload Unused&quot; memory mode. It's also possible to override memory management mode for individual playlists within the bank.</p>
+<table>
+<thead>
+<tr>
+<th>Memory Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preload And Keep In Memory</td>
+<td>Preload audio clip data during startup and keep it always in memory.</td>
+</tr>
+<tr>
+<td>Unload Unused</td>
+<td>Unload audio clip data if it was not used for some time.</td>
+</tr>
+<tr>
+<td>Manual</td>
+<td>Do not manage audio clip data and instead allow the developer to take control.</td>
 </tr>
 </tbody>
 </table>
@@ -103,7 +156,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/key_concepts_music_bank.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/key_concepts_music_bank.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

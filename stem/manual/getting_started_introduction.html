@@ -70,32 +70,42 @@
 <h1 id="introduction">Introduction</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Stem is a lightweight audio manager. It introduces the concept of sound and music bank as persistent storage for organized audio clips and requires no scene setup.</p>
-<h2 id="features">Features</h2>
+<p><strong>Stem</strong> is a robust and versatile audio manager designed from scratch to be extremely fast and easy to use.</p>
+<p>With <strong>Stem</strong> you get a great solution for your audio needs: SFX with variations, layered music playback, automatic crossfades, music events, pooled sounds and more! And all of that without scene modification: just create a single asset, fill it with audio clips and you're ready to go!</p>
+<p>There is also a <strong>Stem Pro</strong> package with additional features such as audio events, workflow improvements, advanced memory management and more.</p>
+<h2 id="basic-features">Basic Features</h2>
 <ul>
-<li>Optimized for runtime use: great performance, zero memory allocations per frame.</li>
-<li>Persists during runtime: you don't have to think about managing game objects.</li>
-<li>Requires no scene setup: just create a few assets, fill it with data and that's it.</li>
-<li>Works with multiple scenes: no prefabs, no additional game objects.</li>
-<li>Integrates with Unity 5 Audio: easily connect sound buses and music players to mixer groups.</li>
-<li>Saves time with the batch import feature.</li>
-<li>Supports sound variations: use multiple audio clips, randomize volume/pitch/delay for each clip.</li>
-<li>Supports 3d sound: tune the most important audio source settings within the bank.</li>
-<li>Supports layered music playback with independent playback controls.</li>
+<li><strong>No scene setup required:</strong> start working easily from a single asset;</li>
+<li><strong>Optimized for runtime:</strong> excellent performance, zero memory allocations per frame;</li>
+<li><strong>Permanent:</strong> keep playing music and sounds while transitioning between scenes;</li>
+<li><strong>Lifelike sound:</strong> easily add variations, randomize volume/pitch/delay;</li>
+<li><strong>Adaptive music:</strong> mix and crossfade music layers the way you want;</li>
+<li><strong>Supports Unity 5 Audio:</strong> easily connect to mixer groups and use built-in audio effects;</li>
+<li><strong>Full control:</strong> tune the most important settings right in the asset, react to music events with callbacks.</li>
+</ul>
+<h2 id="pro-features">Pro Features</h2>
+<ul>
+<li><strong>Save time:</strong> use batch import to quickly add new content;</li>
+<li><strong>Iterate quickly:</strong> tweak and play sounds in Edit Mode;</li>
+<li><strong>React to gameplay changes:</strong> create audio events without writing code;</li>
+<li><strong>Keep music in sync:</strong> create complex soundscapes using sync groups;the code;</li>
+<li><strong>Control audio usage:</strong> use memory management modes to optimize consumption;</li>
 </ul>
 <h2 id="package-contents">Package Contents</h2>
-<p>The package consists of three folders:</p>
+<p>The package consists of four folders:</p>
 <ol>
-<li><em>Documentation</em> — contains pdf file with manual and API reference. It fully matches the content of this site.</li>
-<li><em>Samples</em> — simple scenes that covers all Stem features.</li>
-<li><em>Scripts</em> — source code of the package.</li>
+<li><em>Gizmos</em> — contains icons for sound and music bank assets;</li>
+<li><em>Stem/Documentation</em> — contains pdf file with manual and API reference, fully matches the content on the site;</li>
+<li><em>Stem/Samples</em> — simple scenes that covers basic <strong>Stem</strong> features;</li>
+<li><em>Stem/Scripts</em> — source code of the package.</li>
 </ol>
-<p>Stem source code is divided into four parts:</p>
+<p><strong>Stem</strong> source code is divided into five folders:</p>
 <ol>
-<li><em>API</em> — public API classes. Use them to perform operations in Stem.</li>
-<li><em>Persistent</em> — public data classes. Will be stored inside sound and music bank assets.</li>
-<li><em>Editor</em> — internal editor classes (inspectors for sound and music banks, scene postprocessor). Will not be included during the build stage.</li>
-<li><em>Runtime</em> — internal logic classes. Will be automatically created on demand. Don't use them manually.</li>
+<li><em>API</em> — public API classes which you will be working with most of the time;</li>
+<li><em>Persistent</em> — public data classes, that are stored inside sound and music bank assets;</li>
+<li><em>Editor</em> — internal editor-only classes (inspectors for sound and music banks, scene postprocessor), will be excluded during the build;</li>
+<li><em>Runtime</em> — internal logic classes which <strong>Stem</strong> automatically creates on demand;</li>
+<li><em>Basic</em> or <em>Pro</em> — contains specific features depending on <strong>Stem</strong> version.</li>
 </ol>
 </article>
           </div>
@@ -105,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.1/Documentation/manual/getting_started_introduction.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/aviktorov/stem-unity/blob/stem-v1.2/Documentation/manual/getting_started_introduction.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
