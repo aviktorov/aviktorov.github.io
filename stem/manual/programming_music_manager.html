@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -73,25 +73,32 @@
 <h2 id="description">Description</h2>
 <p>Music Manager is the entry point for music playback and music bank management. It does not require to create any additional game objects in order to use it.</p>
 <h2 id="playlist-controls">Playlist controls</h2>
-<p>Call <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_System_Int32_System_Int32_">Stem.MusicManager.SetPlaylist</a> to assign a playlist to a music player. Once assigned, it'll automatically start playing.</p>
+<p>Call <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_SetPlaylist_Stem_ID_Stem_ID_">Stem.MusicManager.SetPlaylist</a> to assign a playlist to a music player. Once assigned, it'll automatically start playing.</p>
 <p>Use default crossfade duration from the music player:</p>
-<pre><code class="lang-csharp">Stem.MusicManager.SetPlaylist(musicPlayerID, playlistID);
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+Stem.ID playlistID; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+
+Stem.MusicManager.SetPlaylist(musicPlayerID, playlistID);
 </code></pre>
 <p>Or override it:</p>
-<pre><code class="lang-csharp">float newCrossfade = 5.0f;
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+Stem.ID playlistID; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+float newCrossfade = 5.0f;
 
 Stem.MusicManager.SetPlaylist(musicPlayerID, playlistID, newCrossfade);
 </code></pre>
 <h2 id="track-controls">Track controls</h2>
 <p>Call these methods to set a desired track to a music player:</p>
 <ul>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Next_System_Int32_">Stem.MusicManager.Next</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Prev_System_Int32_">Stem.MusicManager.Prev</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_String_">Stem.MusicManager.Seek</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Seek_System_Int32_System_Int32_">Stem.MusicManager.Seek</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Next_Stem_ID_">Stem.MusicManager.Next</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Prev_Stem_ID_">Stem.MusicManager.Prev</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Seek_Stem_ID_System_String_">Stem.MusicManager.Seek</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Seek_Stem_ID_System_Int32_">Stem.MusicManager.Seek</a></li>
 </ul>
 <p>Use default crossfade duration from the music player:</p>
-<pre><code class="lang-csharp">// Will advance music player to next track
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+
+// Will advance music player to next track
 Stem.MusicManager.Next(musicPlayerID);
 
 // Will advance music player to previous track
@@ -104,7 +111,8 @@ Stem.MusicManager.Seek(musicPlayerID, &quot;Level1 Theme&quot;);
 Stem.MusicManager.Seek(musicPlayerID, 0);
 </code></pre>
 <p>Or override it:</p>
-<pre><code class="lang-csharp">float newCrossfade = 5.0f;
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+float newCrossfade = 5.0f;
 
 Stem.MusicManager.Next(musicPlayerID, newCrossfade);
 Stem.MusicManager.Prev(musicPlayerID, newCrossfade);
@@ -114,12 +122,14 @@ Stem.MusicManager.Seek(musicPlayerID, 0, newCrossfade);
 <h2 id="playback-controls">Playback controls</h2>
 <p>Call these methods to change playback state of a music player:</p>
 <ul>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_System_Int32_">Stem.MusicManager.Play</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Stop_System_Int32_">Stem.MusicManager.Stop</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Pause_System_Int32_">Stem.MusicManager.Pause</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_Stem_ID_">Stem.MusicManager.Play</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Stop_Stem_ID_">Stem.MusicManager.Stop</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Pause_Stem_ID_">Stem.MusicManager.Pause</a></li>
 </ul>
 <p>Use default crossfade duration from the music player:</p>
-<pre><code class="lang-csharp">// Will start playing current track of the music player.
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+
+// Will start playing current track of the music player.
 Stem.MusicManager.Play(musicPlayerID);
 
 // Will pause playing current track of the music player.
@@ -132,7 +142,8 @@ Stem.MusicManager.Play(musicPlayerID);
 Stem.MusicManager.Stop(musicPlayerID);
 </code></pre>
 <p>Or override it:</p>
-<pre><code class="lang-csharp">float newCrossfade = 5.0f;
+<pre><code class="lang-csharp">Stem.ID musicPlayerID; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+float newCrossfade = 5.0f;
 
 Stem.MusicManager.Play(musicPlayerID, newCrossfade);
 Stem.MusicManager.Pause(musicPlayerID, newCrossfade);

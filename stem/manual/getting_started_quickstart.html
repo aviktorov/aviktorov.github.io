@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -108,13 +108,13 @@
 <p><img src="../images/getting_started_quickstart_step3_9.png" alt="Adjusting music player parameters"></p>
 <h2 id="play-one-shot-sounds">Play one-shot sounds</h2>
 <h3 id="by-sound-id-in-the-script">By sound ID in the script</h3>
-<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_System_String_">Stem.SoundManager.Play</a> to play one-shot sounds.</p>
+<p>Use <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_Stem_ID_">Stem.SoundManager.Play</a> to play one-shot sounds.</p>
 <pre><code class="lang-csharp">using UnityEngine;
 
 public class PlayerHit : MonoBehaviour
 {
 	[Stem.SoundID]
-	public int soundID = 0;
+	public Stem.ID soundID = Stem.ID.None;
 
 	private void OnTriggerEnter(Collider collider)
 	{
@@ -146,13 +146,13 @@ public class PlayerHit : MonoBehaviour
 <p>Check &quot;Play On Start&quot; option to automatically play current music player when the game starts.</p>
 <p><img src="../images/getting_started_quickstart_play_on_start.png" alt="Play On Start checkbox"></p>
 <h3 id="by-music-player-id-in-the-script">By music player ID in the script</h3>
-<p>Use <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_System_String_">Stem.MusicManager.Play</a> to start music playback during level startup.</p>
+<p>Use <a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_Play_Stem_ID_">Stem.MusicManager.Play</a> to start music playback during level startup.</p>
 <pre><code class="lang-csharp">using UnityEngine;
 
 public class LevelStartup : MonoBehaviour
 {
 	[Stem.MusicPlayerID]
-	public int musicPlayerID = 0;
+	public Stem.ID musicPlayerID = Stem.ID.None;
 
 	private void Start()
 	{

@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -124,20 +124,20 @@ Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(&quot;Music player na
 <h3 id="by-id">By ID</h3>
 <p>Call these methods to search for existing content in all banks:</p>
 <ul>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_System_Int32_">Stem.SoundManager.GetSound</a></li>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_System_Int32_">Stem.SoundManager.GetSoundBus</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_System_Int32_">Stem.MusicManager.GetPlaylist</a></li>
-<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_System_Int32_">Stem.MusicManager.GetMusicPlayer</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSound_Stem_ID_">Stem.SoundManager.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GetSoundBus_Stem_ID_">Stem.SoundManager.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetPlaylist_Stem_ID_">Stem.MusicManager.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicManager.html#Stem_MusicManager_GetMusicPlayer_Stem_ID_">Stem.MusicManager.GetMusicPlayer</a></li>
 </ul>
 <p>As all IDs are unique, the <a href="programming_bank_content.html#primary-bank">PrimaryBank</a> property has no effect on the search results. Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
-<pre><code class="lang-csharp">int soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
-int soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
+<pre><code class="lang-csharp">Stem.ID soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+Stem.ID soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
 
 Stem.Sound sound = SoundManager.GetSound(soundId);
 Stem.SoundBus soundBus = SoundManager.GetSoundBus(soundBusId);
 </code></pre>
-<pre><code class="lang-csharp">int playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
-int musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+<pre><code class="lang-csharp">Stem.ID playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+Stem.ID musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
 
 Stem.Playlist playlist = MusicManager.GetPlaylist(playlistId);
 Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(musicPlayerId);
@@ -146,20 +146,20 @@ Stem.MusicPlayer musicPlayer = MusicManager.GetMusicPlayer(musicPlayerId);
 <h3 id="by-id-1">By ID</h3>
 <p>Call these methods to search for existing content in the bank:</p>
 <ul>
-<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSound_System_Int32_">Stem.SoundBank.GetSound</a></li>
-<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_System_Int32_">Stem.SoundBank.GetSoundBus</a></li>
-<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_System_Int32_">Stem.MusicBank.GetPlaylist</a></li>
-<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_System_Int32_">Stem.MusicBank.GetMusicPlayer</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSound_Stem_ID_">Stem.SoundBank.GetSound</a></li>
+<li><a class="xref" href="../api/Stem.SoundBank.html#Stem_SoundBank_GetSoundBus_Stem_ID_">Stem.SoundBank.GetSoundBus</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetPlaylist_Stem_ID_">Stem.MusicBank.GetPlaylist</a></li>
+<li><a class="xref" href="../api/Stem.MusicBank.html#Stem_MusicBank_GetMusicPlayer_Stem_ID_">Stem.MusicBank.GetMusicPlayer</a></li>
 </ul>
 <p>Use <a href="programming_id_attributes.html">ID attributes</a> to get the ID from the Inspector.</p>
-<pre><code class="lang-csharp">int soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
-int soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
+<pre><code class="lang-csharp">Stem.ID soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+Stem.ID soundBusId; // Assume it's filled earlier in the code or was set by the Stem.SoundBusID attribute
 
 Stem.Sound sound = bank.GetSound(soundId);
 Stem.SoundBus soundBus = bank.GetSoundBus(soundBusId);
 </code></pre>
-<pre><code class="lang-csharp">int playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
-int musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
+<pre><code class="lang-csharp">Stem.ID playlistId; // Assume it's filled earlier in the code or was set by the Stem.PlaylistID attribute
+Stem.ID musicPlayerId; // Assume it's filled earlier in the code or was set by the Stem.MusicPlayerID attribute
 
 Stem.Playlist playlist = bank.GetPlaylist(playlistId);
 Stem.MusicPlayer musicPlayer = bank.GetMusicPlayer(musicPlayerId);

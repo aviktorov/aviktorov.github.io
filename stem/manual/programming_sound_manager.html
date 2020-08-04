@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -80,17 +80,19 @@
 <h2 id="one-shot-sound-instances">One-shot sound instances</h2>
 <p>Call these methods to play a one-shot sound:</p>
 <ul>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_System_Int32_">Stem.SoundManager.Play</a></li>
-<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play3D_System_Int32_Vector3_">Stem.SoundManager.Play3D</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play_Stem_ID_">Stem.SoundManager.Play</a></li>
+<li><a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_Play3D_Stem_ID_Vector3_">Stem.SoundManager.Play3D</a></li>
 </ul>
 <p>Use default volume, pitch and delay values from the sound:</p>
-<pre><code class="lang-csharp">Vector3 soundPosition = new Vector3(100.0f, 0.0f, 0.0f);
+<pre><code class="lang-csharp">Stem.ID soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+Vector3 soundPosition = new Vector3(100.0f, 0.0f, 0.0f);
 
 Stem.SoundManager.Play(soundID);
 Stem.SoundManager.Play3D(soundID, soundPosition);
 </code></pre>
 <p>Or override them:</p>
-<pre><code class="lang-csharp">Vector3 soundPosition = new Vector3(100.0f, 0.0f, 0.0f);
+<pre><code class="lang-csharp">Stem.ID soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+Vector3 soundPosition = new Vector3(100.0f, 0.0f, 0.0f);
 float newVolume = 0.5f;
 float newPitch = 0.9f;
 float newDelay = 0.1f;
@@ -100,7 +102,9 @@ Stem.SoundManager.Play3D(soundID, soundPosition, newVolume, newPitch, newDelay);
 </code></pre>
 <h2 id="manual-sound-instances">Manual sound instances</h2>
 <p>Call <a class="xref" href="../api/Stem.SoundManager.html#Stem_SoundManager_GrabSound">Stem.SoundManager.GrabSound</a> to get a reference to a sound instance from the sound pool:</p>
-<pre><code class="lang-csharp">Stem.SoundInstance soundInstance = Stem.SoundManager.GrabSound(soundID);
+<pre><code class="lang-csharp">Stem.ID soundId; // Assume it's filled earlier in the code or was set by the Stem.SoundID attribute
+
+Stem.SoundInstance soundInstance = Stem.SoundManager.GrabSound(soundID);
 </code></pre>
 <p>Call <a class="xref" href="../api/Stem.SoundInstance.html#Stem_SoundInstance_Play">Stem.SoundInstance.Play</a> or <a class="xref" href="../api/Stem.SoundInstance.html#Stem_SoundInstance_Play3D_Vector3_">Stem.SoundInstance.Play3D</a> to manuall play a sound. Use default volume, pitch and delay values from the sound:</p>
 <pre><code class="lang-csharp">Vector3 soundPosition = new Vector3(100.0f, 0.0f, 0.0f);
