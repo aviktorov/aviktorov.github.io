@@ -1,13 +1,13 @@
 struct FragmentInput
 {
-	@builtin(position) position: vec4f,
+	@builtin(position) position: vec4f
 };
 
 struct Application
 {
 	viewport: vec4f,
 	time: f32,
-	dt: f32,
+	dt: f32
 };
 
 @group(0) @binding(0) var<uniform> application: Application;
@@ -48,7 +48,7 @@ struct Application
 {
 	viewport: vec4f,
 	time: f32,
-	dt: f32,
+	dt: f32
 };
 
 struct EmitterData
@@ -59,7 +59,7 @@ struct EmitterData
 	min_lifetime: f32,
 	max_lifetime: f32,
 	min_imass: f32,
-	max_imass: f32,
+	max_imass: f32
 };
 
 @group(0) @binding(0) var<uniform> application: Application;
@@ -184,7 +184,7 @@ struct VertexInput
 {
 	@builtin(vertex_index) index: u32,
 	@location(0) offset: vec2f,
-	@location(1) position: vec4f,
+	@location(1) position: vec4f
 };
 
 struct VertexOutput
