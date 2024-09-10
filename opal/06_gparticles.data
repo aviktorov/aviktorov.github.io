@@ -190,13 +190,13 @@ struct VertexInput
 struct VertexOutput
 {
 	@builtin(position) position: vec4f,
-	@location(0) data: vec4f,
+	@location(0) data: vec4f
 };
 
 struct Camera
 {
 	view: mat4x4f,
-	projection: mat4x4f,
+	projection: mat4x4f
 };
 
 const PARTICLE_SIZE: f32 = 0.005;
@@ -224,7 +224,7 @@ struct Application
 {
 	viewport: vec4f,
 	time: f32,
-	dt: f32,
+	dt: f32
 };
 
 struct EmitterData
@@ -235,7 +235,7 @@ struct EmitterData
 	min_lifetime: f32,
 	max_lifetime: f32,
 	min_imass: f32,
-	max_imass: f32,
+	max_imass: f32
 };
 
 @group(0) @binding(0) var<uniform> application: Application;
